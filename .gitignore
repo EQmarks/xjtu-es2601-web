@@ -1,0 +1,30 @@
+# 忽略规则（网站仓库）
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.bak
+*.log
+_tmp/
+_temp/
+node_modules/
+
+# ⚠️ 敏感数据 —— 绝对不要提交
+# （本项目仓库只覆盖网站目录，此处为双保险）
+wechat_plain/
+*.db
+*.db-wal
+*.db-shm
+key.txt
+key_windows.txt
+
+# 大文件 —— 图片请压到 500KB 以内再放 assets/img
+# 单个超过 5MB 的文件会被 git 永久记住，谨慎
