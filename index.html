@@ -43,7 +43,7 @@
     <h1>储百卅之光　能万里新程</h1>
     <div class="sub">纪念长征胜利 90 周年 · 西迁 70 周年 · 建校 130 周年</div>
     <div class="btns">
-      <a href="#map" class="btn btn-gold">进入红色足迹地图 →</a>
+      <a href="map3d.html" class="btn btn-gold">进入红色足迹 3D 地图 →</a>
       <a href="#ch" class="btn btn-ghost">查看活动全览</a>
     </div>
   </div>
@@ -103,7 +103,7 @@
       <h2>红色足迹 · 2.5D 地图</h2>
       <a href="#" class="more">查看全部站点 →</a>
     </div>
-    <div class="mapbox">
+    <div class="mapbox" id="redmap">
       <div class="map-hd">
         <b>我们走过的地方</b>
         <span>2026 年国庆 — 10 月</span>
@@ -111,6 +111,7 @@
       <div class="map-legend">
         <span><i></i>红色地标</span>
         <span><i style="background:#F5D76E"></i>能量流</span>
+        <button class="map-tour" type="button">自动巡游</button>
       </div>
       <div class="map-stage">
         <!-- 等距（isometric）手绘 SVG：tileW:tileH = 2:1 -->
@@ -159,15 +160,6 @@
           </g>
 
           <!-- 站点立柱 -->
-          <!-- 榆林 -->
-          <g>
-            <path d="M180 252 L200 262 L180 272 L160 262 Z" fill="#5C0713"/>
-            <rect x="160" y="180" width="20" height="72" fill="url(#pil)" opacity=".95"/>
-            <rect x="180" y="180" width="20" height="72" fill="#6B0A18" opacity=".9"/>
-            <path d="M180 168 L200 178 L180 188 L160 178 Z" fill="#F5D76E"/>
-            <text class="lbl" x="180" y="156">榆林</text>
-            <text class="lbl-sm" x="180" y="298">压缩空气储能</text>
-          </g>
           <!-- 延安 -->
           <g>
             <path d="M330 168 L350 178 L330 188 L310 178 Z" fill="#5C0713"/>
@@ -208,6 +200,7 @@
           <path d="M132 306 L172 268" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3 4" opacity=".6"/>
         </svg>
       </div>
+      <aside class="map-card" aria-live="polite"></aside>
     </div>
   </div>
 </section>
@@ -300,5 +293,6 @@
   <div class="fbar">版权所有 © 2026 储能2601 团支部 ｜ 本站为最佳团日成果展示，非官方站点</div>
 </footer>
 
+<script src="assets/js/redmap.js"></script>
 </body>
 </html>

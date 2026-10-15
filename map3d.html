@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>红色足迹 · 3D 中国地图｜储能2601 团支部最佳团日</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+:root{--c:var(--ch1)}
+body{background:#1A060A}
+.page-hd{background:linear-gradient(125deg,#5C0713 0%,#8B0A1E 48%,#A00C24 100%);
+  color:#fff;padding:34px 0 30px;position:relative;overflow:hidden}
+.page-hd::after{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(60deg,rgba(255,255,255,.04) 0 2px,transparent 2px 44px),
+                   repeating-linear-gradient(-60deg,rgba(255,255,255,.04) 0 2px,transparent 2px 44px)}
+.page-hd .wrap{position:relative;z-index:2}
+.page-hd .badge{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:2px;
+  color:var(--accent);border:1px solid rgba(212,175,55,.5);padding:5px 13px;border-radius:2px;margin-bottom:14px}
+.page-hd .badge i{width:9px;height:9px;background:var(--ch1);border-radius:2px}
+.page-hd h1{font-size:32px;letter-spacing:3px;font-weight:700}
+.page-hd p{margin-top:12px;color:var(--accent-light);font-size:15px;max-width:780px}
+
+.map-shell{position:relative;background:radial-gradient(ellipse at 50% 42%,#3D1219 0%,#2A0A10 58%,#160509 100%)}
+#globe{width:100%;height:680px}
+.map-hint{position:absolute;left:26px;bottom:22px;font-size:12.5px;color:#C89A8A;z-index:3;line-height:1.9}
+.map-hint b{color:var(--accent)}
+.map-side{position:absolute;right:22px;top:22px;width:290px;z-index:4;
+  background:rgba(26,6,10,.9);border:1px solid rgba(212,175,55,.35);border-radius:4px;
+  padding:18px 20px;color:#fff;backdrop-filter:blur(6px);transition:.25s;opacity:0;transform:translateX(14px);
+  pointer-events:none}
+.map-side.on{opacity:1;transform:none;pointer-events:auto}
+.map-side .ms-ch{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:2px;
+  background:rgba(200,16,46,.28);color:#FF9EB0;border:1px solid rgba(200,16,46,.5)}
+.map-side h4{margin:10px 0 4px;font-size:18px;letter-spacing:1px}
+.map-side .ms-sub{font-size:13px;color:var(--accent)}
+.map-side .ms-meta{font-size:12.5px;color:#C89A8A;margin-top:8px}
+.map-side p{font-size:13.5px;color:#EBC9CF;margin-top:10px;line-height:1.75}
+.map-side .ms-close{position:absolute;right:12px;top:10px;background:none;border:none;color:#C89A8A;
+  font-size:20px;line-height:1;cursor:pointer}
+.map-side .ms-close:hover{color:#fff}
+
+.ctrl{display:flex;gap:10px;flex-wrap:wrap;padding:16px 0}
+.ctrl button{background:rgba(255,255,255,.06);border:1px solid rgba(212,175,55,.4);color:var(--accent-light);
+  font-size:13.5px;padding:8px 16px;border-radius:3px;cursor:pointer;transition:.18s;font-family:inherit}
+.ctrl button:hover{background:rgba(212,175,55,.16);color:#fff}
+.ctrl button.on{background:var(--accent);color:#5C0713;border-color:var(--accent);font-weight:600}
+
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 0}
+.stats-row div{background:rgba(255,255,255,.04);border:1px solid rgba(212,175,55,.22);
+  border-radius:4px;padding:16px 14px;text-align:center}
+.stats-row b{display:block;font-size:26px;color:var(--accent);line-height:1}
+.stats-row span{display:block;font-size:12.5px;color:#C89A8A;margin-top:7px}
+
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:#C89A8A;padding:14px 0 0}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.sec-dark{background:#1A060A;color:#EBC9CF;padding:34px 0 54px}
+.sec-dark h2{color:#fff;font-size:20px;letter-spacing:1px;margin-bottom:14px;
+  padding-left:14px;position:relative}
+.sec-dark h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:4px;height:20px;background:var(--ch1);border-radius:2px}
+.sec-dark .acts .act{background:rgba(255,255,255,.045);border-color:rgba(212,175,55,.22);color:#EBC9CF}
+.sec-dark .acts .act h3{color:#fff}
+.sec-dark .acts .act p{color:#C89A8A}
+.sec-dark .acts .act .when{color:#8E6A6A}
+.sec-dark .acts .act .foot{border-top-color:rgba(212,175,55,.22)}
+.sec-dark .acts .act:hover{background:rgba(255,255,255,.08)}
+
+@media (max-width:900px){
+  #globe{height:460px}
+  .map-side{position:static;width:auto;margin:0 16px 16px;opacity:1;transform:none;pointer-events:auto}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .page-hd h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo">储能</div>
+    <div class="brand-text">
+      <b>储能2601 团支部</b>
+      <span>赓续红色薪火 · 储启百卅新程</span>
+    </div>
+    <div class="right">共青团西安交通大学<br>钱学森书院委员会</div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html">首页</a>
+    <a href="jn.html">聚能 · 学</a>
+    <a href="xs.html">蓄势 · 思</a>
+    <a href="cr.html">传热 · 悟</a>
+    <a href="sn.html">释能 · 行</a>
+    <a href="map3d.html" class="on">红色足迹</a>
+    <a href="about.html">支部概况</a>
+    <a href="download.html">材料下载</a>
+  </div>
+</nav>
+
+<div class="crumb" style="background:#2A0A10;border-color:rgba(212,175,55,.2);color:#C89A8A">
+  <div class="wrap"><a href="index.html" style="color:#C89A8A">首页</a> &nbsp;›&nbsp;
+    <b style="color:#fff">红色足迹 · 3D 地图</b></div>
+</div>
+
+<header class="page-hd">
+  <div class="wrap">
+    <div class="badge"><i></i>第一篇章 · 聚能 · 学</div>
+    <h1>红色足迹 · 3D 中国地图</h1>
+    <p>这 130 年，光从上海出发，走了 1400 公里，落在西安。我们这 32 个人，从各自家乡出发，
+       走了几十到几千公里，也落在西安。<b style="color:var(--accent)">这条路，就是储能。</b></p>
+  </div>
+</header>
+
+<div class="map-shell">
+  <div id="globe"></div>
+  <div class="map-hint">
+    <b>拖动</b> 旋转视角 ｜ <b>滚轮</b> 缩放 ｜ <b>点击立柱</b> 查看站点
+  </div>
+  <aside class="map-side" id="side" aria-live="polite"></aside>
+</div>
+
+<div class="sec-dark">
+  <div class="wrap">
+    <div class="ctrl">
+      <button class="on" data-view="cn">3D 立体视角</button>
+      <button data-view="flat">俯视视角</button>
+      <button id="tour">自动巡游</button>
+      <button id="reset">重置视角</button>
+    </div>
+    <div class="stats-row">
+      <div><b>5</b><span>红色地标（实地）</span></div>
+      <div><b>32</b><span>返乡分散点位</span></div>
+      <div><b>5</b><span>条能量流路径</span></div>
+      <div><b>3</b><span>三庆主题</span></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:#C8102E"></i>西安 · 主会场</span>
+      <span><i style="background:#E8734A"></i>长征线（延安）</span>
+      <span><i style="background:#7EC8E3"></i>返乡分散点</span>
+    </div>
+  </div>
+</div>
+
+<section class="sec-dark" style="padding-top:0">
+  <div class="wrap">
+    <h2>五处实地红色地标</h2>
+    <div class="acts">
+      <div class="act" style="--c:var(--ch1)"><div class="bar"></div>
+        <h3>西安事变纪念馆</h3>
+        <div class="when">2026-10-06 15:00 · 10 人</div>
+        <p>参加英仔爱心社组织的研学，重温西安事变历史，缅怀革命先烈。</p></div>
+      <div class="act" style="--c:var(--ch1)"><div class="bar"></div>
+        <h3>西迁博物馆</h3>
+        <div class="when">2026-10-11 15:00 · 24 人</div>
+        <p>走一遍「打起背包就出发」的物理现场，新生养成教育必要环节。</p></div>
+      <div class="act" style="--c:var(--ch1)"><div class="bar"></div>
+        <h3>钱学森科学精神与教育思想展</h3>
+        <div class="when">2026-10-11 16:00 · 25 人</div>
+        <p>在钱学森图书馆读懂科学家精神与教育思想。</p></div>
+      <div class="act" style="--c:var(--ch1)"><div class="bar"></div>
+        <h3>饮水思源碑</h3>
+        <div class="when">2026-10-11 16:30 · 23 人</div>
+        <p>把「饮水思源」四个字，站在脚下。</p></div>
+      <div class="act" style="--c:var(--ch1)"><div class="bar"></div>
+        <h3>交大博物馆 · 秦腔博物馆</h3>
+        <div class="when">2026-10-07 14:30</div>
+        <p>从校史走到地方戏曲，文化自信的第一手材料。</p></div>
+      </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h4>主办单位</h4>
+        <p>西安交通大学钱学森书院<br>储能2601 团支部</p>
+        <p style="margin-top:10px">指导单位：共青团西安交通大学委员会</p></div>
+      <div><h4>友情链接</h4><ul>
+        <li><a href="#">共青团西安交通大学委员会</a></li>
+        <li><a href="#">钱学森书院</a></li>
+        <li><a href="#">西迁博物馆</a></li></ul></div>
+      <div><h4>本站导航</h4><ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="jn.html">聚能 · 学</a></li>
+        <li><a href="map3d.html">红色足迹 · 3D 地图</a></li></ul></div>
+    </div>
+  </div>
+  <div class="fbar">版权所有 © 2026 储能2601 团支部 ｜ 本站为最佳团日成果展示，非官方站点</div>
+</footer>
+
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/vendor/echarts-gl.min.js"></script>
+<script>
+/* ============================================================
+   红色足迹 3D 地图（ECharts GL: map3D + lines3D + scatter3D）
+   ============================================================ */
+(function () {
+  'use strict';
+
+  /* 实地红色地标（真实经纬度） */
+  var SITES = [
+    { id:'xian', name:'西安', sub:'西迁博物馆 · 钱学森展 · 思源碑',
+      coord:[108.98,34.26], value:25, chapter:'聚能', color:'#C8102E',
+      date:'2026-10-11', desc:'西迁博物馆 24 人、钱学森科学精神与教育思想展 25 人、饮水思源碑合影 23 人——走一遍「打起背包就出发」的物理现场。' },
+    { id:'xian-incident', name:'西安事变纪念馆', sub:'红色研学实践',
+      coord:[108.99,34.25], value:10, chapter:'聚能', color:'#C8102E',
+      date:'2026-10-06', desc:'参加英仔爱心社组织的研学，重温西安事变历史，缅怀革命先烈。班级名额 10 人。' },
+    { id:'yanan', name:'延安', sub:'长征会师地 · 会合',
+      coord:[109.49,36.59], value:8, chapter:'聚能', color:'#E8734A',
+      date:'2026 国庆期间', desc:'延安籍同学与班级同学在长征会师地会合，完成长征线的落点。' },
+    { id:'fuping', name:'富平', sub:'习仲勋故里 · 党课（意向）',
+      coord:[109.18,34.75], value:4, chapter:'聚能', color:'#D4AF37',
+      date:'2026-10-17（意向）', desc:'前往习仲勋故里富平，上一堂行走的党课。' }
+  ];
+
+  /* 能源流路径（从西安向外辐射） */
+  var ROUTES = [
+    { from:'西安',   to:'延安', coord:[[108.98,34.26],[109.49,36.59]] },
+    { from:'西安',   to:'富平', coord:[[108.98,34.26],[109.18,34.75]] },
+    { from:'上海',   to:'西安', coord:[[121.47,31.23],[108.98,34.26]] },
+  ];
+
+  /* 32 位同学的家乡（返乡红色地标）—— 来自国庆返乡调研 */
+  var HOMES = [
+    ['山东·济南',117.00,36.65],['山东·青岛',120.38,36.07],['山东·临沂',118.35,35.10],
+    ['河南·郑州',113.62,34.75],['河南·洛阳',112.45,34.62],['河北·石家庄',114.51,38.04],
+    ['河北·唐山',118.18,39.63],['陕西·西安',108.98,34.26],
+    ['陕西·延安',109.49,36.59],['陕西·宝鸡',107.14,34.36],['陕西·咸阳',108.71,34.33],
+    ['山西·太原',112.55,37.87],['山西·运城',111.00,35.02],['四川·成都',104.07,30.57],
+    ['四川·绵阳',104.68,31.47],['湖北·武汉',114.31,30.52],['湖北·宜昌',111.29,30.69],
+    ['湖南·长沙',112.94,28.23],['江苏·南京',118.80,32.06],['江苏·徐州',117.18,34.26],
+    ['浙江·杭州',120.15,30.28],['安徽·合肥',117.23,31.82],['福建·福州',119.30,26.08],
+    ['江西·南昌',115.86,28.68],['广东·广州',113.26,23.13],['广西·南宁',108.37,22.82],
+    ['辽宁·沈阳',123.43,41.80],['吉林·长春',125.32,43.82],['黑龙江·哈尔滨',126.53,45.80],
+    ['甘肃·兰州',103.83,36.06],['新疆·乌鲁木齐',87.62,43.82],['内蒙古·呼和浩特',111.75,40.84],
+    ['北京',116.41,39.90],['天津',117.20,39.13],['重庆',106.55,29.56],['云南·昆明',102.83,24.88]
+  ];
+
+  var chart = null, side = document.getElementById('side');
+
+  function showSide(s) {
+    side.innerHTML =
+      '<button class="ms-close" type="button" aria-label="关闭">×</button>' +
+      '<span class="ms-ch">' + s.chapter + '</span>' +
+      '<h4>' + s.name + '</h4>' +
+      '<div class="ms-sub">' + s.sub + '</div>' +
+      '<div class="ms-meta">' + s.date + (s.value ? ' · 参与 ' + s.value + ' 人' : '') + '</div>' +
+      '<p>' + s.desc + '</p>';
+    side.classList.add('on');
+    side.querySelector('.ms-close').addEventListener('click', function () {
+      side.classList.remove('on');
+    });
+  }
+
+  function buildOption(view) {
+    var alpha = view === 'flat' ? 88 : 46;      // 俯视 / 立体
+    var beta  = view === 'flat' ? 0 : 26;
+    var depth = view === 'flat' ? 3 : 12;
+
+    return {
+      backgroundColor: 'transparent',
+      tooltip: { show: false },
+      geo3D: {
+        map: 'china',
+        regionHeight: depth,
+        shading: 'lambert',
+        boxWidth: 96,
+        boxDepth: 78,
+        boxHeight: 12,
+        viewControl: {
+          alpha: alpha, beta: beta,
+          distance: view === 'flat' ? 96 : 108,
+          autoRotate: false,
+          minAlpha: 0, maxAlpha: 90,
+          panMouseButton: 'right', rotateMouseButton: 'left'
+        },
+        light: {
+          main: { intensity: 1.15, shadow: true, alpha: 34, beta: 26 },
+          ambient: { intensity: 0.42 }
+        },
+        itemStyle: { color: '#7A1C2A', opacity: 0.94, borderWidth: 0.6, borderColor: '#C8102E' },
+        emphasis: { itemStyle: { color: '#C8102E' }, label: { show: true, color: '#fff', fontSize: 12 } },
+        label: { show: false }
+      },
+      series: [
+        /* ---------- 能量流飞线 ---------- */
+        {
+          type: 'lines3D',
+          coordinateSystem: 'geo3D',
+          effect: { show: true, trailWidth: 2.6, trailLength: 0.32,
+                    trailOpacity: 0.95, trailColor: '#F5D76E' },
+          blendMode: 'lighter',
+          lineStyle: { width: 1.6, color: '#D4AF37', opacity: 0.5 },
+          data: ROUTES.map(function (r) { return { coords: r.coord, name: r.from + ' → ' + r.to }; })
+        },
+        /* ---------- 实地红色地标（立柱） ---------- */
+        {
+          type: 'scatter3D',
+          coordinateSystem: 'geo3D',
+          symbol: 'circle',
+          symbolSize: function (v) { return 7 + v[2] * 0.5; },
+          itemStyle: { color: function (p) { return SITES[p.dataIndex].color; },
+                       opacity: 0.98, borderWidth: 1.2, borderColor: '#FFF3C4' },
+          label: { show: true, formatter: function (p) { return p.data.name; },
+                   color: '#FFF3C4', fontSize: 13, distance: 2,
+                   textStyle: { borderWidth: 0, backgroundColor: 'transparent' } },
+          emphasis: { label: { show: true, color: '#fff', fontSize: 15 } },
+          data: SITES.map(function (s) {
+            return { name: s.name, value: s.coord.concat(s.value) };
+          })
+        },
+        /* ---------- 返乡分散点 ---------- */
+        {
+          type: 'scatter3D',
+          coordinateSystem: 'geo3D',
+          symbol: 'circle',
+          symbolSize: 5,
+          itemStyle: { color: '#7EC8E3', opacity: 0.72 },
+          label: { show: false },
+          data: HOMES.map(function (h) { return { name: h[0], value: [h[1], h[2], 3] }; })
+        }
+      ]
+    };
+  }
+
+  function init() {
+    if (!window.echarts || !document.getElementById('globe')) return;
+    chart = echarts.init(document.getElementById('globe'), null, { renderer: 'canvas' });
+
+    side.innerHTML = '<div style="color:#C89A8A;font-size:13.5px">正在加载中国地图数据…</div>';
+    side.classList.add('on');
+
+    fetch('assets/data/china.geo.json', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (geo) {
+        echarts.registerMap('china', geo);
+        chart.setOption(buildOption('cn'));
+        side.classList.remove('on');
+        chart.on('click', function (p) {
+          if (p.componentType === 'series' && p.seriesType === 'scatter3D') {
+            var name = p.data && p.data.name;
+            var hit = null;
+            SITES.forEach(function (s) { if (s.name === name) hit = s; });
+            if (hit) showSide(hit);
+          }
+        });
+      })
+      .catch(function (e) {
+        side.innerHTML = '<div style="color:#FF9EB0;font-size:13.5px">地图数据加载失败：' + e.message +
+          '<br><span style="color:#C89A8A">请通过本地服务器打开（python -m http.server）</span></div>';
+      });
+
+    window.addEventListener('resize', function () { chart && chart.resize(); });
+  }
+
+  /* ---------- 控件 ---------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    init();
+
+    var btns = document.querySelectorAll('.ctrl [data-view]');
+    function clearOn() { btns.forEach(function (b) { b.classList.remove('on'); }); }
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        clearOn(); b.classList.add('on');
+        if (chart) chart.setOption(buildOption(b.getAttribute('data-view')));
+      });
+    });
+
+    var rb = document.getElementById('reset');
+    if (rb) rb.addEventListener('click', function () {
+      clearOn();
+      document.querySelector('.ctrl [data-view="cn"]').classList.add('on');
+      if (chart) chart.setOption(buildOption('cn'), true);
+    });
+
+    var tb = document.getElementById('tour');
+    if (tb) tb.addEventListener('click', function () {
+      var i = 0;
+      tb.disabled = true;
+      var timer = setInterval(function () {
+        if (i >= SITES.length) { clearInterval(timer); tb.disabled = false; side.classList.remove('on'); return; }
+        showSide(SITES[i++]);
+      }, 2400);
+    });
+  });
+})();
+</script>
+</body>
+</html>
