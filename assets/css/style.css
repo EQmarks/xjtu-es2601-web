@@ -72,12 +72,6 @@ img{max-width:100%;display:block}
 .nav a:hover{background:var(--brand-light)}
 .nav a.on{border-bottom-color:var(--accent);background:rgba(0,0,0,.14);font-weight:600}
 
-/* ============ 面包屑 ============ */
-.crumb{background:#fff;border-bottom:1px solid var(--line);font-size:13px;color:var(--text-2)}
-.crumb .wrap{padding-top:12px;padding-bottom:12px}
-.crumb a:hover{color:var(--brand)}
-.crumb b{color:var(--text);font-weight:600}
-
 /* ============ 栏目标题 ============ */
 .sec{padding:52px 0}
 .sec-head{display:flex;align-items:flex-end;gap:14px;margin-bottom:24px}
