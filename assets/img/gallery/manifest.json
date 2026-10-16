@@ -1,0 +1,226 @@
+{
+  "g-redclass": {
+    "folder": "红色足迹",
+    "count": 8,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg"
+    ]
+  },
+  "g-qian": {
+    "folder": "10.11图书馆钱展",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-changzheng": {
+    "folder": "10.11长征观影《四渡赤水》",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-xianincident": {
+    "folder": "10.6西安事变纪念馆",
+    "count": 8,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg"
+    ]
+  },
+  "g-mobilize": {
+    "folder": "10.7动员大会",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ]
+  },
+  "g-dance": {
+    "folder": "10.9广场舞",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-pottery": {
+    "folder": "10.12陶艺社",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-labor": {
+    "folder": "10.12劳动包干",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-prep1": {
+    "folder": "10.13交附预一宣讲",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-prep2": {
+    "folder": "10.11预科二宣讲",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ]
+  },
+  "g-gaozhong": {
+    "folder": "10.15交附团课",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ]
+  },
+  "g-tju": {
+    "folder": "10.15天大联动团课",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-blind": {
+    "folder": "10.15盲人日",
+    "count": 4,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ]
+  },
+  "g-xunpai": {
+    "folder": "10.15迅湃",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ]
+  },
+  "g-innovport": {
+    "folder": "10.16创新港",
+    "count": 8,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg"
+    ]
+  },
+  "g-cui": {
+    "folder": "10.16崔学长分享",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-quiz": {
+    "folder": "知识竞答",
+    "count": 6,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg"
+    ]
+  },
+  "g-cleanplate": {
+    "folder": "光盘行动",
+    "count": 3,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ]
+  },
+  "g-backhome": {
+    "folder": "返校宣讲",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ]
+  }
+}
