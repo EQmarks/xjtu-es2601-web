@@ -1,31 +1,30 @@
 /* ============================================================
-   储能2601 团支部 · 最佳团日成果展示网站
-   共享样式表
-   换肤：只改下方 :root 变量
+   主题变量 —— 配色取自班徽第①款「能流织环 · 原色蓝青」
+   科技蓝 #005699（交大校徽标准色）｜青绿 #009B93（能源）
+   爱国红 #C8161E（交大130周年校庆标识色）
+   换肤：只改这里
    ============================================================ */
-
 :root{
-  /* ---- 主题色：红色（团日主题） ---- */
-  --brand:#C8102E;
-  --brand-deep:#8B0A1E;
-  --brand-light:#E63A50;
-  --brand-tint:#FFF1F3;
-  --accent:#D4AF37;
-  --accent-light:#F0DFA0;
+  --brand:        #005699;   /* 科技蓝 · 主色 */
+  --brand-deep:   #003D6E;   /* 深蓝 · 页脚 */
+  --brand-light:  #1B7FBF;   /* 亮蓝 · 悬浮 */
+  --brand-2:      #009B93;   /* 青绿 · 第二色 */
+  --brand-tint:   #EAF3FA;   /* 极浅蓝 · 卡片底 */
+  --accent:       #C8161E;   /* 爱国红 · 强调/徽标 */
+  --accent-light: #E8A0A4;   /* 浅红 */
 
-  /* ---- 四篇章标识色（红→深红→暖橙→金，构成能量温度序列） ---- */
-  --ch1:#C8102E;   /* 聚能 · 学 */
-  --ch2:#8B0A1E;   /* 蓄势 · 思 */
-  --ch3:#E8734A;   /* 传热 · 悟 */
-  --ch4:#D4AF37;   /* 释能 · 行 */
+  /* 四篇章标识色：蓝 → 深蓝 → 青绿 → 红（能量的温度序列） */
+  --ch1:#005699;   /* 聚能 · 学 */
+  --ch2:#003D6E;   /* 蓄势 · 思 */
+  --ch3:#009B93;   /* 传热 · 悟 */
+  --ch4:#C8161E;   /* 释能 · 行 */
 
-  /* ---- 中性色 ---- */
-  --page-bg:#FAF7F5;   /* 暖白（红调切忌配冷灰） */
+  --page-bg:#F5F8FB;
   --card-bg:#FFFFFF;
-  --line:#EFE0E2;
-  --text:#262626;
-  --text-2:#6B6B6B;
-  --text-3:#9A9A9A;
+  --line:#DCE6EF;
+  --text:#1F2D3D;
+  --text-2:#5A6B7C;
+  --text-3:#93A3B3;
 }
 /* ---- 蓝色主题（后期班级官网）——取消注释即整体换肤 ----
 :root{
@@ -50,12 +49,16 @@ img{max-width:100%;display:block}
 /* ============ 顶部 & 导航 ============ */
 .topbar{background:var(--brand-deep);color:#fff}
 .topbar .wrap{display:flex;align-items:center;gap:16px;height:64px}
+/* ============ 顶栏班徽（替换原文字圆形 LOGO） ============ */
 .logo{
-  width:42px;height:42px;border-radius:50%;flex:0 0 auto;
-  background:linear-gradient(135deg,var(--accent),var(--brand));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:700;font-size:15px;color:#fff;letter-spacing:-1px;
+  width:46px;height:46px;border-radius:0;flex:0 0 auto;
+  background:none;display:block;overflow:visible;
 }
+.logo img{
+  width:100%;height:100%;object-fit:contain;display:block;
+  filter:drop-shadow(0 1px 4px rgba(0,0,0,.28));
+}
+.topbar .logo{width:48px;height:48px}
 .brand-text b{display:block;font-size:17px;letter-spacing:1px}
 .brand-text span{display:block;font-size:12px;color:var(--accent-light)}
 .topbar .right{margin-left:auto;font-size:12.5px;color:var(--accent-light);text-align:right}
@@ -266,4 +269,84 @@ footer a:hover{color:var(--accent)}
   .chapters{grid-template-columns:1fr}
   .stat{min-width:33.33%;padding:18px 6px}
   .stat b{font-size:26px}
+}
+
+
+/* ============================================================
+   宣传成果 · 政务官网信息流
+   ============================================================ */
+.nf-wrap{background:var(--card-bg);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.nf-hd{
+  display:flex;align-items:center;gap:12px;padding:14px 20px;
+  background:linear-gradient(90deg,var(--brand) 0%,var(--brand-light) 100%);
+}
+.nf-hd h3{color:#fff;font-size:16.5px;font-weight:700;letter-spacing:1px}
+.nf-hd .nf-hd-sub{color:#CFE4F5;font-size:12.5px;margin-left:auto}
+.nf-hd i{width:4px;height:18px;background:var(--accent);border-radius:2px;display:inline-block}
+
+.nf-list{list-style:none;padding:6px 20px 12px}
+.nf-list li{
+  display:flex;align-items:center;gap:12px;height:46px;
+  border-bottom:1px dashed var(--line);font-size:14.5px;
+}
+.nf-list li:last-child{border-bottom:none}
+.nf-ch{
+  flex:0 0 auto;font-size:11.5px;padding:1px 8px;border-radius:2px;
+  background:var(--brand-tint);color:var(--brand);border:1px solid #C9DFF0;
+  font-weight:600;
+}
+.nf-ch[data-ch="蓄势"]{background:#E7EFF6;color:#003D6E;border-color:#C4D6E6}
+.nf-ch[data-ch="传热"]{background:#E3F5F3;color:#00716B;border-color:#BCE4E0}
+.nf-ch[data-ch="释能"]{background:#FBEAEB;color:#A81219;border-color:#F0C2C5}
+.nf-title{
+  flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  transition:.16s;color:var(--text);
+}
+.nf-title:hover{color:var(--brand);transform:translateX(4px)}
+.nf-src{flex:0 0 auto;font-size:12.5px;color:var(--text-3);max-width:180px;
+        overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nf-list time{flex:0 0 auto;font-size:13px;color:var(--text-3);font-variant-numeric:tabular-nums}
+
+/* 头条 + 侧栏 */
+.nf-head{display:grid;grid-template-columns:1fr 1.15fr;gap:0}
+.nf-hero{
+  background:linear-gradient(150deg,var(--brand) 0%,var(--brand-deep) 100%);
+  padding:26px 24px;display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.nf-hero::after{
+  content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(60deg,rgba(255,255,255,.05) 0 2px,transparent 2px 40px);
+}
+.nf-hero a{position:relative;z-index:2;display:block}
+.nf-hero-ch{
+  display:inline-block;font-size:11.5px;letter-spacing:1px;color:#CFE4F5;
+  border:1px solid rgba(255,255,255,.4);padding:3px 10px;border-radius:2px;margin-bottom:14px;
+}
+.nf-hero h4{color:#fff;font-size:19px;font-weight:700;line-height:1.55}
+.nf-hero h4:hover{color:#EAF3FA}
+.nf-hero-meta{margin-top:14px;font-size:12.5px;color:#A8C8E4}
+
+/* 统计块 */
+.nf-stat{padding:14px 20px 18px;border-top:1px solid var(--line);background:#FAFCFE}
+.nf-stat-hd{font-size:13.5px;font-weight:700;color:var(--brand);margin-bottom:10px;
+            padding-left:10px;position:relative}
+.nf-stat-hd::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+                    width:3px;height:14px;background:var(--accent);border-radius:2px}
+.nf-stat-row{display:flex;justify-content:space-between;font-size:13.5px;
+             color:var(--text-2);padding:7px 0;border-bottom:1px dotted var(--line)}
+.nf-stat-row:last-child{border-bottom:none}
+.nf-stat-row b{color:var(--brand);font-variant-numeric:tabular-nums}
+.nf-stat-row.total{margin-top:6px;padding-top:11px;border-top:1px solid var(--line);
+                   font-weight:700;color:var(--text)}
+.nf-err{color:#A81219;font-size:13.5px;padding:16px 20px}
+
+@media (max-width:900px){
+  .nf-head{grid-template-columns:1fr}
+  .nf-src{display:none}
+  .nf-list li{height:auto;padding:10px 0;flex-wrap:wrap;gap:8px}
+  .nf-title{white-space:normal;flex:1 1 100%;order:2}
+  .nf-ch{order:1}
+  .nf-list time{order:3;margin-left:auto}
+  .topbar .logo{width:40px;height:40px}
 }
