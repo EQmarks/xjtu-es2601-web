@@ -34,10 +34,30 @@
         "lead": "最后要变成真东西"
       }
     },
-    "dateNote": "活动日期以现场素材文件夹日期为准，不作推算",
-    "galleryNote": "照片经压缩：缩略图 480px / 大图 1200px"
+    "dateNote": "dateKey 为可排序日期，用于列表排序；仅表示先后，不代表发布时序",
+    "galleryNote": "照片经压缩：缩略图 480px / 大图 1200px",
+    "photoMap": "assets/data/photo-map.json"
   },
   "activities": [
+    {
+      "ch": "聚能",
+      "main": "学",
+      "status": "done",
+      "verified": "A",
+      "title": "长征纪念跑",
+      "when": "2026-10-01 ~ 10-08 · 国庆假期",
+      "desc": "纪念中国工农红军长征胜利 90 周年，支部同学在国庆假期（10 月 1 日—8 日）以 Keep 户外跑形式完成里程打卡，单人里程 2.00—2.35 公里，全程截图汇总归档。",
+      "tags": [
+        "选做1 长征",
+        "必做1 理论学习"
+      ],
+      "gallery": "g-changzheng-run",
+      "photos": 4,
+      "id": "a01",
+      "href": "activity.html?id=a01",
+      "photoFolder": "长征跑",
+      "dateKey": "2026-10-01"
+    },
     {
       "ch": "聚能",
       "main": "学",
@@ -51,10 +71,11 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a01",
-      "href": "activity.html?id=a01",
-      "gallery": "g-redclass",
-      "photos": 8
+      "id": "a02",
+      "href": "activity.html?id=a02",
+      "gallery": "g-redclass-ready",
+      "photos": 6,
+      "dateKey": "2026-10-11"
     },
     {
       "ch": "聚能",
@@ -62,17 +83,19 @@
       "title": "三庆主题知识竞答",
       "when": "2026-09 ~ 10 · 线上",
       "photo": "知识竞答",
-      "desc": "庆祝新中国成立 77 周年、长征胜利 90 周年、交大建校 130 周年线上知识竞答，支部同学全员参与并留存答题截图。",
+      "desc": "参加校内外多项线上知识竞赛并全员完赛：寻访·薪火—长征精神与西迁校史主题知识竞赛、「溯源百卅交大，聚力招生传声」招生知识竞赛、医学文化知识竞答「医承文脉，护佑初心」、长征九秩·交大百卅 2026 级新生爱心社线上知识竞赛等，多人获得满分。",
       "tags": [
         "必做1 理论学习",
         "三庆"
       ],
       "status": "done",
       "verified": "A",
-      "id": "a02",
-      "href": "activity.html?id=a02",
+      "id": "a03",
+      "href": "activity.html?id=a03",
       "gallery": "g-quiz",
-      "photos": 6
+      "photos": 19,
+      "photoFolder": "知识竞答",
+      "dateKey": "2026-09-25"
     },
     {
       "ch": "聚能",
@@ -86,10 +109,11 @@
       ],
       "status": "planned",
       "verified": "C",
-      "id": "a03",
-      "href": "activity.html?id=a03",
+      "id": "a04",
+      "href": "activity.html?id=a04",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "9999-12-31"
     },
     {
       "ch": "聚能",
@@ -104,10 +128,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a04",
-      "href": "activity.html?id=a04",
+      "id": "a05",
+      "href": "activity.html?id=a05",
       "gallery": "g-qian",
-      "photos": 6
+      "photos": 6,
+      "photoFolder": "10.11图书馆钱展",
+      "dateKey": "2026-10-11"
     },
     {
       "ch": "聚能",
@@ -121,10 +147,11 @@
       ],
       "status": "planned",
       "verified": "C",
-      "id": "a05",
-      "href": "activity.html?id=a05",
+      "id": "a06",
+      "href": "activity.html?id=a06",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "9999-12-31"
     },
     {
       "ch": "聚能",
@@ -139,10 +166,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a06",
-      "href": "activity.html?id=a06",
+      "id": "a07",
+      "href": "activity.html?id=a07",
       "gallery": "g-xianincident",
-      "photos": 8
+      "photos": 8,
+      "photoFolder": "10.6西安事变纪念馆",
+      "dateKey": "2026-10-06"
     },
     {
       "ch": "聚能",
@@ -156,10 +185,11 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a07",
-      "href": "activity.html?id=a07",
-      "gallery": "g-mobilize",
-      "photos": 5
+      "id": "a08",
+      "href": "activity.html?id=a08",
+      "gallery": "",
+      "photos": 0,
+      "dateKey": "2026-10-07"
     },
     {
       "ch": "聚能",
@@ -174,10 +204,11 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a08",
-      "href": "activity.html?id=a08",
-      "gallery": "g-quiz",
-      "photos": 6
+      "id": "a09",
+      "href": "activity.html?id=a09",
+      "gallery": "",
+      "photos": 0,
+      "dateKey": "2026-10-13"
     },
     {
       "ch": "聚能",
@@ -192,10 +223,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a09",
-      "href": "activity.html?id=a09",
+      "id": "a10",
+      "href": "activity.html?id=a10",
       "gallery": "g-blind",
-      "photos": 4
+      "photos": 4,
+      "photoFolder": "10.15盲人日",
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "聚能",
@@ -209,10 +242,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a10",
-      "href": "activity.html?id=a10",
+      "id": "a11",
+      "href": "activity.html?id=a11",
       "gallery": "g-cui",
-      "photos": 6
+      "photos": 6,
+      "photoFolder": "10.16崔学长分享",
+      "dateKey": "2026-10-16"
     },
     {
       "ch": "聚能",
@@ -226,10 +261,11 @@
         "选做7 AI智能科创"
       ],
       "photo": "",
-      "id": "a11",
-      "href": "activity.html?id=a11",
+      "id": "a12",
+      "href": "activity.html?id=a12",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-17"
     },
     {
       "ch": "聚能",
@@ -243,10 +279,11 @@
         "选做7 AI智能科创"
       ],
       "photo": "",
-      "id": "a12",
-      "href": "activity.html?id=a12",
+      "id": "a13",
+      "href": "activity.html?id=a13",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-17"
     },
     {
       "ch": "聚能",
@@ -255,16 +292,17 @@
       "verified": "C",
       "title": "富平党课 · 习仲勋故居参观",
       "when": "2026-10-17（周六）意向 · 火车往返约 100 元/人",
-      "desc": "参观习仲勋陵园/故居、现场党课。注意：党课地点在习仲勋陵园附近而非纪念馆、故居，以对方通知为准。",
+      "desc": "参观习仲勋陵园/故居、现场党课。注意：党课地点在习仲勋陵园附近而非纪念馆、故居，以对方通知为准。（素材库中的相关照片为同学国庆返乡所摄，非本活动。）",
       "tags": [
         "选做4 攀登实践",
         "爱国主义教育"
       ],
       "photo": "",
-      "id": "a13",
-      "href": "activity.html?id=a13",
+      "id": "a14",
+      "href": "activity.html?id=a14",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-17"
     },
     {
       "ch": "蓄势",
@@ -279,10 +317,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a14",
-      "href": "activity.html?id=a14",
+      "id": "a15",
+      "href": "activity.html?id=a15",
       "gallery": "g-changzheng",
-      "photos": 6
+      "photos": 5,
+      "photoFolder": "10.11长征观影《四渡赤水》",
+      "dateKey": "2026-10-11"
     },
     {
       "ch": "蓄势",
@@ -296,10 +336,11 @@
         "附件4 要求项"
       ],
       "status": "done",
-      "id": "a15",
-      "href": "activity.html?id=a15",
+      "id": "a16",
+      "href": "activity.html?id=a16",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-16"
     },
     {
       "ch": "传热",
@@ -314,10 +355,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a16",
-      "href": "activity.html?id=a16",
-      "gallery": "g-tju",
-      "photos": 6
+      "id": "a17",
+      "href": "activity.html?id=a17",
+      "gallery": "g-tongyuan",
+      "photos": 6,
+      "photoFolder": "10.11四校同源微团课",
+      "dateKey": "2026-10-11"
     },
     {
       "ch": "传热",
@@ -331,10 +374,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a17",
-      "href": "activity.html?id=a17",
+      "id": "a18",
+      "href": "activity.html?id=a18",
       "gallery": "g-tju",
-      "photos": 6
+      "photos": 5,
+      "photoFolder": "10.15天大联动团课",
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "传热",
@@ -349,10 +394,11 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a18",
-      "href": "activity.html?id=a18",
+      "id": "a19",
+      "href": "activity.html?id=a19",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "传热",
@@ -366,35 +412,20 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a19",
-      "href": "activity.html?id=a19",
-      "gallery": "g-backhome",
-      "photos": 5
-    },
-    {
-      "ch": "传热",
-      "main": "悟",
-      "title": "预科一 · 交大附中少年班讲座",
-      "when": "2026-10-13",
-      "photo": "10.13交附预一宣讲",
-      "desc": "把入学以来学到的，讲给附中少年班的学弟学妹听。",
-      "tags": [
-        "选做4 攀登实践"
-      ],
-      "status": "done",
-      "verified": "A",
       "id": "a20",
       "href": "activity.html?id=a20",
-      "gallery": "g-prep1",
-      "photos": 6
+      "gallery": "g-backhome",
+      "photos": 4,
+      "photoFolder": "返校宣讲",
+      "dateKey": "2026-10-02"
     },
     {
       "ch": "传热",
       "main": "悟",
-      "title": "预科二 · 朋辈辅导员学习生活讲座",
-      "when": "2026-10-11",
-      "photo": "10.11预科二宣讲",
-      "desc": "面向少年班预科二的朋辈辅导，讲学习、讲生活、讲怎么适应。",
+      "title": "交大附中少年班预科一讲座",
+      "when": "2026-10-13",
+      "photo": "10.13交附预一宣讲",
+      "desc": "面向交大附中少年班预科一同学开展讲座，讲专业认知、学习经验与成长规划。",
       "tags": [
         "选做4 攀登实践"
       ],
@@ -402,26 +433,49 @@
       "verified": "A",
       "id": "a21",
       "href": "activity.html?id=a21",
-      "gallery": "g-prep2",
-      "photos": 5
+      "gallery": "g-prep1",
+      "photos": 6,
+      "photoFolder": "10.13交附预一宣讲",
+      "dateKey": "2026-10-13"
     },
     {
       "ch": "传热",
       "main": "悟",
-      "title": "回交大附中 · 团课宣讲",
+      "title": "交大少年班预科二讲座",
+      "when": "2026-10-11",
+      "photo": "10.11预科二宣讲",
+      "desc": "面向交大少年班预科二同学的讲座，讲学习、讲生活、讲怎么适应大学节奏。",
+      "tags": [
+        "选做4 攀登实践"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a22",
+      "href": "activity.html?id=a22",
+      "gallery": "g-prep2",
+      "photos": 4,
+      "photoFolder": "10.11预科二宣讲",
+      "dateKey": "2026-10-11"
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
+      "title": "交大附中高中入团积极分子团课",
       "when": "2026-10-15",
       "photo": "10.15交附团课",
-      "desc": "回到交大附中开展团课宣讲，把西迁精神与专业认知带回中学课堂。",
+      "desc": "面向交大附中高中入团积极分子开展团课，讲团史、讲西迁精神、讲青年担当。",
       "tags": [
         "选做4 攀登实践",
         "必做2 西迁精神"
       ],
       "status": "done",
       "verified": "A",
-      "id": "a22",
-      "href": "activity.html?id=a22",
+      "id": "a23",
+      "href": "activity.html?id=a23",
       "gallery": "g-gaozhong",
-      "photos": 5
+      "photos": 5,
+      "photoFolder": "10.15交附团课",
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "传热",
@@ -435,10 +489,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a23",
-      "href": "activity.html?id=a23",
+      "id": "a24",
+      "href": "activity.html?id=a24",
       "gallery": "g-cleanplate",
-      "photos": 3
+      "photos": 3,
+      "photoFolder": "光盘行动",
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "传热",
@@ -453,10 +509,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a24",
-      "href": "activity.html?id=a24",
+      "id": "a25",
+      "href": "activity.html?id=a25",
       "gallery": "g-labor",
-      "photos": 6
+      "photos": 7,
+      "photoFolder": "10.12劳动包干",
+      "dateKey": "2026-10-12"
     },
     {
       "ch": "释能",
@@ -471,10 +529,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a25",
-      "href": "activity.html?id=a25",
+      "id": "a26",
+      "href": "activity.html?id=a26",
       "gallery": "g-innovport",
-      "photos": 8
+      "photos": 8,
+      "photoFolder": "10.16创新港",
+      "dateKey": "2026-10-16"
     },
     {
       "ch": "释能",
@@ -489,10 +549,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a26",
-      "href": "activity.html?id=a26",
+      "id": "a27",
+      "href": "activity.html?id=a27",
       "gallery": "g-xunpai",
-      "photos": 5
+      "photos": 5,
+      "photoFolder": "10.15迅湃",
+      "dateKey": "2026-10-15"
     },
     {
       "ch": "释能",
@@ -507,10 +569,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a27",
-      "href": "activity.html?id=a27",
+      "id": "a28",
+      "href": "activity.html?id=a28",
       "gallery": "g-pottery",
-      "photos": 6
+      "photos": 5,
+      "photoFolder": "10.12陶艺社",
+      "dateKey": "2026-10-12"
     },
     {
       "ch": "释能",
@@ -524,10 +588,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a28",
-      "href": "activity.html?id=a28",
+      "id": "a29",
+      "href": "activity.html?id=a29",
       "gallery": "g-dance",
-      "photos": 6
+      "photos": 6,
+      "photoFolder": "10.9广场舞",
+      "dateKey": "2026-10-09"
     },
     {
       "ch": "释能",
@@ -541,10 +607,11 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a29",
-      "href": "activity.html?id=a29",
+      "id": "a30",
+      "href": "activity.html?id=a30",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-13"
     },
     {
       "ch": "释能",
@@ -558,10 +625,12 @@
       ],
       "status": "done",
       "verified": "A",
-      "id": "a30",
-      "href": "activity.html?id=a30",
-      "gallery": "",
-      "photos": 0
+      "id": "a31",
+      "href": "activity.html?id=a31",
+      "gallery": "g-mobilize",
+      "photos": 5,
+      "photoFolder": "10.7动员大会",
+      "dateKey": "2026-10-07"
     },
     {
       "ch": "释能",
@@ -575,10 +644,11 @@
       "status": "done",
       "verified": "A",
       "photo": "",
-      "id": "a31",
-      "href": "activity.html?id=a31",
+      "id": "a32",
+      "href": "activity.html?id=a32",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-01"
     },
     {
       "ch": "释能",
@@ -593,10 +663,11 @@
       "status": "done",
       "verified": "A",
       "photo": "",
-      "id": "a32",
-      "href": "activity.html?id=a32",
+      "id": "a33",
+      "href": "activity.html?id=a33",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-13"
     },
     {
       "ch": "释能",
@@ -610,10 +681,11 @@
       "status": "done",
       "verified": "A",
       "photo": "",
-      "id": "a33",
-      "href": "activity.html?id=a33",
+      "id": "a34",
+      "href": "activity.html?id=a34",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "2026-10-09"
     },
     {
       "ch": "释能",
@@ -627,10 +699,11 @@
         "附件4 加分项"
       ],
       "photo": "",
-      "id": "a34",
-      "href": "activity.html?id=a34",
+      "id": "a35",
+      "href": "activity.html?id=a35",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "9999-12-31"
     },
     {
       "ch": "释能",
@@ -645,10 +718,11 @@
         "校级活动"
       ],
       "photo": "",
-      "id": "a35",
-      "href": "activity.html?id=a35",
+      "id": "a36",
+      "href": "activity.html?id=a36",
       "gallery": "",
-      "photos": 0
+      "photos": 0,
+      "dateKey": "9999-12-31"
     }
   ]
 }
