@@ -26,15 +26,6 @@
   --text-2:#5A6B7C;
   --text-3:#93A3B3;
 }
-/* ---- 蓝色主题（后期班级官网）——取消注释即整体换肤 ----
-:root{
-  --brand:#1A4D8F; --brand-deep:#0E2F5C; --brand-light:#2E6DB4;
-  --brand-tint:#EFF5FC; --accent:#C9A227; --accent-light:#EFE3B8;
-  --ch1:#1A4D8F; --ch2:#0E2F5C; --ch3:#2E6DB4; --ch4:#C9A227;
-  --page-bg:#F5F7FA; --card-bg:#FFFFFF; --line:#E0E6ED;
-  --text:#262626; --text-2:#666666; --text-3:#999999;
-}
-*/
 
 *{margin:0;padding:0;box-sizing:border-box}
 body{
