@@ -53,10 +53,10 @@
 <div class="stats">
   <div class="wrap">
     <div class="stat"><b>31</b><span>全班人数</span></div>
-    <div class="stat"><b>34</b><span>活动项数</span></div>
-    <div class="stat"><b>47</b><span>单日参与人次</span></div>
-    <div class="stat"><b>12</b><span>推文篇数</span></div>
-    <div class="stat"><b>3</b><span>媒体报道</span></div>
+    <div class="stat"><b data-count-total-done>—</b><span>已开展活动</span></div>
+    <div class="stat"><b>47</b><span>单日参与人次</span><span class="ph-sub">10/11 四项活动汇总</span></div>
+    <div class="stat"><b>6</b><span>推文篇数</span></div>
+    <div class="stat"><span class="ph">—</span><span>媒体报道</span><span class="ph-sub">待统计</span></div>
   </div>
 </div>
 
@@ -72,25 +72,25 @@
         <div class="dot"></div>
         <h3>聚能 <em>学</em></h3>
         <p>把散在各处的光聚到一处——理论学习、校史寻根、红色足迹、专业启蒙。</p>
-        <div class="cnt">14 项活动</div>
+        <div class="cnt"><b data-count-ch="聚能">—</b> 项活动</div>
       </a>
       <a class="ch" href="xs.html" style="--c:var(--ch2)">
         <div class="dot"></div>
         <h3>蓄势 <em>思</em></h3>
         <p>光收进来了，要沉下去——研讨思辨、观影悟史、给四年后自己的信。</p>
-        <div class="cnt">5 项活动</div>
+        <div class="cnt"><b data-count-ch="蓄势">—</b> 项活动</div>
       </a>
       <a class="ch" href="cr.html" style="--c:var(--ch3)">
         <div class="dot"></div>
         <h3>传热 <em>悟</em></h3>
         <p>一个人懂了不算，要传出去——四校联动、志愿服务、回母校宣讲。</p>
-        <div class="cnt">6 项活动</div>
+        <div class="cnt"><b data-count-ch="传热">—</b> 项活动</div>
       </a>
       <a class="ch" href="sn.html" style="--c:var(--ch4)">
         <div class="dot"></div>
         <h3>释能 <em>行</em></h3>
         <p>最后要变成真东西——陶艺作品、班徽班歌、成果网站、宣传影响。</p>
-        <div class="cnt">7 项活动</div>
+        <div class="cnt"><b data-count-ch="释能">—</b> 项活动</div>
       </a>
     </div>
   </div>
@@ -100,107 +100,30 @@
 <section class="sec" id="map" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
-      <h2>红色足迹 · 2.5D 地图</h2>
-      <a href="#" class="more">查看全部站点 →</a>
+      <h2>红色足迹 · 3D 中国地图</h2>
+      <a href="map3d.html" class="more">进入 3D 地图 →</a>
     </div>
-    <div class="mapbox" id="redmap">
-      <div class="map-hd">
-        <b>我们走过的地方</b>
-        <span>2026 年国庆 — 10 月</span>
+    <div class="map-cta">
+      <div class="map-cta-l">
+        <div class="map-cta-badge">已实地走访</div>
+        <div class="map-cta-nums">
+          <div><b>3</b><span>处红色地标</span></div>
+          <div><b>2</b><span>条能量流路径</span></div>
+          <div><b>31</b><span>位同学家乡</span></div>
+        </div>
+        <div class="map-cta-sites">
+          <span>西安 · 西迁博物馆 / 钱学森展 / 思源碑</span>
+          <span>西安事变纪念馆 · 红色研学</span>
+          <span class="pending">富平 · 习仲勋故里（意向）</span>
+        </div>
       </div>
-      <div class="map-legend">
-        <span><i></i>红色地标</span>
-        <span><i style="background:#F5D76E"></i>能量流</span>
-        <button class="map-tour" type="button">自动巡游</button>
+      <div class="map-cta-r">
+        <a class="map-cta-btn" href="map3d.html">
+          <span>进入 3D 中国地图</span>
+          <em>真实省界 · 立体省份 · 飞线动画</em>
+        </a>
+        <p class="map-cta-note">拖动旋转 ｜ 滚轮缩放 ｜ 点击立柱查看站点</p>
       </div>
-      <div class="map-stage">
-        <!-- 等距（isometric）手绘 SVG：tileW:tileH = 2:1 -->
-        <svg class="iso" width="880" height="380" viewBox="0 0 880 380">
-          <defs>
-            <linearGradient id="pil" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#F5D76E"/>
-              <stop offset="55%" stop-color="#D4AF37"/>
-              <stop offset="100%" stop-color="#8B0A1E"/>
-            </linearGradient>
-            <linearGradient id="pil2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#FF9E7A"/>
-              <stop offset="60%" stop-color="#E8734A"/>
-              <stop offset="100%" stop-color="#8B0A1E"/>
-            </linearGradient>
-            <linearGradient id="pil3" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#FF6B84"/>
-              <stop offset="60%" stop-color="#C8102E"/>
-              <stop offset="100%" stop-color="#5C0713"/>
-            </linearGradient>
-          </defs>
-
-          <!-- 地面网格（等距菱形铺底） -->
-          <g opacity=".42" stroke="#7A2733" stroke-width="1" fill="none">
-            <path d="M440 60 L800 240 L440 420 L80 240 Z" fill="rgba(122,39,51,.13)"/>
-            <path d="M440 100 L720 240 L440 380 L160 240 Z"/>
-            <path d="M440 140 L640 240 L440 340 L240 240 Z"/>
-            <path d="M440 60 L440 420"/>
-            <path d="M80 240 L800 240"/>
-            <path d="M260 150 L620 330"/>
-            <path d="M620 150 L260 330"/>
-          </g>
-
-          <!-- 能量流连线（虚线上流动 + 光点） -->
-          <g>
-            <path class="flow" d="M180 232 L330 178"/>
-            <path class="flow" d="M330 178 L470 214"/>
-            <path class="flow" d="M470 214 L600 196"/>
-            <path class="flow" d="M600 196 L730 246"/>
-            <circle class="spark" r="3.4"><animateMotion dur="3.2s" repeatCount="indefinite"
-              path="M180 232 L330 178 L470 214 L600 196 L730 246"/></circle>
-            <circle class="spark" r="2.6"><animateMotion dur="3.2s" begin="1.1s" repeatCount="indefinite"
-              path="M180 232 L330 178 L470 214 L600 196 L730 246"/></circle>
-            <circle class="spark" r="2.2"><animateMotion dur="3.2s" begin="2.2s" repeatCount="indefinite"
-              path="M180 232 L330 178 L470 214 L600 196 L730 246"/></circle>
-          </g>
-
-          <!-- 站点立柱 -->
-          <!-- 延安 -->
-          <g>
-            <path d="M330 168 L350 178 L330 188 L310 178 Z" fill="#5C0713"/>
-            <rect x="310" y="112" width="20" height="56" fill="url(#pil2)" opacity=".95"/>
-            <rect x="330" y="112" width="20" height="56" fill="#6B0A18" opacity=".9"/>
-            <path d="M330 100 L350 110 L330 120 L310 110 Z" fill="#FF9E7A"/>
-            <text class="lbl" x="330" y="88">延安</text>
-            <text class="lbl-sm" x="330" y="216">长征会师地</text>
-          </g>
-          <!-- 西安（主站，两根立柱：西迁博物馆 + 钱图） -->
-          <g>
-            <path d="M470 204 L492 214 L470 224 L448 214 Z" fill="#5C0713"/>
-            <rect x="448" y="92" width="22" height="112" fill="url(#pil3)"/>
-            <rect x="470" y="92" width="22" height="112" fill="#7A0B1C"/>
-            <path d="M470 78 L492 88 L470 98 L448 88 Z" fill="#FF6B84"/>
-            <text class="lbl" x="470" y="66">西安</text>
-            <text class="lbl-sm" x="470" y="252">西迁博物馆 · 钱学森展 · 思源碑</text>
-          </g>
-          <!-- 富平（待定） -->
-          <g opacity=".62">
-            <path d="M600 186 L620 196 L600 206 L580 196 Z" fill="#5C0713" stroke="#D4AF37" stroke-dasharray="3 3"/>
-            <rect x="580" y="152" width="20" height="34" fill="url(#pil)" opacity=".7"/>
-            <rect x="600" y="152" width="20" height="34" fill="#6B0A18" opacity=".7"/>
-            <path d="M600 140 L620 150 L600 160 L580 150 Z" fill="#D4AF37" opacity=".8"/>
-            <text class="lbl" x="600" y="128">富平</text>
-            <text class="lbl-sm" x="600" y="230">待定</text>
-          </g>
-          <!-- 返乡分散点（示意小点） -->
-          <g opacity=".85">
-            <circle cx="720" cy="236" r="5" fill="#C8102E"/>
-            <circle cx="750" cy="222" r="4" fill="#C8102E"/>
-            <circle cx="690" cy="258" r="4" fill="#C8102E"/>
-            <circle cx="762" cy="252" r="3.4" fill="#C8102E"/>
-            <text class="lbl-sm" x="742" y="290">返乡红色地标 · 待收集</text>
-          </g>
-          <!-- 起点标注 -->
-          <text class="lbl-sm" x="120" y="322" opacity=".75">上海（交通大学源起）· 1896</text>
-          <path d="M132 306 L172 268" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3 4" opacity=".6"/>
-        </svg>
-      </div>
-      <aside class="map-card" aria-live="polite"></aside>
     </div>
   </div>
 </section>
@@ -311,7 +234,7 @@
   <div class="fbar">版权所有 © 2026 储能2601 团支部 ｜ 本站为最佳团日成果展示，非官方站点</div>
 </footer>
 
-<script src="assets/js/redmap.js"></script>
+<script src="assets/js/render-activities.js"></script>
 <script src="assets/js/newsfeed.js"></script>
 </body>
 </html>

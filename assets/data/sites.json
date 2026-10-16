@@ -6,21 +6,6 @@
   },
   "sites": [
     {
-      "id": "yanan",
-      "name": "延安",
-      "sub": "长征会师地 · 会合",
-      "chapter": "聚能",
-      "date": "2026 国庆期间",
-      "participants": null,
-      "x": 330,
-      "y": 168,
-      "height": 56,
-      "color": "orange",
-      "done": true,
-      "desc": "延安籍同学与班级同学在长征会师地会合，完成长征线的落点。",
-      "photos": []
-    },
-    {
       "id": "xian",
       "name": "西安",
       "sub": "西迁博物馆 · 钱学森展 · 思源碑",
@@ -92,10 +77,6 @@
     ]
   },
   "routes": [
-    {
-      "from": "yanan",
-      "to": "xian"
-    },
     {
       "from": "xian",
       "to": "fuping"
