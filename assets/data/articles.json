@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "宣传成果",
+    "subtitle": "最佳团日期间已发布推文",
+    "source": "微信群「推文」｜共 6 篇",
+    "updated": "2026-10-16"
+  },
+  "articles": [
+    {
+      "id": "a1",
+      "title": "最佳团日 ｜ 联合理论学习",
+      "date": "2026-10-09",
+      "source": "西交萤烛爱心社",
+      "platform": "院级 / 社团平台",
+      "chapter": "聚能",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598756&idx=1&sn=46aca0bfe9cd9022a0073d19336ec47b"
+    },
+    {
+      "id": "a2",
+      "title": "最佳团日 ｜ 陕博&储能2601团支部：“踏访红色旧址，赓续家国薪火”——西安事变纪念馆红色研学实践活动",
+      "date": "2026-10-09",
+      "source": "西交萤烛爱心社",
+      "platform": "院级 / 社团平台",
+      "chapter": "聚能",
+      "featured": true,
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598756&idx=3&sn=54ee651fd949878491a4e012014e7c07"
+    },
+    {
+      "id": "a3",
+      "title": "【最佳团日】储能2601团支部：蓄力百卅，储能启程",
+      "date": "2026-10-12",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "释能",
+      "featured": true,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507000&idx=1&sn=d7ca01a443cbed94a5ec40a5c3ae374d"
+    },
+    {
+      "id": "a4",
+      "title": "【最佳团日】储能2601团支部：红色足迹，家国初心",
+      "date": "2026-10-14",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "聚能",
+      "featured": true,
+      "url": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ"
+    },
+    {
+      "id": "a5",
+      "title": "【最佳团日】储能2601团支部：红旗漫卷，青春向党",
+      "date": "2026-10-14",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "聚能",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=3&sn=fa00fff7d293e8eb6f65218a2189a4bb"
+    },
+    {
+      "id": "a6",
+      "title": "【最佳团日】储能2601团支部：星光起舞，青春飞扬",
+      "date": "2026-10-14",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "释能",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=1&sn=a0f2df737bcfecd107caf1a304b82141"
+    }
+  ]
+}
