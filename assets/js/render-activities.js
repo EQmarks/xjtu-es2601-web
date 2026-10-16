@@ -30,15 +30,23 @@
     var pills = (a.tags || []).map(function (t) {
       return '<span class="' + PILL_CLASS(t) + '">' + t + '</span>';
     }).join('');
-    return '' +
-      '<div class="act' + (planned ? ' act-planned' : '') + '" style="--c:' + color + '">' +
-        '<div class="bar"></div>' +
-        (planned ? '<span class="act-badge">计划中</span>' : '') +
-        '<h3>' + a.title + '</h3>' +
-        '<div class="when">' + (a.when || '') + (a.n ? ' · ' + a.n + ' 人' : '') + '</div>' +
-        '<p>' + a.desc + '</p>' +
-        '<div class="foot">' + pills + '</div>' +
+    var inner =
+      '<div class="bar"></div>' +
+      (planned ? '<span class="act-badge">计划中</span>' : '') +
+      '<h3>' + a.title + '</h3>' +
+      '<div class="when">' + (a.when || '') + (a.n ? ' · ' + a.n + ' 人' : '') + '</div>' +
+      '<p>' + a.desc + '</p>' +
+      '<div class="foot">' + pills +
+        (a.photos ? '<span class="pill photo">📷 ' + a.photos + ' 张</span>' : '') +
       '</div>';
+
+    /* 有详情页的做成整卡可点击 */
+    if (a.href) {
+      return '<a class="act act-link' + (planned ? ' act-planned' : '') +
+             '" href="' + a.href + '" style="--c:' + color + '">' + inner + '</a>';
+    }
+    return '<div class="act' + (planned ? ' act-planned' : '') +
+           '" style="--c:' + color + '">' + inner + '</div>';
   }
 
   function setAll(sel, val) {

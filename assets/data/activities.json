@@ -1,10 +1,16 @@
 {
   "meta": {
     "updated": "2026-10-17",
-    "source": "依据支部各活动策划案与现场记录整理",
+    "source": "依据支部活动策划案与现场照片素材整理",
+    "photoRoot": "D:\\XJTUpack\\大一\\班委\\最佳团日活动\\素材",
     "statusNote": {
-      "done": "已完成（有照片/名单/记录佐证）",
+      "done": "已举办（有现场照片佐证）",
       "planned": "计划中 / 未举办"
+    },
+    "verifiedNote": {
+      "A": "有现场照片",
+      "B": "可溯源（课表/记录）",
+      "C": "仅有策划案，待补现场证据"
     },
     "chapters": {
       "聚能": {
@@ -28,112 +34,185 @@
         "lead": "最后要变成真东西"
       }
     },
-    "verifiedNote": {
-      "A": "现场证据已确认（照片 / 名单 / 记录 / 支部确认）",
-      "B": "可溯源（课表 / 班会记录）",
-      "C": "仅有策划案，待现场证据补充"
-    }
+    "dateNote": "活动日期以现场素材文件夹日期为准，不作推算",
+    "galleryNote": "照片经压缩：缩略图 480px / 大图 1200px"
   },
   "activities": [
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "A",
       "title": "红色足迹主题班会（返乡见闻分享 + 红色观影）",
-      "when": "2026-10-11 21:00 · 主A102",
-      "desc": "返乡见闻分享 + 红色观影思想教育，会后撰写观后感并汇编心得。把国庆八天在各自家乡看到的东西讲到一起。",
+      "when": "2026-10-11 晚 · 主A102",
+      "photo": "红色足迹",
+      "desc": "返乡见闻分享 + 长征题材红色观影《四渡赤水》，会后撰写观后感并汇编心得。把国庆八天在各自家乡看到的东西讲到一起。",
       "tags": [
         "必做1 理论学习",
         "必做2 西迁精神"
-      ]
-    },
-    {
-      "ch": "聚能",
-      "main": "学",
-      "status": "planned",
-      "verified": "A",
-      "title": "红色观影 + 观后感撰写",
-      "when": "2026-10-11 晚 · 主A102",
-      "desc": "结合红色足迹主题班会观影，每人写下感受。",
-      "tags": [
-        "必做1 理论学习"
-      ]
-    },
-    {
-      "ch": "聚能",
-      "main": "学",
+      ],
       "status": "done",
       "verified": "A",
+      "id": "a01",
+      "href": "activity.html?id=a01",
+      "gallery": "g-redclass",
+      "photos": 8
+    },
+    {
+      "ch": "聚能",
+      "main": "学",
+      "title": "三庆主题知识竞答",
+      "when": "2026-09 ~ 10 · 线上",
+      "photo": "知识竞答",
+      "desc": "庆祝新中国成立 77 周年、长征胜利 90 周年、交大建校 130 周年线上知识竞答，支部同学全员参与并留存答题截图。",
+      "tags": [
+        "必做1 理论学习",
+        "三庆"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a02",
+      "href": "activity.html?id=a02",
+      "gallery": "g-quiz",
+      "photos": 6
+    },
+    {
+      "ch": "聚能",
+      "main": "学",
       "title": "西迁博物馆参观 · 新生养成教育",
-      "when": "2026-10-11 15:00 · 24 人",
-      "desc": "走一遍「打起背包就出发」的物理现场。该参观为新生养成教育必要环节。",
+      "when": "后续补办（未在 10/11 当天完成）",
+      "photo": "红色足迹",
+      "desc": "走一遍「打起背包就出发」的物理现场。该参观为新生养成教育必要环节。原计划 10/11 与钱展同批进行，当天未能安排，后续补办。",
       "tags": [
         "必做2 西迁精神"
-      ]
+      ],
+      "status": "planned",
+      "verified": "C",
+      "id": "a03",
+      "href": "activity.html?id=a03",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "A",
       "title": "钱学森科学精神与教育思想展",
       "when": "2026-10-11 16:00 · 25 人",
-      "desc": "在钱学森图书馆读懂科学家精神与教育思想，已预约讲解员。",
+      "photo": "10.11图书馆钱展",
+      "desc": "在钱学森图书馆读懂科学家精神与教育思想，已预约讲解员，全程准时。当天四校微团课结束后的现场学习环节。",
       "tags": [
         "必做1 理论学习",
         "必做2 西迁精神"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a04",
+      "href": "activity.html?id=a04",
+      "gallery": "g-qian",
+      "photos": 6
     },
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "A",
       "title": "饮水思源碑打卡合影",
-      "when": "2026-10-11 16:30 · 23 人",
-      "desc": "把「饮水思源」四个字站在脚下；在旗杆前台阶合影留档。",
+      "when": "后续补办（未在 10/11 当天完成）",
+      "photo": "红色足迹",
+      "desc": "把「饮水思源」四个字站在脚下；在旗杆前台阶合影留档。原计划 10/11 当天完成，当天未能安排，后续补办。",
       "tags": [
         "必做2 西迁精神"
-      ]
+      ],
+      "status": "planned",
+      "verified": "C",
+      "id": "a05",
+      "href": "activity.html?id=a05",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "A",
       "title": "西安事变纪念馆红色研学实践",
       "when": "2026-10-06 15:00 · 10 人",
+      "photo": "10.6西安事变纪念馆",
       "desc": "参加英仔爱心社组织的研学，重温西安事变历史，缅怀革命先烈。已产出推文并被院级平台刊发。",
       "tags": [
         "必做2 西迁精神",
         "红色教育"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a06",
+      "href": "activity.html?id=a06",
+      "gallery": "g-xianincident",
+      "photos": 8
     },
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "A",
       "title": "交大博物馆 · 秦腔博物馆参观",
       "when": "2026-10-07 14:30",
+      "photo": "10.7动员大会",
       "desc": "从校史走到地方戏曲，文化自信的第一手材料。",
       "tags": [
         "选做3 文化自信"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a07",
+      "href": "activity.html?id=a07",
+      "gallery": "g-mobilize",
+      "photos": 5
     },
     {
       "ch": "聚能",
       "main": "学",
-      "status": "done",
-      "verified": "C",
       "title": "筑梦社宣讲 · 铸牢中华民族共同体意识",
       "when": "2026-10-13 21:10—22:20 · 主楼 A-105",
-      "desc": "参加筑梦社（2017 年成立，2025-2026 学年五星级社团）专题宣讲，四场报告：都贵玛与中华民族守望相助、基层脱贫故事、《哥达纲领批判》按劳分配理论、从「荒茅田」到「花繁叶茂」。",
+      "photo": "10.13筑梦社",
+      "desc": "参加筑梦社（2017 年成立，2025-2026 学年五星级社团）专题宣讲，四场报告：都贵玛与中华民族守望相助、基层脱贫故事、《哥达纲领批判》按劳分配理论、从「荒茅田」到「花繁叶茂」。已提交观后感。",
       "tags": [
         "必做1 理论学习",
         "选做1 长征"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a08",
+      "href": "activity.html?id=a08",
+      "gallery": "g-quiz",
+      "photos": 6
+    },
+    {
+      "ch": "聚能",
+      "main": "学",
+      "title": "国际盲人节主题活动",
+      "when": "2026-10-15 · 国际盲人节",
+      "photo": "10.15盲人日",
+      "desc": "国际盲人节（10 月 15 日）主题学习与体验活动，关注视障群体、践行人文关怀。",
+      "tags": [
+        "必做3 志愿服务",
+        "人文关怀"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a09",
+      "href": "activity.html?id=a09",
+      "gallery": "g-blind",
+      "photos": 4
+    },
+    {
+      "ch": "聚能",
+      "main": "学",
+      "title": "崔学长经验分享会",
+      "when": "2026-10-16",
+      "photo": "10.16崔学长分享",
+      "desc": "与学长面对面交流，讲学习、讲专业、讲怎么度过大一。",
+      "tags": [
+        "朋辈引领"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a10",
+      "href": "activity.html?id=a10",
+      "gallery": "g-cui",
+      "photos": 6
     },
     {
       "ch": "聚能",
@@ -145,7 +224,12 @@
       "desc": "主讲：叶石瑞（机械类2606，GitHub 高星开源 DSH 插件项目开发者）、孙渤越学长（专业第一、连续两年国奖、SSCI 一区与 EI 一作）。90 分钟含 10 分钟休息。",
       "tags": [
         "选做7 AI智能科创"
-      ]
+      ],
+      "photo": "",
+      "id": "a11",
+      "href": "activity.html?id=a11",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "聚能",
@@ -157,7 +241,12 @@
       "desc": "人工智能学院郑凯中教授分享脑机接口前沿知识，参观人机所实验室。名额 4—5 人。原定 10.13，因故暂定推后。",
       "tags": [
         "选做7 AI智能科创"
-      ]
+      ],
+      "photo": "",
+      "id": "a12",
+      "href": "activity.html?id=a12",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "聚能",
@@ -170,193 +259,361 @@
       "tags": [
         "选做4 攀登实践",
         "爱国主义教育"
-      ]
+      ],
+      "photo": "",
+      "id": "a13",
+      "href": "activity.html?id=a13",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "蓄势",
       "main": "思",
+      "title": "长征观影《四渡赤水》",
+      "when": "2026-10-11 晚 · 主A102",
+      "photo": "10.11长征观影《四渡赤水》",
+      "desc": "集体观看长征题材影片《四渡赤水》，观影后每人撰写观后感。",
+      "tags": [
+        "选做1 长征",
+        "必做1 理论学习"
+      ],
       "status": "done",
       "verified": "A",
-      "title": "返乡见闻分享会",
-      "when": "2026-10-11 · 并入红色足迹班会",
-      "desc": "把国庆八天在各自身边看到的东西讲出来——同一个中国，多种视角。",
-      "tags": [
-        "必做1 理论学习"
-      ]
+      "id": "a14",
+      "href": "activity.html?id=a14",
+      "gallery": "g-changzheng",
+      "photos": 6
     },
     {
       "ch": "蓄势",
       "main": "思",
-      "status": "done",
-      "verified": "B",
-      "title": "心得体会汇编",
+      "title": "心得体会与观后感汇编",
       "when": "持续进行",
+      "verified": "B",
+      "photo": "10.13筑梦社",
       "desc": "每一位支部成员撰写活动感想，汇编成册，作为总结材料附件（附件 4 要求项）。",
       "tags": [
         "附件4 要求项"
-      ]
-    },
-    {
-      "ch": "蓄势",
-      "main": "思",
-      "status": "planned",
-      "verified": "C",
-      "title": "给四年后自己的一封信",
-      "when": "待定",
-      "desc": "写下此刻的自己，封存起来，四年后毕业时再打开。",
-      "tags": [
-        "班级文化"
-      ]
-    },
-    {
-      "ch": "蓄势",
-      "main": "思",
-      "status": "planned",
-      "verified": "C",
-      "title": "辩论赛",
-      "when": "待定",
-      "desc": "围绕青年责任与专业选择展开辩论，练的是把问题想明白的能力。",
-      "tags": [
-        "选做4 攀登实践"
-      ]
+      ],
+      "status": "done",
+      "id": "a15",
+      "href": "activity.html?id=a15",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "传热",
       "main": "悟",
-      "status": "done",
-      "verified": "A",
       "title": "四校同源主题微团课（我支部主讲）",
       "when": "2026-10-11 17:00—18:40 · 腾讯会议",
-      "desc": "联合多所交通大学支部开展线上联合团课，由储能2601 团支部担任主讲。会议号 408-337-007。各支部选派代表讲本校校史故事，共同学习习近平总书记给四校师生回信精神。",
+      "photo": "10.11预科二宣讲",
+      "desc": "联合多所交通大学支部开展线上联合团课，由储能2601 团支部担任主讲。各支部选派代表讲本校校史故事，共同学习习近平总书记给四校师生回信精神。",
       "tags": [
         "选做6 校际联动",
         "亮点"
-      ]
-    },
-    {
-      "ch": "传热",
-      "main": "悟",
-      "status": "done",
-      "verified": "C",
-      "title": "同源 · 同心 · 同行 —— 交通大学同源主题团日活动",
-      "when": "2026-10-06 ~ 10-24 · 线上",
-      "desc": "与电气2607 支部联办。含「同源讲堂」线上联合团课（90 分钟）、「同源印记」地标联动打卡、「同源问答」校史云端知识竞赛、「同源寄语」写给 130 岁的交大。",
-      "tags": [
-        "选做6 校际联动",
-        "必做2 西迁精神"
-      ]
-    },
-    {
-      "ch": "传热",
-      "main": "悟",
+      ],
       "status": "done",
       "verified": "A",
+      "id": "a16",
+      "href": "activity.html?id=a16",
+      "gallery": "g-tju",
+      "photos": 6
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
+      "title": "与天津大学支部联动 · 团课",
+      "when": "2026-10-15",
+      "photo": "10.15天大联动团课",
+      "desc": "与天津大学支部联合开展线上团课，交流支部建设与专业认知。",
+      "tags": [
+        "选做6 校际联动"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a17",
+      "href": "activity.html?id=a17",
+      "gallery": "g-tju",
+      "photos": 6
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
+      "title": "与天津大学联动 · 100 秒微访谈",
+      "when": "2026-10",
+      "photo": "天大100s微访谈",
+      "desc": "录制 100 秒微访谈视频 8 段，用短视频形式记录青年视角下的专业与家国。",
+      "tags": [
+        "选做6 校际联动",
+        "视频成果"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a18",
+      "href": "activity.html?id=a18",
+      "gallery": "",
+      "photos": 0
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
       "title": "回母校 · 西迁精神宣讲",
       "when": "2026 国庆期间",
+      "photo": "返校宣讲",
       "desc": "走进高中母校，把西迁精神讲给学弟学妹听。",
       "tags": [
         "必做2 西迁精神"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a19",
+      "href": "activity.html?id=a19",
+      "gallery": "g-backhome",
+      "photos": 5
     },
     {
       "ch": "传热",
       "main": "悟",
-      "status": "done",
-      "verified": "A",
       "title": "预科一 · 交大附中少年班讲座",
       "when": "2026-10-13",
+      "photo": "10.13交附预一宣讲",
       "desc": "把入学以来学到的，讲给附中少年班的学弟学妹听。",
       "tags": [
         "选做4 攀登实践"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a20",
+      "href": "activity.html?id=a20",
+      "gallery": "g-prep1",
+      "photos": 6
     },
     {
       "ch": "传热",
       "main": "悟",
-      "status": "done",
-      "verified": "A",
       "title": "预科二 · 朋辈辅导员学习生活讲座",
       "when": "2026-10-11",
+      "photo": "10.11预科二宣讲",
       "desc": "面向少年班预科二的朋辈辅导，讲学习、讲生活、讲怎么适应。",
       "tags": [
         "选做4 攀登实践"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a21",
+      "href": "activity.html?id=a21",
+      "gallery": "g-prep2",
+      "photos": 5
     },
     {
       "ch": "传热",
       "main": "悟",
-      "status": "planned",
-      "verified": "C",
+      "title": "回交大附中 · 团课宣讲",
+      "when": "2026-10-15",
+      "photo": "10.15交附团课",
+      "desc": "回到交大附中开展团课宣讲，把西迁精神与专业认知带回中学课堂。",
+      "tags": [
+        "选做4 攀登实践",
+        "必做2 西迁精神"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a22",
+      "href": "activity.html?id=a22",
+      "gallery": "g-gaozhong",
+      "photos": 5
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
+      "title": "文明餐桌 · 光盘行动志愿服务",
+      "when": "2026-10 · 兴庆校区食堂",
+      "photo": "光盘行动",
+      "desc": "光盘行动引导、餐盘回收协助。志愿马甲向书院/食堂借用，横屏拍照留痕。",
+      "tags": [
+        "必做3 志愿服务"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a23",
+      "href": "activity.html?id=a23",
+      "gallery": "g-cleanplate",
+      "photos": 3
+    },
+    {
+      "ch": "传热",
+      "main": "悟",
       "title": "劳动包干 · 志愿服务",
-      "when": "2026-10-19",
+      "when": "2026-10-12",
+      "photo": "10.12劳动包干",
       "desc": "承担书院划定的劳动包干区域，全员参与，附工作记录表。",
       "tags": [
         "必做3 志愿服务",
         "附件4 强制"
-      ]
-    },
-    {
-      "ch": "传热",
-      "main": "悟",
+      ],
       "status": "done",
-      "verified": "C",
-      "title": "与天津大学支部联动 · 同源讲座",
-      "when": "2026-10-14 晚",
-      "desc": "天津大学与储能的联动「同源讲座」。",
-      "tags": [
-        "选做6 校际联动"
-      ]
+      "verified": "A",
+      "id": "a24",
+      "href": "activity.html?id=a24",
+      "gallery": "g-labor",
+      "photos": 6
     },
     {
       "ch": "释能",
       "main": "行",
-      "status": "done",
-      "verified": "A",
       "title": "创新港参观 · 国家储能平台",
       "when": "2026-10-16 12:30—18:00",
+      "photo": "10.16创新港",
       "desc": "参观国家储能平台、实验室及创新港校区。13:50 风帆广场集合合影后统一前往储能平台；参观结束前往涵英楼合影。地铁五号线至创新港站，全程约 1 小时 30 分钟。",
       "tags": [
         "专业特色",
         "选做5 青年创新"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a25",
+      "href": "activity.html?id=a25",
+      "gallery": "g-innovport",
+      "photos": 8
     },
     {
       "ch": "释能",
       "main": "行",
-      "status": "done",
-      "verified": "A",
       "title": "西安迅湃快速充电技术有限公司参观",
-      "when": "2026-10-15（周四）下午 · 高新区",
+      "when": "2026-10-15 下午 · 高新区",
+      "photo": "10.15迅湃",
       "desc": "6—15 人报名制，由孟锦豪老师与企业沟通接待。不包车，几人一组打车往返，班委分头带队。",
       "tags": [
         "选做5 青年创新",
         "校企联合"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a26",
+      "href": "activity.html?id=a26",
+      "gallery": "g-xunpai",
+      "photos": 5
     },
     {
       "ch": "释能",
       "main": "行",
-      "status": "done",
-      "verified": "A",
       "title": "陶艺社联动 · 中国符号陶砖",
       "when": "2026-10-12 19:30—21:30 · 工程坊B",
+      "photo": "10.12陶艺社",
       "desc": "在陶艺社动手制作泥板浮雕陶砖，把专业与传统文化做进同一件作品里。",
       "tags": [
         "选做3 文化自信",
         "动手成果"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a27",
+      "href": "activity.html?id=a27",
+      "gallery": "g-pottery",
+      "photos": 6
     },
     {
       "ch": "释能",
       "main": "行",
+      "title": "「嗨跳·仙交」广场舞团支部友谊专场",
+      "when": "2026-10-09",
+      "photo": "10.9广场舞",
+      "desc": "参加「嗨跳·仙交」广场舞第二届团支部友谊专场活动。",
+      "tags": [
+        "文体活动"
+      ],
       "status": "done",
       "verified": "A",
+      "id": "a28",
+      "href": "activity.html?id=a28",
+      "gallery": "g-dance",
+      "photos": 6
+    },
+    {
+      "ch": "释能",
+      "main": "行",
+      "title": "三对三篮球赛",
+      "when": "2026-10-13",
+      "photo": "10.13篮球赛",
+      "desc": "参加校级三对三篮球赛，场上场下都是集体。",
+      "tags": [
+        "文体活动"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a29",
+      "href": "activity.html?id=a29",
+      "gallery": "",
+      "photos": 0
+    },
+    {
+      "ch": "释能",
+      "main": "行",
+      "title": "最佳团日动员大会",
+      "when": "2026-10-07",
+      "photo": "10.7动员大会",
+      "desc": "支部最佳团日活动动员与分工，明确各工作组任务与时间节点。",
+      "tags": [
+        "组织建设"
+      ],
+      "status": "done",
+      "verified": "A",
+      "id": "a30",
+      "href": "activity.html?id=a30",
+      "gallery": "",
+      "photos": 0
+    },
+    {
+      "ch": "释能",
+      "main": "行",
       "title": "班徽 · 班旗 视觉系统",
       "when": "已完成",
       "desc": "班徽三版矢量设计 + 五套配色系统，班旗已交付印刷并在多次活动合影中使用。",
       "tags": [
         "附件4 加分项"
-      ]
+      ],
+      "status": "done",
+      "verified": "A",
+      "photo": "",
+      "id": "a31",
+      "href": "activity.html?id=a31",
+      "gallery": "",
+      "photos": 0
+    },
+    {
+      "ch": "释能",
+      "main": "行",
+      "title": "成果展示网站（本站）",
+      "when": "2026-10-13 起",
+      "desc": "自建红色政务风格成果展示网站，含 3D 中国地图飞线展示红色足迹。纯静态零依赖，以 git 管理并部署于静态托管。",
+      "tags": [
+        "创新意识",
+        "专业特色"
+      ],
+      "status": "done",
+      "verified": "A",
+      "photo": "",
+      "id": "a32",
+      "href": "activity.html?id=a32",
+      "gallery": "",
+      "photos": 0
+    },
+    {
+      "ch": "释能",
+      "main": "行",
+      "title": "宣传推文矩阵",
+      "when": "持续进行 · 已发 6 篇",
+      "desc": "摄影组 → 文案组 → 排版组 → 校对组四步流水线产出推文。已发布 6 篇：仙交钱小团 4 篇、西交萤烛爱心社 2 篇。",
+      "tags": [
+        "宣传影响力"
+      ],
+      "status": "done",
+      "verified": "A",
+      "photo": "",
+      "id": "a33",
+      "href": "activity.html?id=a33",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "释能",
@@ -368,44 +625,12 @@
       "desc": "支部同学以小提琴等乐器合奏校歌，录制为班歌。",
       "tags": [
         "附件4 加分项"
-      ]
-    },
-    {
-      "ch": "释能",
-      "main": "行",
-      "status": "done",
-      "verified": "A",
-      "title": "成果展示网站（本站）",
-      "when": "2026-10-13 起",
-      "desc": "自建红色政务风格成果展示网站，含 3D 中国地图飞线展示红色足迹。纯静态零依赖，以 git 管理并部署于静态托管。",
-      "tags": [
-        "创新意识",
-        "专业特色"
-      ]
-    },
-    {
-      "ch": "释能",
-      "main": "行",
-      "status": "done",
-      "verified": "A",
-      "title": "宣传推文矩阵",
-      "when": "持续进行 · 已发 6 篇",
-      "desc": "摄影组 → 文案组 → 排版组 → 校对组四步流水线产出推文。已发布 6 篇：仙交钱小团 4 篇、西交萤烛爱心社 2 篇。",
-      "tags": [
-        "宣传影响力"
-      ]
-    },
-    {
-      "ch": "释能",
-      "main": "行",
-      "status": "done",
-      "verified": "A",
-      "title": "三对三篮球赛 · 新生足球赛",
-      "when": "2026-10",
-      "desc": "参加校级新生球赛，场上场下都是集体。",
-      "tags": [
-        "文体活动"
-      ]
+      ],
+      "photo": "",
+      "id": "a34",
+      "href": "activity.html?id=a34",
+      "gallery": "",
+      "photos": 0
     },
     {
       "ch": "释能",
@@ -418,7 +643,12 @@
       "tags": [
         "选做1 长征",
         "校级活动"
-      ]
+      ],
+      "photo": "",
+      "id": "a35",
+      "href": "activity.html?id=a35",
+      "gallery": "",
+      "photos": 0
     }
   ]
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>活动相册｜储能2601 团支部</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.pgal-hd{background:linear-gradient(125deg,#5C0713 0%,#8B0A1E 48%,#A00C24 100%);
+  color:#fff;padding:32px 0 28px;position:relative;overflow:hidden}
+.pgal-hd::after{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(60deg,rgba(255,255,255,.04) 0 2px,transparent 2px 44px)}
+.pgal-hd .wrap{position:relative;z-index:2}
+.pgal-hd h1{font-size:28px;letter-spacing:2px}
+.pgal-hd p{margin-top:10px;color:var(--accent-light);font-size:14.5px}
+.pgal-all{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 22px}
+.pgal-all a{font-size:13px;padding:6px 13px;border:1px solid var(--line);border-radius:20px;
+  color:var(--text-2);background:#fff;transition:.16s}
+.pgal-all a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-tint)}
+.pgal-all a b{color:var(--brand);margin-left:5px}
+.pgal-sec{padding:24px 0}
+.pgal-sec h2{font-size:17px;color:var(--brand);padding-left:12px;position:relative}
+.pgal-sec h2::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:4px;height:17px;background:var(--accent);border-radius:2px}
+.pgal-meta{font-size:13px;color:var(--text-3);margin:6px 0 14px;padding-left:12px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="返回首页"><img src="assets/img/logo/badge-1-liu-white.png" alt="储能2601 班徽"></a>
+    <div class="brand-text">
+      <b>储能2601 团支部</b>
+      <span>赓续红色薪火 · 储启百卅新程</span>
+    </div>
+    <div class="right">共青团西安交通大学<br>钱学森书院委员会</div>
+  </div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html">首页</a>
+    <a href="jn.html">聚能 · 学</a>
+    <a href="xs.html">蓄势 · 思</a>
+    <a href="cr.html">传热 · 悟</a>
+    <a href="sn.html">释能 · 行</a>
+    <a href="map3d.html">红色足迹</a>
+    <a href="about.html" class="on">支部概况</a>
+    <a href="download.html">材料下载</a>
+  </div>
+</nav>
+
+<header class="pgal-hd">
+  <div class="wrap">
+    <h1>活动相册</h1>
+    <p id="pgal-sub">现场照片记录</p>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:22px">
+  <div class="wrap">
+    <div class="pgal-all" id="pgal-nav"></div>
+    <div id="pgal-body"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>主办单位</h4>
+        <p>西安交通大学钱学森书院<br>储能2601 团支部</p>
+        <p style="margin-top:10px">指导单位：共青团西安交通大学委员会</p>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="#">共青团西安交通大学委员会</a></li>
+          <li><a href="#">钱学森书院</a></li>
+          <li><a href="#">西迁博物馆</a></li>
+          <li><a href="#">仙交钱小团</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>本站导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="map3d.html">红色足迹 3D 地图</a></li>
+          <li><a href="jn.html">聚能 · 学</a></li>
+          <li><a href="xs.html">蓄势 · 思</a></li>
+          <li><a href="cr.html">传热 · 悟</a></li>
+          <li><a href="sn.html">释能 · 行</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="fbar">版权所有 © 2026 储能2601 团支部 ｜ 本站为最佳团日成果展示，非官方站点</div>
+</footer>
+
+<script>
+(function(){
+  fetch('assets/data/activities.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+    var acts=(d.activities||[]).filter(function(a){return a.gallery && a.photos;});
+    var total=acts.reduce(function(s,a){return s+a.photos;},0);
+    document.getElementById('pgal-sub').textContent =
+      '共 '+acts.length+' 项活动 · '+total+' 张现场照片 ｜ 点击看大图，支持左右切换与键盘操作';
+    document.getElementById('pgal-nav').innerHTML = acts.map(function(a,i){
+      return '<a href="#g'+i+'">'+a.title.slice(0,16)+'<b>'+a.photos+'</b></a>';
+    }).join('');
+    document.getElementById('pgal-body').innerHTML = acts.map(function(a,i){
+      return '<div class="pgal-sec" id="g'+i+'">'+
+             '<h2>'+a.title+'</h2>'+
+             '<div class="pgal-meta">'+(a.when||'')+' ｜ '+a.photos+' 张</div>'+
+             '<div class="gal" data-gallery="'+a.gallery+'"></div></div>';
+    }).join('');
+    var s=document.createElement('script'); s.src='assets/js/gallery.js'; document.body.appendChild(s);
+  }).catch(function(e){
+    document.getElementById('pgal-body').innerHTML='<div class="notice">加载失败：'+e.message+'</div>';
+  });
+})();
+</script>
+</body>
+</html>
