@@ -61,18 +61,19 @@
   var tip = document.getElementById('mapTip');
 
   /* ---------- 尺寸 ---------- */
+  /* 关键：位图尺寸必须严格等于 CSS 显示尺寸，否则浏览器会重采样导致发糊 */
   function resize() {
     var rect = cv.getBoundingClientRect();
-    DPR = Math.min(window.devicePixelRatio || 1, 2);
-    /* 用 CSS 像素的整数尺寸，保证位图与显示 1:1 */
-    W = Math.max(320, Math.round(rect.width));
-    H = Math.max(240, Math.round(rect.height));
-    cv.width = Math.round(W * DPR);
-    cv.height = Math.round(H * DPR);
-    /* 显式锁定 CSS 尺寸，避免被容器拉伸 */
-    cv.style.width = W + 'px';
-    cv.style.height = H + 'px';
-    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    var cssW = Math.max(320, Math.round(rect.width));
+    var cssH = Math.max(240, Math.round(rect.height));
+    W = cssW;
+    H = cssH;
+    DPR = 1;                       /* 1:1 像素映射，绝不缩放 */
+    cv.width = cssW;               /* 位图 = 显示尺寸 */
+    cv.height = cssH;
+    cv.style.width = cssW + 'px';
+    cv.style.height = cssH + 'px';
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     computeTransform();
     buildProvinces();
   }
@@ -167,7 +168,7 @@
     ctx.globalAlpha = 1;
     ctx.globalCompositeOperation = 'source-over';
     ctx.filter = 'none';
-    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.lineJoin = 'round';
 
     ctx.fillStyle = BG;
