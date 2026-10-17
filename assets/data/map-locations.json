@@ -1,0 +1,322 @@
+[
+  {
+    "id": "xian",
+    "group": "xian",
+    "name": "西安",
+    "title": "钱学森科学精神与教育思想展",
+    "status": "集体研学",
+    "date": "2026.10.11",
+    "address": "陕西省西安市 · 西安交通大学钱学森图书馆",
+    "desc": "在钱学森图书馆，读懂科学家精神与教育思想。",
+    "note": "西迁博物馆参观、思源碑合影仍待补办。",
+    "coord": [
+      108.98,
+      34.26
+    ],
+    "source": "activities.json · a05"
+  },
+  {
+    "id": "incident",
+    "group": "xian",
+    "name": "西安事变纪念馆",
+    "title": "西安事变纪念馆红色研学",
+    "status": "集体研学",
+    "date": "2026.10.06",
+    "address": "陕西省西安市碑林区建国路69号",
+    "desc": "参加英仔爱心社组织的红色研学，重温西安事变历史。",
+    "note": "10 人参与 · 已产出推文",
+    "coord": [
+      108.98,
+      34.26
+    ],
+    "source": "activities.json · a07",
+    "url": "https://www.mva.gov.cn/sy/zt/krzzsl75zn/kzjnssyzml/202009/t20200901_41904.html"
+  },
+  {
+    "id": "fuping",
+    "group": "xian",
+    "name": "富平",
+    "title": "富平党课 · 习仲勋故居参观",
+    "status": "意向",
+    "date": "2026.10.17（意向）",
+    "address": "陕西省渭南市富平县",
+    "desc": "计划开展现场党课与参观学习，完成情况待确认。",
+    "note": "不计入已完成足迹。",
+    "coord": [
+      109.18,
+      34.75
+    ],
+    "source": "activities.json · a14"
+  },
+  {
+    "id": "shanghai",
+    "group": "shanghai",
+    "name": "上海",
+    "title": "交通大学 · 上海源起",
+    "status": "校史源起",
+    "date": "1896",
+    "address": "上海市",
+    "desc": "从上海源起，到西安扎根，以校史脉络连接我们的红色足迹。",
+    "note": "上海 → 西安 · 西迁精神",
+    "coord": [
+      121.47,
+      31.23
+    ],
+    "source": "校史源起标记"
+  },
+  {
+    "id": "zaoyuan",
+    "group": "yanan",
+    "name": "枣园革命旧址",
+    "title": "延安 · 枣园革命旧址寻访",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "陕西省延安市宝塔区枣园街道枣园村",
+    "desc": "素材中的枣园办公室旧址、周恩来旧居等标牌，可确认枣园寻访地点。",
+    "note": "刘德瑞提供 · 个人寻访素材",
+    "coord": [
+      109.42,
+      36.63
+    ],
+    "source": "红色足迹/刘德瑞/226f7604c468f13548578b19c9c5beda.jpg",
+    "url": "https://daj.shaanxi.gov.cn/Article/View?id=4757"
+  },
+  {
+    "id": "baotashan",
+    "group": "yanan",
+    "name": "宝塔山",
+    "title": "延安 · 宝塔山红色足迹",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "陕西省延安市宝塔区 · 宝塔山",
+    "desc": "白天与夜景照片记录了宝塔山这一红色地标。",
+    "note": "刘德瑞提供 · 个人寻访素材",
+    "coord": [
+      109.49,
+      36.59
+    ],
+    "source": "红色足迹/刘德瑞/649e3b7c1db4a35e2cfdb92ba57b120b.jpg",
+    "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35098"
+  },
+  {
+    "id": "yanan-museum",
+    "group": "yanan",
+    "name": "延安革命纪念馆",
+    "title": "延安革命纪念馆参观",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "陕西省延安市宝塔区王家坪",
+    "desc": "纪念馆正门、馆内展陈和雕塑照片，记录了延安革命历史学习。",
+    "note": "刘德瑞提供 · 个人寻访素材",
+    "coord": [
+      109.49,
+      36.59
+    ],
+    "source": "红色足迹/刘德瑞/bcb42ba6da36cba2d778658681143829.jpg",
+    "url": "https://www.mva.gov.cn/sy/zt/krzzsl75zn/kzjnssyzml/202009/t20200901_41904.html"
+  },
+  {
+    "id": "huabei",
+    "group": "hebei",
+    "name": "华北军区烈士陵园",
+    "title": "华北军区烈士陵园 · 白求恩纪念展陈",
+    "status": "个人寻访",
+    "date": "照片标注 2026.10.01",
+    "address": "河北省石家庄市桥西区中山西路343号",
+    "desc": "照片可见烈士纪念碑、白求恩墓亭及白求恩·印度援华医疗队纪念馆。",
+    "note": "李泽一提供 · 个人寻访素材",
+    "coord": [
+      114.51,
+      38.04
+    ],
+    "source": "红色足迹/李泽一/45a96cce74b22ed682a7f92eea0a7d7c.jpg",
+    "url": "https://wenwu.hebei.gov.cn/system/2023/09/27/030254044.shtml"
+  },
+  {
+    "id": "zhengding",
+    "group": "hebei",
+    "name": "河北正定中学",
+    "title": "回母校 · 科学家精神宣讲",
+    "status": "返校宣讲",
+    "date": "2026 年国庆期间",
+    "address": "河北省石家庄市正定县 · 河北正定中学",
+    "desc": "李泽一回母校开展科学家精神宣讲，现场主题为“科学家精神——发现与行动”。",
+    "note": "学校名称由班委确认；具体校区未作推定。",
+    "coord": [
+      114.57,
+      38.14
+    ],
+    "source": "返校宣讲/李泽一；班委确认校名",
+    "url": "https://jyzc.com/school/zxxschool?category=zxx&id=10036"
+  },
+  {
+    "id": "jiangqiao",
+    "group": "jiangqiao",
+    "name": "江桥抗战纪念地",
+    "title": "江桥抗战纪念地 · 红色寻访",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "黑龙江省齐齐哈尔市泰来县江桥镇江安社区",
+    "desc": "照片可见“江桥抗战”“和平广场”等标识及抗战史事展板。",
+    "note": "曲宇卿提供 · 个人寻访素材",
+    "coord": [
+      123.7,
+      46.77
+    ],
+    "source": "红色足迹/曲宇卿/2bed4f216903682d371a5c6d25a2b95c.jpg",
+    "url": "https://www.mva.gov.cn/sy/zt/krzzsl75zn/kzjnssyzml/202009/t20200901_41904.html"
+  },
+  {
+    "id": "xiaosiyuan",
+    "group": "yanjin",
+    "name": "肖思远烈士故居",
+    "title": "两校学子追寻英雄足迹",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "河南省新乡市延津县石婆固镇东龙王庙村",
+    "desc": "照片与文字稿记录了西安交大、上海交大学子共同寻访肖思远烈士故居。",
+    "note": "王宫垚提供 · 照片及寻访文字稿",
+    "coord": [
+      114.2,
+      35.14
+    ],
+    "source": "红色足迹/王宫垚/踏红色足迹 承家国初心——两校学子追寻英.doc",
+    "url": "https://yanjin.gov.cn/newsinfo/21709.html"
+  },
+  {
+    "id": "juzizhou",
+    "group": "changsha",
+    "name": "橘子洲",
+    "title": "长沙 · 毛泽东青年艺术雕塑",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "湖南省长沙市岳麓区橘子洲头2号",
+    "desc": "素材照片记录了橘子洲毛泽东青年艺术雕塑。",
+    "note": "武泽凯提供 · 个人寻访素材",
+    "coord": [
+      112.96,
+      28.2
+    ],
+    "source": "红色足迹/武泽凯/a1099d60e9c5c1ad0c5e5893bbd0c391.jpg",
+    "url": "https://hunan.gov.cn/hnszf/c101474/202108/t20210827_20403826.html"
+  },
+  {
+    "id": "baolu",
+    "group": "chengdu",
+    "name": "四川保路运动史事陈列馆",
+    "title": "成都 · 保路运动史事寻访",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "四川省成都市青羊区人民公园 · 银杏阁",
+    "desc": "素材可见四川保路运动史事陈列馆与辛亥秋保路死事纪念碑。",
+    "note": "王禹宸提供 · 个人寻访素材",
+    "coord": [
+      104.06,
+      30.66
+    ],
+    "source": "红色足迹/王禹宸/bd42506a8e40b485cc1e89f4986f06a3.jpg",
+    "url": "https://ctt.swjtu.edu.cn/info/5271/174841.htm"
+  },
+  {
+    "id": "huanghuagang",
+    "group": "guangzhou",
+    "name": "黄花岗七十二烈士墓园",
+    "title": "广州 · 黄花岗七十二烈士墓园",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "广东省广州市越秀区先烈中路79号",
+    "desc": "照片中的“七十二烈士之墓”等标识，确认了黄花岗寻访地点。",
+    "note": "王禹宸提供 · 个人寻访素材",
+    "coord": [
+      113.28,
+      23.13
+    ],
+    "source": "红色足迹/王禹宸/340393e9d9fdc805cb86a02a226791e9.jpg",
+    "url": "https://www.yuexiu.gov.cn/zjyx/yxjd/gzjdgms/content/post_8658148.html"
+  },
+  {
+    "id": "wuhu",
+    "group": "anhui",
+    "name": "芜湖烈士陵园",
+    "title": "芜湖烈士陵园 · 缅怀先烈",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "安徽省芜湖市镜湖区 · 神山公园",
+    "desc": "照片与短视频均可辨认“芜湖烈士陵园”，并记录了纪念馆内展陈。",
+    "note": "夏雨晨提供 · 个人寻访素材",
+    "coord": [
+      118.38,
+      31.33
+    ],
+    "source": "红色足迹/夏雨晨/6ec4d07c7f2afb24e7762618e37177ab.jpg",
+    "url": "https://ct.wuhu.gov.cn/xwzx/tzgg/8741792.html"
+  },
+  {
+    "id": "dujiang",
+    "group": "anhui",
+    "name": "渡江战役纪念馆",
+    "title": "合肥 · 渡江战役主题分享",
+    "status": "视频分享",
+    "date": "视频素材 · 日期待补",
+    "address": "安徽省合肥市包河区云谷路299号",
+    "desc": "视频中的纪念馆建筑、胜利塔及展陈与合肥渡江战役纪念馆对应。",
+    "note": "郭一航提供视频；不据此推定本人实地走访。",
+    "coord": [
+      117.33,
+      31.71
+    ],
+    "source": "红色足迹/郭一航/0.mp4",
+    "url": "https://www.djzyjng.cn/news_1462405.html"
+  },
+  {
+    "id": "jiefangge",
+    "group": "jinan",
+    "name": "济南解放阁",
+    "title": "济南解放阁 · 铭记解放历史",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "山东省济南市历下区 · 黑虎泉西路东端",
+    "desc": "素材中的解放阁建筑、解放济南战役革命烈士纪念碑，可确认这一寻访地点。",
+    "note": "赵师玖提供 · 个人寻访素材",
+    "coord": [
+      117.02,
+      36.67
+    ],
+    "source": "红色足迹/赵师玖/a81d0e3f02837d03cb3b062adc254a3c.jpg",
+    "url": "https://www.jnzx.gov.cn/folder325/folder329/folder336/2017-10-27/78606.html"
+  },
+  {
+    "id": "jinan-53",
+    "group": "jinan",
+    "name": "济南五三惨案纪念园",
+    "title": "济南 · 五三惨案纪念园寻访",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "山东省济南市 · 趵突泉公园北区",
+    "desc": "照片记录了纪念“五三惨案”的石刻与纪念设施。",
+    "note": "赵师玖提供 · 个人寻访素材",
+    "coord": [
+      117.02,
+      36.67
+    ],
+    "source": "红色足迹/赵师玖/88f42e43b9975ac325c7a151361dc2ee.jpg",
+    "url": "https://shandong-chorography.org/database/f063/section/25/article/4/"
+  },
+  {
+    "id": "nanchang",
+    "group": "nanchang",
+    "name": "南昌八一起义纪念馆",
+    "title": "南昌 · 军旗升起的地方",
+    "status": "个人寻访",
+    "date": "国庆期间 · 日期待补",
+    "address": "江西省南昌市西湖区中山路380号",
+    "desc": "展厅中的“八一”军旗、步枪雕塑及1927年8月1日铭文，可辨认为八一起义主题展陈。",
+    "note": "赵师玖提供 · 个人寻访素材",
+    "coord": [
+      115.86,
+      28.68
+    ],
+    "source": "红色足迹/赵师玖/041260b11a530680cfb554450f552d3c.jpg",
+    "url": "https://wgxj.nc.gov.cn/wgxlj/zfcg/202402/523dbb2782d646a3b88704fb9ac6fba7.shtml"
+  }
+]
