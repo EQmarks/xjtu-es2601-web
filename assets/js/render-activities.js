@@ -55,7 +55,11 @@
 
   function init() {
     var boxes = document.querySelectorAll('.acts[data-chapter]');
-    if (!boxes.length) return;
+    /* 注意：没有 .acts 容器的页面（如首页）仍需要填计数，所以这里不能提前 return */
+    var hasCounters = document.querySelector(
+      '[data-count-total],[data-count-total-done],[data-count-ch],[data-count-ch-done],[data-count-tag]'
+    );
+    if (!boxes.length && !hasCounters) return;
 
     fetch('assets/data/activities.json', { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
@@ -81,13 +85,49 @@
           }
           box.innerHTML = html;
 
-          setAll('[data-count-ch="' + ch + '"]', list.length);
-          setAll('[data-count-ch-done="' + ch + '"]', dn.length);
-
           /* 兼容旧标记 */
           var head = box.closest('.sec, section');
           var cnt = head && head.querySelector('[data-count]');
           if (cnt) cnt.textContent = list.length;
+        });
+
+        /* 按篇章计数（不依赖 .acts 容器，首页四篇章卡片也用它） */
+        ["聚能", "蓄势", "传热", "释能"].forEach(function (ch) {
+          var list = all.filter(function (a) { return a.ch === ch; });
+          if (!list.length) return;
+          setAll('[data-count-ch="' + ch + '"]', list.length);
+          setAll('[data-count-ch-done="' + ch + '"]', list.filter(isDone).length);
+        });
+        /* 兜底：DOM 里出现了其他篇章名也一并填 */
+        document.querySelectorAll('[data-count-ch]').forEach(function (el) {
+          var ch = el.getAttribute('data-count-ch');
+          var list = all.filter(function (a) { return a.ch === ch; });
+          el.textContent = list.length;
+          setAll('[data-count-ch-done="' + ch + '"]', list.filter(isDone).length);
+        });
+
+        /* 活动分布条：[data-bar-ch] 的宽度按该篇章占总数的比例自动计算 */
+        var maxCh = Math.max.apply(null, ["聚能", "蓄势", "传热", "释能"].map(function (ch) {
+          return all.filter(function (a) { return a.ch === ch; }).length;
+        }).concat([1]));
+        document.querySelectorAll('[data-bar-ch]').forEach(function (el) {
+          var ch = el.getAttribute('data-bar-ch');
+          var n = all.filter(function (a) { return a.ch === ch; }).length;
+          el.style.width = Math.round(n / maxCh * 100) + '%';
+        });
+
+        /* 支部要闻：[data-latest-acts="N"] 自动填最近 N 项已办活动 */
+        document.querySelectorAll('[data-latest-acts]').forEach(function (ul) {
+          var n = parseInt(ul.getAttribute('data-latest-acts'), 10) || 6;
+          var latest = doneAll.slice().sort(function (a, b) {
+            return String(b.dateKey || '').localeCompare(String(a.dateKey || ''));
+          }).slice(0, n);
+          ul.innerHTML = latest.map(function (a) {
+            var gold = (a.ch === '蓄势' || a.ch === '释能') ? ' gold' : '';
+            return '<li><span class="tag' + gold + '">' + a.ch + '</span>' +
+                   '<a href="' + (a.href || '#') + '">' + a.title + '</a>' +
+                   '<time>' + (a.dateKey || a.when || '') + '</time></li>';
+          }).join('');
         });
 
         setAll('[data-count-total]', all.length);

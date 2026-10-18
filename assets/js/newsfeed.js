@@ -42,6 +42,24 @@
     '</div>';
   }
 
+  /* 已成稿、待发布的推文（无链接，显示为纯文本 + 待发标记） */
+  function draftListHTML(drafts) {
+    if (!drafts || !drafts.length) return '';
+    return '<div class="nf-drafts">' +
+      '<div class="nf-drafts-hd">已成稿 · 待发布<span>' + drafts.length + ' 篇</span></div>' +
+      '<ul class="nf-list">' +
+      drafts.map(function (a) {
+        return '<li class="is-draft">' +
+          '<span class="nf-ch" data-ch="' + esc(a.chapter) + '">' + esc(a.chapter) + '</span>' +
+          '<span class="nf-title" title="' + esc(a.title) + '">' + esc(a.title) + '</span>' +
+          '<span class="nf-draft-tag">待发</span>' +
+          '<span class="nf-src">' + esc(a.source) + '</span>' +
+          '<time>' + esc(a.date) + '</time>' +
+        '</li>';
+      }).join('') +
+      '</ul></div>';
+  }
+
   function statHTML(arts) {
     var by = {};
     arts.forEach(function (a) { by[a.source] = (by[a.source] || 0) + 1; });
@@ -67,6 +85,22 @@
           return String(b.date || '').localeCompare(String(a.date || ''));
         });
         var head = arts.filter(function (a) { return a.featured; })[0] || arts[0];
+        var drafts = (d.drafts || []).slice().sort(function (a, b) {
+          return String(b.date || '').localeCompare(String(a.date || ''));
+        });
+
+        /* 表头统计文案自动填 */
+        var metaEl = document.querySelector('[data-article-meta]');
+        if (metaEl) {
+          var srcCnt = {};
+          arts.forEach(function (a) { srcCnt[a.source] = (srcCnt[a.source] || 0) + 1; });
+          var srcTxt = Object.keys(srcCnt)
+            .sort(function (x, y) { return srcCnt[y] - srcCnt[x]; })
+            .map(function (k) { return k + ' ' + srcCnt[k] + ' 篇'; })
+            .join(' · ');
+          metaEl.textContent = '数据来源：微信公众号｜共 ' + (arts.length + drafts.length) +
+                               ' 篇（' + srcTxt + '）';
+        }
 
         boxes.forEach(function (box) {
           var mode = box.getAttribute('data-feed') || 'all';
@@ -75,9 +109,10 @@
           } else if (mode === 'head') {
             /* 头条 + 其余条目按时间排列 */
             var rest = arts.filter(function (a) { return a !== head; });
-            box.innerHTML = heroHTML(head) + listHTML([head].concat(rest)) + statHTML(arts);
+            box.innerHTML = heroHTML(head) + listHTML([head].concat(rest)) +
+                            draftListHTML(drafts) + statHTML(arts);
           } else {
-            box.innerHTML = listHTML(arts) + statHTML(arts);
+            box.innerHTML = listHTML(arts) + draftListHTML(drafts) + statHTML(arts);
           }
         });
       })
