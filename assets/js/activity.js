@@ -16,8 +16,8 @@
 (function () {
   'use strict';
 
-  var CH_PAGE = { '聚能': 'jn', '蓄势': 'xs', '传热': 'cr', '释能': 'sn' };
-  var CH_LABEL = { '聚能': '学', '蓄势': '思', '传热': '悟', '释能': '行' };
+  var CH_PAGE = { '回望': 'jn', '自驱': 'xs', '携手': 'cr', '开物': 'sn' };
+  var CH_LABEL = { '回望': '根', '自驱': '知', '携手': '行', '开物': '创' };
 
   var esc = Site.escapeHTML;
   var href = Site.safeHref;
