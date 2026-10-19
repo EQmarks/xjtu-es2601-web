@@ -594,3 +594,121 @@ a.act{display:block;text-decoration:none;color:inherit;cursor:pointer}
 a.act:hover{border-color:var(--brand);box-shadow:0 6px 20px rgba(139,10,30,.13)}
 a.act:hover h3{color:var(--brand)}
 .act .foot .pill.photo{background:var(--brand-tint);color:var(--brand);border-color:#F0C9CF}
+
+/* ============================================================
+   活动详情页 · 推文形式
+   ============================================================ */
+
+/* 已发布推文入口（置于正文之前） */
+.act-article{margin:0 0 30px}
+.act-article-btn{
+  display:flex;align-items:center;gap:14px;
+  padding:15px 20px;border:1px solid #F3C9D0;border-radius:4px;
+  background:linear-gradient(100deg,#FFF8F9 0%,#FFF1F3 100%);
+  transition:.18s;text-decoration:none;
+}
+.act-article-btn:hover{background:#FFF1F3;border-color:var(--brand);transform:translateY(-1px)}
+.act-article-ico{
+  flex:0 0 auto;width:38px;height:38px;border-radius:3px;
+  background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:700;letter-spacing:1px;
+}
+.act-article-txt{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.act-article-txt b{font-size:15px;color:var(--text);letter-spacing:.5px}
+.act-article-txt em{font-size:12.5px;color:var(--text-3);font-style:normal}
+.act-article-arrow{flex:0 0 auto;color:var(--brand);font-size:18px}
+
+/* 导语 */
+.act-lead{
+  font-size:16.5px;line-height:2;color:var(--text);
+  padding:18px 22px;margin:0 0 34px;
+  background:var(--brand-tint);border-left:3px solid var(--brand);border-radius:0 3px 3px 0;
+}
+.act-lead strong{color:var(--brand);font-weight:600}
+
+/* 正文 */
+.act-story{max-width:820px;margin:0 0 8px}
+.act-story h2{
+  font-size:19px;font-weight:700;color:var(--text);letter-spacing:.5px;
+  margin:34px 0 14px;padding-left:13px;position:relative;
+}
+.act-story h2::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:3px;
+  background:var(--brand);border-radius:2px;
+}
+.act-story h2:first-child{margin-top:0}
+.act-story p{
+  font-size:15.5px;line-height:2.05;color:var(--text-2);
+  text-indent:2em;margin:0 0 16px;text-align:justify;
+}
+.act-story p strong{color:var(--text);font-weight:600}
+
+/* 总结 */
+.act-summary{max-width:820px;margin:38px 0 0;padding-top:8px}
+.act-summary h2{
+  font-size:19px;font-weight:700;color:var(--text);
+  margin:0 0 14px;padding-left:13px;position:relative;
+}
+.act-summary h2::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:3px;
+  background:var(--accent);border-radius:2px;
+}
+.act-summary p{
+  font-size:15.5px;line-height:2.05;color:var(--text-2);
+  text-indent:2em;text-align:justify;margin:0;
+}
+
+/* 观后感 */
+.act-insight{max-width:820px;margin:38px 0 0}
+.act-insight h2{
+  font-size:19px;font-weight:700;color:var(--text);
+  margin:0 0 16px;padding-left:13px;position:relative;
+}
+.act-insight h2::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:3px;
+  background:var(--brand-deep);border-radius:2px;
+}
+.act-insight blockquote{
+  margin:0 0 14px;padding:15px 20px;
+  background:#FBF8F6;border-left:3px solid #E8D3C4;border-radius:0 3px 3px 0;
+  font-size:14.5px;line-height:1.95;color:var(--text-2);
+}
+.act-insight blockquote cite{
+  display:block;margin-top:8px;font-size:12.5px;color:var(--text-3);font-style:normal;text-align:right;
+}
+
+/* 现场照片 */
+.act-photos{margin:44px 0 0;padding-top:28px;border-top:1px solid var(--line)}
+.act-photos h2{
+  font-size:19px;font-weight:700;color:var(--text);
+  margin:0 0 18px;padding-left:13px;position:relative;
+  display:flex;align-items:center;gap:10px;
+}
+.act-photos h2::before{
+  content:"";position:absolute;left:0;top:5px;bottom:5px;width:3px;
+  background:var(--brand);border-radius:2px;
+}
+
+/* 上下篇 */
+.act-nav{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;
+  margin:52px 0 8px;padding-top:26px;border-top:1px solid var(--line);
+}
+.act-nav a{
+  display:flex;flex-direction:column;gap:6px;
+  padding:14px 18px;border:1px solid var(--line);border-radius:4px;
+  text-decoration:none;background:#fff;transition:.18s;min-width:0;
+}
+.act-nav a:hover{border-color:var(--brand);background:#FFFBFC}
+.act-nav em{font-size:12px;color:var(--text-3);font-style:normal}
+.act-nav b{
+  font-size:14.5px;color:var(--text);font-weight:600;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+
+@media (max-width:640px){
+  .act-lead{font-size:15px;padding:14px 16px;margin-bottom:26px}
+  .act-story h2,.act-summary h2,.act-insight h2,.act-photos h2{font-size:17px}
+  .act-story p,.act-summary p{font-size:15px;line-height:1.95;text-indent:0}
+  .act-nav{grid-template-columns:1fr}
+}
