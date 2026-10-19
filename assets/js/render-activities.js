@@ -30,12 +30,15 @@
     var pills = (a.tags || []).map(function (t) {
       return '<span class="' + PILL_CLASS(t) + '">' + t + '</span>';
     }).join('');
+    /* 卡片摘要：优先用导语（lead），兼容旧的 desc；过长截断 */
+    var brief = a.lead || a.desc || '';
+    if (brief.length > 110) brief = brief.slice(0, 110) + '…';
     var inner =
       '<div class="bar"></div>' +
       (planned ? '<span class="act-badge">计划中</span>' : '') +
       '<h3>' + a.title + '</h3>' +
-      '<div class="when">' + (a.when || '') + (a.n ? ' · ' + a.n + ' 人' : '') + '</div>' +
-      '<p>' + a.desc + '</p>' +
+      '<div class="when">' + (a.when || '') + '</div>' +
+      '<p>' + brief + '</p>' +
       '<div class="foot">' + pills +
         (a.photos ? '<span class="pill photo">📷 ' + a.photos + ' 张</span>' : '') +
       '</div>';
