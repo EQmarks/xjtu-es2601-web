@@ -44,7 +44,7 @@
       var color = (chs[a.ch] && chs[a.ch].color) || 'var(--brand)';
       var planned = a.status === 'planned';
       var pills = (a.tags || []).map(function (t) {
-        return '<span class="pill">' + esc(t) + '</span>';
+        return '<span class="pill">' + esc(Site.tagLabel(t)) + '</span>';
       }).join('');
 
       /* ---- 兼容新旧字段 ---- */
@@ -63,7 +63,7 @@
       /* 头图区 */
       h += '<header class="act-hero" style="--c:' + esc(color) + '"><div class="wrap">' +
            '<span class="act-hero-ch">' + esc(a.ch) + ' · ' + esc(a.main || CH_LABEL[a.ch] || '') + '</span>' +
-           (planned ? '<span class="act-hero-badge">计划中 / 未举办</span>' : '') +
+           (planned ? '<span class="act-hero-badge">计划中</span>' : '') +
            '<h1>' + esc(a.title) + '</h1>' +
            '<div class="act-hero-meta">' + esc(a.when || '') + '</div>' +
            '<div class="act-hero-tags">' + pills + '</div>' +
@@ -105,7 +105,7 @@
 
       /* 观后感 */
       if (insight && insight.length) {
-        h += '<div class="act-insight"><h2>观后感</h2>';
+        h += '<div class="act-insight"><h2>同学感言</h2>';
         insight.forEach(function (x) {
           if (typeof x === 'string') {
             h += '<blockquote>' + fmt(x) + '</blockquote>';
@@ -124,7 +124,7 @@
       if (a.gallery) {
         h += '<div class="gal" data-gallery="' + esc(a.gallery) + '"></div>';
       } else {
-        h += '<div class="notice">该活动暂无照片素材。</div>';
+        h += '<div class="notice">' + (planned ? '活动举办后补充现场照片。' : '暂无可公开的现场照片。') + '</div>';
       }
       h += '</div>';
 

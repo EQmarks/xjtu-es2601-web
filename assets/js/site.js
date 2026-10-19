@@ -38,6 +38,23 @@
     else init();
   }
 
+  function activityDate(activity) {
+    var text = String(activity.when || '日期待确认').split(' · ')[0];
+    var range = /^(\d{4})-(\d{2})-(\d{2})\s*至\s*(\d{2})-(\d{2})/.exec(text);
+    if (range) return range[1] + '.' + range[2] + '.' + range[3] + '—' + range[4] + '.' + range[5];
+    var months = /^(\d{4})-(\d{2})\s*至\s*(\d{2})$/.exec(text);
+    if (months) return months[1] + ' 年 ' + Number(months[2]) + '—' + Number(months[3]) + ' 月';
+    var exact = /^(\d{4})-(\d{2})-(\d{2})/.exec(text);
+    if (exact && text.indexOf('至') < 0) return exact[1] + '.' + exact[2] + '.' + exact[3];
+    var month = /^(\d{4})-(\d{2})$/.exec(text);
+    if (month) return month[1] + ' 年 ' + Number(month[2]) + ' 月';
+    return text.replace(/^(\d{4}) 国庆/, '$1 年国庆');
+  }
+
+  function tagLabel(tag) {
+    return String(tag).replace(/^(必做|选做)\d+\s*/, '').replace(/^附件\s*4.*$/, '学习记录');
+  }
+
   function loadError(label) {
     return label + '暂时无法加载，请刷新重试。' +
       (location.protocol === 'file:' ? '本地预览请先启动 tools/serve.py，再通过本地网址打开。' : '');
@@ -48,6 +65,8 @@
     safeHref: safeHref,
     loadJSON: loadJSON,
     ready: ready,
+    activityDate: activityDate,
+    tagLabel: tagLabel,
     loadError: loadError,
     isDone: function (activity) { return activity.status === 'done'; }
   };

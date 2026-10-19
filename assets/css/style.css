@@ -225,6 +225,7 @@ footer a:hover{color:var(--accent)}
 .ch .cnt{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:13px;color:var(--c);font-weight:600}
 
 .cols{display:grid;grid-template-columns:1.35fr 1fr;gap:26px}
+.cols > *{min-width:0}
 .panel{background:var(--card-bg);border:1px solid var(--line);border-radius:4px;padding:24px 26px}
 .news li{list-style:none;display:flex;align-items:center;gap:14px;height:46px;border-bottom:1px dashed var(--line);font-size:14.5px}
 .news li:last-child{border-bottom:none}
