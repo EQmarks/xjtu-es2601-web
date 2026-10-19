@@ -32,3 +32,7 @@ key_windows.txt
 # Python 缓存
 __pycache__/
 *.pyc
+
+# 代理运行日志
+_proxy.log
+_proxy.err
