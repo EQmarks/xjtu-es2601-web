@@ -67,17 +67,24 @@
   "g-qian": {
     "folder": "10.11图书馆钱展",
     "activity": "钱学森科学精神与教育思想展",
-    "count": 6,
+    "count": 12,
     "photos": [
       "01.jpg",
       "02.jpg",
       "03.jpg",
       "04.jpg",
       "05.jpg",
-      "06.jpg"
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg",
+      "10.jpg",
+      "11.jpg",
+      "12.jpg"
     ],
-    "raw": 26,
-    "deduped": 21
+    "raw": 32,
+    "deduped": 12,
+    "_note": "含推文配图补入的 6 张"
   },
   "g-prep1": {
     "folder": "10.13交附预一宣讲",
@@ -380,5 +387,110 @@
     ],
     "raw": 8,
     "deduped": 8
+  },
+  "g-ailiteracy": {
+    "folder": "AI媒介素养（推文内嵌）",
+    "activity": "AI 媒介素养讲堂",
+    "count": 4,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ],
+    "raw": 4,
+    "deduped": 4
+  },
+  "g-xunweifuping": {
+    "folder": "寻味富平（推文内嵌）",
+    "activity": "寻味富平 · 乡土美食文化体验",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ],
+    "raw": 5,
+    "deduped": 5
+  },
+  "g-zhonghuajun": {
+    "folder": "中华郡（推文内嵌）",
+    "activity": "中华郡乡村振兴调研",
+    "count": 7,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg"
+    ],
+    "raw": 7,
+    "deduped": 7
+  },
+  "g-fuping-red": {
+    "folder": "富平红色之行（推文内嵌）",
+    "activity": "富平党课 · 习仲勋故里行",
+    "count": 9,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg"
+    ],
+    "raw": 9,
+    "deduped": 9
+  },
+  "g-basketball": {
+    "folder": "三对三篮球赛（推文内嵌）",
+    "activity": "三对三篮球赛",
+    "count": 4,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg"
+    ],
+    "raw": 4,
+    "deduped": 4
+  },
+  "g-xqchallenge": {
+    "folder": "西迁闯关（推文内嵌）",
+    "activity": "「两校同源·西迁记忆」线上闯关挑战",
+    "count": 8,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg"
+    ],
+    "raw": 8,
+    "deduped": 8
+  },
+  "g-guqin": {
+    "folder": "古琴刘少椿（推文内嵌）",
+    "activity": "古琴非遗 · 刘少椿纪念馆",
+    "count": 5,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg"
+    ],
+    "raw": 5,
+    "deduped": 5
   }
 }
