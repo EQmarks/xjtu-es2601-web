@@ -18,7 +18,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "聚能",
       "featured": true,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=1&sn=02b27973f11b7e915e63c8778d85468f"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=1&sn=02b27973f11b7e915e63c8778d85468f",
+      "activityId": "a09"
     },
     {
       "id": "a2",
@@ -29,7 +30,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "蓄势",
       "featured": true,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=2&sn=3b003ff0e458ae558f7a57c886414f08"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=2&sn=3b003ff0e458ae558f7a57c886414f08",
+      "activityId": "a38"
     },
     {
       "id": "a3",
@@ -38,31 +40,34 @@
       "date": "2026-10-17",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
-      "chapter": "释能",
+      "chapter": "聚能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=4&sn=6c1006fc50e69ffd9322faa3d6df2ccc"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=4&sn=6c1006fc50e69ffd9322faa3d6df2ccc",
+      "activityId": "a27"
     },
     {
       "id": "a4",
       "title": "【最佳团日】储能2601团支部：朋辈相授，储能启航",
-      "subtitle": "崔学长经验分享会",
+      "subtitle": "少年班预科二新生讲座",
       "date": "2026-10-17",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
-      "chapter": "聚能",
+      "chapter": "传热",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=5&sn=9274bda82d7212442a51bdd3a444aef0"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=5&sn=9274bda82d7212442a51bdd3a444aef0",
+      "activityId": "a22"
     },
     {
       "id": "a5",
       "title": "【最佳团日】储能2601团支部：见贤思齐，笃行致远",
-      "subtitle": "奋进有为 · 工作汇报",
+      "subtitle": "崔学长经验分享会",
       "date": "2026-10-17",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
-      "chapter": "聚能",
+      "chapter": "蓄势",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=3&sn=12a81223db23144d8dbd272148ad0646"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=3&sn=12a81223db23144d8dbd272148ad0646",
+      "activityId": "a11"
     },
     {
       "id": "a6",
@@ -71,9 +76,10 @@
       "date": "2026-10-17",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
-      "chapter": "聚能",
+      "chapter": "释能",
       "featured": true,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9",
+      "activityId": "a37"
     },
     {
       "id": "a7",
@@ -84,7 +90,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "传热",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=1&sn=67732b9fe1365e3c138940f246bf84ac"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=1&sn=67732b9fe1365e3c138940f246bf84ac",
+      "activityId": "a20"
     },
     {
       "id": "a8",
@@ -95,7 +102,8 @@
       "platform": "院级 / 社团平台",
       "chapter": "聚能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598843&idx=1&sn=70f0702f7bd5069c20f24ff408c4fc97"
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598843&idx=1&sn=70f0702f7bd5069c20f24ff408c4fc97",
+      "activityId": "a08"
     },
     {
       "id": "a9",
@@ -106,7 +114,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "释能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=1&sn=d47ea3e8add73360cad8a27c21dbbdbb"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=1&sn=d47ea3e8add73360cad8a27c21dbbdbb",
+      "activityId": "a28"
     },
     {
       "id": "a10",
@@ -128,7 +137,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "释能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=3&sn=36d7028c0133ac487df390eaf58e7566"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=3&sn=36d7028c0133ac487df390eaf58e7566",
+      "activityId": "a25"
     },
     {
       "id": "a12",
@@ -150,7 +160,8 @@
       "platform": "校团委团组织建设指导中心",
       "chapter": "释能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=1&sn=a0f2df737bcfecd107caf1a304b82141"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=1&sn=a0f2df737bcfecd107caf1a304b82141",
+      "activityId": "a29"
     },
     {
       "id": "a14",
@@ -159,9 +170,10 @@
       "date": "2026-10-14",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
-      "chapter": "聚能",
+      "chapter": "蓄势",
       "featured": true,
-      "url": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ"
+      "url": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ",
+      "activityId": "a02"
     },
     {
       "id": "a15",
@@ -183,7 +195,8 @@
       "platform": "院级 / 社团平台",
       "chapter": "聚能",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598756&idx=3&sn=54ee651fd949878491a4e012014e7c07"
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598756&idx=3&sn=54ee651fd949878491a4e012014e7c07",
+      "activityId": "a07"
     },
     {
       "id": "a17",
@@ -207,7 +220,8 @@
       "author": "马伊霖 李泽一",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a12"
     },
     {
       "title": "弦歌不辍，古韵新声",
@@ -218,7 +232,8 @@
       "author": "张弛 张宸粼",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a44"
     },
     {
       "title": "寻味富平，品读乡土",
@@ -229,29 +244,32 @@
       "author": "待补",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a42"
     },
     {
       "title": "烟火聚塬上，文旅兴乡村",
       "about": "中华郡乡村振兴调研",
       "date": "2026-10-18",
-      "chapter": "释能",
+      "chapter": "传热",
       "photos": 7,
       "author": "詹天雨",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a43"
     },
     {
       "title": "踏访富平寻根，缅怀先辈铸魂",
-      "about": "富平红色之行（9 人团）",
+      "about": "富平红色研学",
       "date": "2026-10-18",
       "chapter": "聚能",
       "photos": 9,
       "author": "刘纪康",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a14"
     },
     {
       "title": "溯源忆西迁，竞学承薪火",
@@ -262,7 +280,8 @@
       "author": "赵师玖",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a41"
     },
     {
       "title": "以球会友，以赛砺志",
@@ -273,7 +292,8 @@
       "author": "赵师玖",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a30"
     },
     {
       "title": "展卷钱图寻访大师，浸润书香砥砺初心",
@@ -284,7 +304,8 @@
       "author": "刘纪康",
       "prefix": "【最佳团日】储能2601团支部：",
       "source": "新推文草稿",
-      "status": "已完稿 · 未排版"
+      "status": "已完稿 · 未排版",
+      "activityId": "a05"
     }
   ]
 }

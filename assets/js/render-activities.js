@@ -72,6 +72,14 @@
         var chs = (d.meta && d.meta.chapters) || {};
         var doneAll = all.filter(isDone);
 
+        /* 篇章说明与分类规则共用同一份数据，避免介绍和实际归类脱节。 */
+        ['rule', 'scope', 'lead'].forEach(function (field) {
+          document.querySelectorAll('[data-chapter-' + field + ']').forEach(function (el) {
+            var chapter = chs[el.getAttribute('data-chapter-' + field)];
+            if (chapter && chapter[field]) el.textContent = chapter[field];
+          });
+        });
+
         boxes.forEach(function (box) {
           var ch = box.getAttribute('data-chapter');
           var color = (chs[ch] && chs[ch].color) || 'var(--brand)';

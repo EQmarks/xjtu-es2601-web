@@ -25,6 +25,10 @@
   function fmt(s) {
     return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
   }
+  function paragraphs(s) {
+    return String(s || '').split(/\n\s*\n/).filter(function (p) { return p.trim(); })
+      .map(function (p) { return '<p>' + fmt(p.trim()) + '</p>'; }).join('');
+  }
 
   var id = new URLSearchParams(location.search).get('id') || '';
   var root = document.getElementById('act-root');
@@ -91,7 +95,7 @@
       if (story.length) {
         story.forEach(function (s) {
           if (s.h) h += '<h2>' + esc(s.h) + '</h2>';
-          if (s.p) h += '<p>' + fmt(s.p) + '</p>';
+          if (s.p) h += paragraphs(s.p);
         });
       } else {
         h += '<p>' + esc(a.desc || '内容待补充。') + '</p>';
@@ -100,7 +104,7 @@
 
       /* 总结 */
       if (summary) {
-        h += '<div class="act-summary"><h2>总结</h2><p>' + fmt(summary) + '</p></div>';
+        h += '<div class="act-summary"><h2>总结</h2>' + paragraphs(summary) + '</div>';
       }
 
       /* 观后感 */
