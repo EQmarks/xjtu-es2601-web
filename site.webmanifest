@@ -1,0 +1,27 @@
+{
+  "name": "储能2601 团支部 · 最佳团日成果展示",
+  "short_name": "储能2601",
+  "description": "西安交通大学钱学森书院 储能2601 团支部 最佳团日成果展示",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF7F5",
+  "theme_color": "#C8102E",
+  "icons": [
+    {
+      "src": "assets/img/logo/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/logo/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/logo/favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
