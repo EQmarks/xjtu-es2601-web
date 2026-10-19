@@ -102,6 +102,25 @@ def main():
         parser.feed(path.read_text(encoding='utf-8'))
         check(not parser.errors and not parser.stack,
               path.name + ': HTML 标签不配平 ' + repr(parser.errors or parser.stack))
+    hometowns = read('assets/data/hometowns.json')
+    map_html = (ROOT / 'map3d.html').read_text(encoding='utf-8')
+    embedded = re.search(r'<script type="application/json" id="rm-geometry">(.*?)</script>', map_html, re.S)
+    map_data = json.loads(embedded[1])
+    homes = hometowns['homes']
+    check(map_data['homes'] == homes, '家乡清单与地图内嵌数据不一致，请运行 tools/sync_hometowns.py')
+    check(len(homes) == hometowns['meta']['places'], '家乡地点数不一致')
+    check(sum(h['n'] for h in homes) == hometowns['meta']['students'], '家乡人数不一致')
+    check(len({h['name'] for h in homes}) == len(homes), '家乡地点重复，请合并人数')
+    check(all(isinstance(h['n'], int) and h['n'] > 0 and len(h['p']) == 2 for h in homes), '家乡点位格式错误')
+    for name in ('index.html', 'map3d.html'):
+        html = (ROOT / name).read_text(encoding='utf-8')
+        check(f'<b>{len(homes)}</b><span>个家乡地点</span>' in html, name + ': 家乡地点计数未同步')
+    source_sites = read('assets/data/map-locations.json')
+    embedded_sites = {s['id']: s for s in map_data['sites']}
+    check(len(source_sites) == len(embedded_sites), '地图站点数量与源数据不一致')
+    for site in source_sites:
+        embedded_site = embedded_sites.get(site['id'], {})
+        check(all(embedded_site.get(k) == v for k, v in site.items()), site['id'] + ': 地图站点内容与源数据不一致')
     if errors:
         for error in errors:
             print('FAIL: ' + error)

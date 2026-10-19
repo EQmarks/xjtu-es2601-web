@@ -7,6 +7,7 @@
 | `serve.py` | 本地预览服务器。显式声明 `charset=utf-8`，避免浏览器猜错编码导致中文乱码 |
 | `git_proxy.py` | GitHub 推送被墙时的本地转发代理。自动挑选可用 IP，绕过 IP 层封锁 |
 | `validate.py` | 检查活动字段、统计、公开文案规范、相册清单与双尺寸文件。检查失败时返回非零退出码 |
+| `sync_hometowns.py` | 将 `assets/data/hometowns.json` 同步到独立地图，并更新首页、地图的家乡地点数 |
 
 ## 用法
 
@@ -26,6 +27,8 @@ python tools/validate.py
 ```
 
 脚本根据实际数据计算统计，不把 41 项活动、34 个相册等当前数量写死。新增活动或照片后也可继续使用。
+
+家乡数据以 `assets/data/hometowns.json` 为准，`n` 表示该地点对应人数，`p` 为现有地图投影坐标。修改后先运行 `python tools/sync_hometowns.py`，再运行校验。地图仍内嵌完整数据，支持离线打开。
 
 ### 推送被墙时
 
