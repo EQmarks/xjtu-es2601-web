@@ -11,9 +11,13 @@ import io, sys, os, socket, threading, select
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8899
+# 可选：直接指定上游 IP，跳过自动挑选
+FORCE_UPSTREAM = sys.argv[2] if len(sys.argv) > 2 else None
 
-# 候选 GitHub 前置 IP（实测可用的排前面）
+# 候选 GitHub 前置 IP（2026-10-19 实测可用：140.82.116.4 / 20.207.73.82）
 CANDIDATES = [
+    ("140.82.116.4", 443),
+    ("20.207.73.82", 443),
     ("140.82.112.3", 443),
     ("140.82.113.3", 443),
     ("140.82.114.3", 443),
@@ -22,7 +26,6 @@ CANDIDATES = [
     ("20.27.177.113", 443),
     ("20.200.245.247", 443),
     ("20.201.28.151", 443),
-    ("20.207.73.82", 443),
     ("4.237.22.38", 443),
 ]
 
@@ -32,7 +35,15 @@ def log(*a):
 
 
 def pick_target():
-    """依次尝试候选 IP，返回第一个能建立 TCP 连接的"""
+    """依次尝试候选 IP，返回第一个能建立 TCP 连接的（可用第二个参数强制指定）"""
+    if FORCE_UPSTREAM:
+        try:
+            s = socket.create_connection((FORCE_UPSTREAM, 443), timeout=5)
+            s.close()
+            log("  ✔ 使用指定上游: %s:443" % FORCE_UPSTREAM)
+            return FORCE_UPSTREAM, 443
+        except Exception as e:
+            log("  ✘ 指定上游 %s 不可用（%s），改为自动挑选" % (FORCE_UPSTREAM, type(e).__name__))
     for ip, port in CANDIDATES:
         try:
             s = socket.create_connection((ip, port), timeout=4)
