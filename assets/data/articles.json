@@ -2,24 +2,88 @@
   "meta": {
     "title": "宣传成果",
     "subtitle": "最佳团日期间已发布推文",
-    "source": "微信公众号｜已发 17 篇 · 已成稿待发 8 篇",
+    "source": "微信公众号｜已发 23 篇 · 已成稿待发 4 篇",
     "updated": "2026-10-19",
     "note": "发布方：仙交钱小团（校团委团组织建设指导中心）、英仔爱心社（院级/社团平台）",
-    "draftCount": 8,
-    "totalPlanned": 25
+    "draftCount": 4,
+    "totalPlanned": 27
   },
   "articles": [
     {
-      "id": "a1",
-      "title": "【最佳团日】储能2601团支部：以讲传声，同心筑梦",
-      "subtitle": "筑梦社支部宣讲 · 铸牢中华民族共同体意识",
-      "date": "2026-10-18",
+      "id": "a20",
+      "title": "【最佳团日】储能2601团支部：烟火聚塬上，文旅兴乡村",
+      "subtitle": "中华郡乡村振兴调研",
+      "date": "2026-10-19",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "开物",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=4&sn=b59eef019b75aa9dc498f130a3b850c4",
+      "activityId": "a43",
+      "photos": 7
+    },
+    {
+      "title": "【最佳团日】储能2601团支部：溯源西迁承先辈志，思源致远砺青年心",
+      "subtitle": "西迁博物馆参观 · 饮水思源",
+      "date": "2026-10-19",
+      "chapter": "回望",
+      "activityId": "a04",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=2&sn=0a7635e6f5d169144d06ff7e48ab5449",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "featured": false,
+      "id": "a23"
+    },
+    {
+      "id": "a18",
+      "title": "【最佳团日】储能2601团支部：智启AI素养，工筑清朗未来",
+      "subtitle": "AI 媒介素养讲堂（联合机械类2606）",
+      "date": "2026-10-19",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "开物",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=5&sn=b30e3a779b1b37f637886816bb573375",
+      "activityId": "a12",
+      "photos": 4
+    },
+    {
+      "title": "【最佳团日】储能2601团支部：新港观储能平台，实地悟科创新知",
+      "subtitle": "创新港国家储能平台研学",
+      "date": "2026-10-19",
+      "chapter": "开物",
+      "activityId": "a26",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=3&sn=01cf45cd73689cf56f773027582a4a52",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "featured": false,
+      "id": "a22"
+    },
+    {
+      "id": "a19",
+      "title": "【最佳团日】储能2601团支部：寻味富平，品读乡土",
+      "subtitle": "乡土美食文化体验",
+      "date": "2026-10-19",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "开物",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=1&sn=57f884cdb2c08e69613694cc7e6b1848",
+      "activityId": "a42",
+      "photos": 5
+    },
+    {
+      "id": "a21",
+      "title": "【最佳团日】储能2601团支部：以球会友，以赛砺志",
+      "subtitle": "新生三对三篮球赛",
+      "date": "2026-10-19",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
       "chapter": "自驱",
-      "featured": true,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=1&sn=02b27973f11b7e915e63c8778d85468f",
-      "activityId": "a09"
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510142&idx=3&sn=1ada8348aee8c4b2974b999e8df15c96",
+      "activityId": "a30",
+      "photos": 4
     },
     {
       "id": "a2",
@@ -34,63 +98,16 @@
       "activityId": "a38"
     },
     {
-      "id": "a3",
-      "title": "【最佳团日】储能2601团支部：探访迅湃科技，感知产业前沿",
-      "subtitle": "西安讯派快速充电技术有限公司参观",
-      "date": "2026-10-17",
-      "source": "仙交钱小团",
-      "platform": "校团委团组织建设指导中心",
-      "chapter": "开物",
-      "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=4&sn=6c1006fc50e69ffd9322faa3d6df2ccc",
-      "activityId": "a27"
-    },
-    {
-      "id": "a4",
-      "title": "【最佳团日】储能2601团支部：朋辈相授，储能启航",
-      "subtitle": "少年班预科二新生讲座",
-      "date": "2026-10-17",
+      "id": "a1",
+      "title": "【最佳团日】储能2601团支部：以讲传声，同心筑梦",
+      "subtitle": "筑梦社支部宣讲 · 铸牢中华民族共同体意识",
+      "date": "2026-10-18",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
       "chapter": "自驱",
-      "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=5&sn=9274bda82d7212442a51bdd3a444aef0",
-      "activityId": "a11"
-    },
-    {
-      "id": "a5",
-      "title": "【最佳团日】储能2601团支部：见贤思齐，笃行致远",
-      "subtitle": "崔学长经验分享会",
-      "date": "2026-10-17",
-      "source": "仙交钱小团",
-      "platform": "校团委团组织建设指导中心",
-      "chapter": "自驱",
-      "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=3&sn=12a81223db23144d8dbd272148ad0646"
-    },
-    {
-      "id": "a6",
-      "title": "【最佳团日】储能2601团支部：百人共书纪长征，信抵吴起绽光彩",
-      "subtitle": "七支部联合“联名颂长征” · 220 份手写寄语送抵吴起镇",
-      "date": "2026-10-17",
-      "source": "仙交钱小团",
-      "platform": "校团委团组织建设指导中心",
-      "chapter": "回望",
       "featured": true,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9",
-      "activityId": "a37"
-    },
-    {
-      "id": "a7",
-      "title": "【最佳团日】储能2601团支部：薪火相传西迁志，朋辈筑梦启新篇",
-      "subtitle": "回母校 · 西迁精神宣讲",
-      "date": "2026-10-17",
-      "source": "仙交钱小团",
-      "platform": "校团委团组织建设指导中心",
-      "chapter": "携手",
-      "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=1&sn=67732b9fe1365e3c138940f246bf84ac",
-      "activityId": "a20"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509480&idx=1&sn=02b27973f11b7e915e63c8778d85468f",
+      "activityId": "a09"
     },
     {
       "id": "a8",
@@ -105,16 +122,63 @@
       "activityId": "a08"
     },
     {
-      "id": "a9",
-      "title": "【最佳团日】储能2601团支部：抟土为器，匠心传承",
-      "subtitle": "陶艺社非遗体验 · 亲手制作中国符号陶砖",
-      "date": "2026-10-16",
+      "id": "a5",
+      "title": "【最佳团日】储能2601团支部：见贤思齐，笃行致远",
+      "subtitle": "崔学长经验分享会",
+      "date": "2026-10-17",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "自驱",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=3&sn=12a81223db23144d8dbd272148ad0646"
+    },
+    {
+      "id": "a7",
+      "title": "【最佳团日】储能2601团支部：薪火相传西迁志，朋辈筑梦启新篇",
+      "subtitle": "回母校 · 西迁精神宣讲",
+      "date": "2026-10-17",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "携手",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=1&sn=67732b9fe1365e3c138940f246bf84ac",
+      "activityId": "a20"
+    },
+    {
+      "id": "a6",
+      "title": "【最佳团日】储能2601团支部：百人共书纪长征，信抵吴起绽光彩",
+      "subtitle": "七支部联合“联名颂长征” · 220 份手写寄语送抵吴起镇",
+      "date": "2026-10-17",
       "source": "仙交钱小团",
       "platform": "校团委团组织建设指导中心",
       "chapter": "回望",
+      "featured": true,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9",
+      "activityId": "a37"
+    },
+    {
+      "id": "a4",
+      "title": "【最佳团日】储能2601团支部：朋辈相授，储能启航",
+      "subtitle": "少年班预科二新生讲座",
+      "date": "2026-10-17",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "自驱",
       "featured": false,
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=1&sn=d47ea3e8add73360cad8a27c21dbbdbb",
-      "activityId": "a28"
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=5&sn=9274bda82d7212442a51bdd3a444aef0",
+      "activityId": "a11"
+    },
+    {
+      "id": "a3",
+      "title": "【最佳团日】储能2601团支部：探访迅湃科技，感知产业前沿",
+      "subtitle": "西安讯派快速充电技术有限公司参观",
+      "date": "2026-10-17",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "开物",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=4&sn=6c1006fc50e69ffd9322faa3d6df2ccc",
+      "activityId": "a27"
     },
     {
       "id": "a10",
@@ -128,6 +192,18 @@
       "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=2&sn=b1679fe985f0c78140aff73f97548188"
     },
     {
+      "id": "a9",
+      "title": "【最佳团日】储能2601团支部：抟土为器，匠心传承",
+      "subtitle": "陶艺社非遗体验 · 亲手制作中国符号陶砖",
+      "date": "2026-10-16",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "回望",
+      "featured": false,
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=1&sn=d47ea3e8add73360cad8a27c21dbbdbb",
+      "activityId": "a28"
+    },
+    {
       "id": "a11",
       "title": "【最佳团日】储能2601团支部：以劳育美，以动润心",
       "subtitle": "劳动包干志愿服务",
@@ -138,6 +214,18 @@
       "featured": false,
       "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=3&sn=36d7028c0133ac487df390eaf58e7566",
       "activityId": "a25"
+    },
+    {
+      "id": "a14",
+      "title": "【最佳团日】储能2601团支部：红色足迹，家国初心",
+      "subtitle": "红色足迹 · 国庆返乡打卡",
+      "date": "2026-10-14",
+      "source": "仙交钱小团",
+      "platform": "校团委团组织建设指导中心",
+      "chapter": "回望",
+      "featured": true,
+      "url": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ",
+      "activityId": "a02"
     },
     {
       "id": "a12",
@@ -161,18 +249,6 @@
       "featured": false,
       "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=1&sn=a0f2df737bcfecd107caf1a304b82141",
       "activityId": "a29"
-    },
-    {
-      "id": "a14",
-      "title": "【最佳团日】储能2601团支部：红色足迹，家国初心",
-      "subtitle": "红色足迹 · 国庆返乡打卡",
-      "date": "2026-10-14",
-      "source": "仙交钱小团",
-      "platform": "校团委团组织建设指导中心",
-      "chapter": "回望",
-      "featured": true,
-      "url": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ",
-      "activityId": "a02"
     },
     {
       "id": "a15",
@@ -211,18 +287,6 @@
   ],
   "drafts": [
     {
-      "title": "智启AI素养，工筑清朗未来",
-      "about": "AI 媒介素养讲堂（联合机械类2606）",
-      "date": "2026-10-17",
-      "chapter": "开物",
-      "photos": 4,
-      "author": "马伊霖 李泽一",
-      "prefix": "【最佳团日】储能2601团支部：",
-      "source": "新推文草稿",
-      "status": "已完稿 · 未排版",
-      "activityId": "a12"
-    },
-    {
       "title": "弦歌不辍，古韵新声",
       "about": "非遗古琴寻访 · 刘少椿纪念馆",
       "date": "2026-10-18",
@@ -233,30 +297,6 @@
       "source": "新推文草稿",
       "status": "已完稿 · 未排版",
       "activityId": "a44"
-    },
-    {
-      "title": "寻味富平，品读乡土",
-      "about": "乡土美食文化体验",
-      "date": "2026-10-18",
-      "chapter": "开物",
-      "photos": 5,
-      "author": "待补",
-      "prefix": "【最佳团日】储能2601团支部：",
-      "source": "新推文草稿",
-      "status": "已完稿 · 未排版",
-      "activityId": "a42"
-    },
-    {
-      "title": "烟火聚塬上，文旅兴乡村",
-      "about": "中华郡乡村振兴调研",
-      "date": "2026-10-18",
-      "chapter": "开物",
-      "photos": 7,
-      "author": "詹天雨",
-      "prefix": "【最佳团日】储能2601团支部：",
-      "source": "新推文草稿",
-      "status": "已完稿 · 未排版",
-      "activityId": "a43"
     },
     {
       "title": "踏访富平寻根，缅怀先辈铸魂",
@@ -281,18 +321,6 @@
       "source": "新推文草稿",
       "status": "已完稿 · 未排版",
       "activityId": "a41"
-    },
-    {
-      "title": "以球会友，以赛砺志",
-      "about": "新生三对三篮球赛",
-      "date": "2026-10",
-      "chapter": "自驱",
-      "photos": 4,
-      "author": "赵师玖",
-      "prefix": "【最佳团日】储能2601团支部：",
-      "source": "新推文草稿",
-      "status": "已完稿 · 未排版",
-      "activityId": "a30"
     },
     {
       "title": "展卷钱图寻访大师，浸润书香砥砺初心",
