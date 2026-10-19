@@ -733,3 +733,46 @@ a.act:hover h3{color:var(--brand)}
   .act-band{margin:22px 0 12px}
   .act-band b{font-size:16px}
 }
+
+/* ============================================================
+   首页 · 两幕布局：每幕 2 张卡，左右顶格撑满整行
+   ============================================================ */
+.chapters.chapters-2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){
+  .chapters.chapters-2{grid-template-columns:1fr}
+}
+/* ============================================================
+   首页 · 两幕布局
+   每幕 2 张卡、左右顶格；卡片改为横向：左标题与范围，右活动数
+   ============================================================ */
+.chapters.chapters-2{grid-template-columns:repeat(2,1fr)}
+
+.chapters.chapters-2 .ch{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:4px 20px;
+  padding:24px 26px;
+}
+.chapters.chapters-2 .ch .dot{grid-row:1 / span 2;grid-column:1;margin-bottom:0}
+.chapters.chapters-2 .ch h3{grid-row:1;grid-column:2;align-self:end}
+.chapters.chapters-2 .ch p{grid-row:2;grid-column:2;align-self:start;margin-top:6px;min-height:0}
+.chapters.chapters-2 .ch .cnt{
+  grid-row:1 / span 2;grid-column:3;
+  margin:0;padding:0 0 0 22px;border-top:none;border-left:1px dashed var(--line);
+  text-align:right;font-size:12.5px;line-height:1.5;
+  align-self:center;
+}
+.chapters.chapters-2 .ch .cnt b{
+  display:block;font-size:32px;line-height:1;font-weight:700;
+  color:var(--c);font-variant-numeric:tabular-nums;margin-bottom:2px;
+}
+
+@media (max-width:900px){
+  .chapters.chapters-2{grid-template-columns:1fr}
+  .chapters.chapters-2 .ch{padding:20px 22px;gap:4px 16px}
+  .chapters.chapters-2 .ch .cnt b{font-size:26px}
+}
+@media (max-width:640px){
+  .chapters.chapters-2{grid-template-columns:1fr}
+}
