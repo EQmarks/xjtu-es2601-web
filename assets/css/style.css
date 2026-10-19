@@ -22,11 +22,11 @@
   --xjtu-red:       #C8161E;  /* 爱国红 · 校庆标识色 */
   --xjtu-gold:      #A87B51;  /* 梧桐金 · 校庆标识第二色 */
 
-  /* 四篇章标识色：红 → 深红 → 暖橙 → 金（能量的温度序列） */
-  --ch1:#C8102E;   /* 聚能 · 学 */
-  --ch2:#8B0A1E;   /* 蓄势 · 思 */
-  --ch3:#E8734A;   /* 传热 · 悟 */
-  --ch4:#D4AF37;   /* 释能 · 行 */
+  /* 四篇章标识色：回望(深红) → 自驱(红) → 携手(橙) → 开物(金) */
+  --ch1:#8B0A1E;   /* 回望 · 根 */
+  --ch2:#C8102E;   /* 自驱 · 知 */
+  --ch3:#E8734A;   /* 携手 · 行 */
+  --ch4:#D4AF37;   /* 开物 · 创 */
 
   --page-bg:#FAF7F5;
   --card-bg:#FFFFFF;
@@ -297,9 +297,9 @@ footer a:hover{color:var(--accent)}
   background:var(--brand-tint);color:var(--brand);border:1px solid #F7CFD6;
   font-weight:600;white-space:nowrap;
 }
-.nf-ch[data-ch="蓄势"]{background:#F6E7E9;color:#8B0A1E;border-color:#E6C4C9}
-.nf-ch[data-ch="传热"]{background:#FCEDE6;color:#B84A26;border-color:#F0CFBC}
-.nf-ch[data-ch="释能"]{background:#FAF3DC;color:#8a6d12;border-color:#EBDCA8}
+.nf-ch[data-ch="回望"]{background:#F6E7E9;color:#8B0A1E;border-color:#E6C4C9}
+.nf-ch[data-ch="携手"]{background:#FCEDE6;color:#B84A26;border-color:#F0CFBC}
+.nf-ch[data-ch="开物"]{background:#FAF3DC;color:#8a6d12;border-color:#EBDCA8}
 
 /* 关键：标题允许收缩（min-width:0），过长时省略号而非溢出 */
 .nf-title{
@@ -712,4 +712,24 @@ a.act:hover h3{color:var(--brand)}
   .act-story h2,.act-summary h2,.act-insight h2,.act-photos h2{font-size:17px}
   .act-story p,.act-summary p{font-size:15px;line-height:1.95;text-indent:0}
   .act-nav{grid-template-columns:1fr}
+}
+
+
+/* ============================================================
+   首页 · 两幕分组标题（储百卅之光 / 能万里新程）
+   ============================================================ */
+.act-band{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:30px 0 16px;padding-bottom:11px;border-bottom:1px solid var(--line);
+}
+.act-band:first-of-type{margin-top:6px}
+.act-band span{
+  font-size:11.5px;letter-spacing:2px;color:var(--brand);
+  background:var(--brand-tint);border:1px solid #F7CFD6;border-radius:2px;padding:2px 9px;
+}
+.act-band b{font-size:18px;letter-spacing:2px;color:var(--text)}
+.act-band em{font-style:normal;font-size:13px;color:var(--text-3)}
+@media (max-width:640px){
+  .act-band{margin:22px 0 12px}
+  .act-band b{font-size:16px}
 }

@@ -1,15 +1,15 @@
 /* ============================================================
    活动卡片 · 数据驱动渲染
    读取 assets/data/activities.json
-   容器：<div class="acts" data-chapter="聚能"></div>
+   容器：<div class="acts" data-chapter="回望"></div>
 
    状态区分：
      status="done"     → 正常卡片（已举办）
      status="planned"  → 灰色卡片 + 「计划中」角标
 
    计数标记（在 HTML 里写占位，渲染后自动填数）：
-     [data-count-ch="聚能"]        该篇章总数
-     [data-count-ch-done="聚能"]   该篇章已完成数
+     [data-count-ch="回望"]        该篇章总数
+     [data-count-ch-done="回望"]   该篇章已完成数
      [data-count-total]            全支部总数
      [data-count-total-done]       全支部已完成数
      [data-count-tag="校际联动"]   含该标签的活动数
@@ -113,7 +113,7 @@
         });
 
         /* 活动分布条：[data-bar-ch] 的宽度按该篇章占总数的比例自动计算 */
-        var maxCh = Math.max.apply(null, ["聚能", "蓄势", "传热", "释能"].map(function (ch) {
+        var maxCh = Math.max.apply(null, ["回望", "自驱", "携手", "开物"].map(function (ch) {
           return all.filter(function (a) { return a.ch === ch; }).length;
         }).concat([1]));
         document.querySelectorAll('[data-bar-ch]').forEach(function (el) {
@@ -129,7 +129,7 @@
             return String(b.dateKey || '').localeCompare(String(a.dateKey || ''));
           }).slice(0, n);
           ul.innerHTML = latest.map(function (a) {
-            var gold = (a.ch === '蓄势' || a.ch === '释能') ? ' gold' : '';
+            var gold = (a.ch === '携手' || a.ch === '开物') ? ' gold' : '';
             return '<li><span class="tag' + gold + '">' + esc(a.ch) + '</span>' +
                    '<a href="' + href(a.href) + '">' + esc(a.title) + '</a>' +
                    '<time>' + esc(Site.activityDate(a)) + '</time></li>';
