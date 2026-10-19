@@ -19,27 +19,21 @@
   var CH_PAGE = { '聚能': 'jn', '蓄势': 'xs', '传热': 'cr', '释能': 'sn' };
   var CH_LABEL = { '聚能': '学', '蓄势': '思', '传热': '悟', '释能': '行' };
 
-  function q(k) {
-    var m = new RegExp('[?&]' + k + '=([^&#]*)').exec(location.search);
-    return m ? decodeURIComponent(m[1]) : '';
-  }
-  function esc(s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
+  var esc = Site.escapeHTML;
+  var href = Site.safeHref;
   /* 段落里允许 **加粗** 与换行 */
   function fmt(s) {
     return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
   }
 
-  var id = q('id');
+  var id = new URLSearchParams(location.search).get('id') || '';
+  var root = document.getElementById('act-root');
+  if (!root) return;
 
-  fetch('assets/data/activities.json', { cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  Site.loadJSON('assets/data/activities.json')
     .then(function (d) {
       var all = d.activities || [];
       var a = all.filter(function (x) { return x.id === id; })[0];
-      var root = document.getElementById('act-root');
       if (!a) {
         root.innerHTML = '<div class="notice">未找到该活动。<a href="index.html">返回首页</a></div>';
         return;
@@ -67,7 +61,7 @@
            ' &nbsp;›&nbsp; <b>' + esc(a.title) + '</b></div></div>';
 
       /* 头图区 */
-      h += '<header class="act-hero" style="--c:' + color + '"><div class="wrap">' +
+      h += '<header class="act-hero" style="--c:' + esc(color) + '"><div class="wrap">' +
            '<span class="act-hero-ch">' + esc(a.ch) + ' · ' + esc(a.main || CH_LABEL[a.ch] || '') + '</span>' +
            (planned ? '<span class="act-hero-badge">计划中 / 未举办</span>' : '') +
            '<h1>' + esc(a.title) + '</h1>' +
@@ -80,7 +74,7 @@
       /* ⭐ 推文链接（正文之前） */
       if (a.articleUrl) {
         h += '<div class="act-article">' +
-             '<a class="act-article-btn" href="' + esc(a.articleUrl) + '" target="_blank" rel="noopener">' +
+             '<a class="act-article-btn" href="' + href(a.articleUrl) + '" target="_blank" rel="noopener">' +
              '<span class="act-article-ico">文</span>' +
              '<span class="act-article-txt"><b>阅读已发布推文</b>' +
              '<em>微信公众号原文</em></span>' +
@@ -128,7 +122,7 @@
       if (a.photos) h += '<span class="act-cnt">' + a.photos + ' 张</span>';
       h += '</h2>';
       if (a.gallery) {
-        h += '<div class="gal" data-gallery="' + a.gallery + '"></div>';
+        h += '<div class="gal" data-gallery="' + esc(a.gallery) + '"></div>';
       } else {
         h += '<div class="notice">该活动暂无照片素材。</div>';
       }
@@ -138,21 +132,17 @@
       var idx = all.indexOf(a);
       var prev = all[idx - 1], next = all[idx + 1];
       h += '<div class="act-nav">' +
-           (prev ? '<a href="' + prev.href + '"><em>上一篇</em><b>' + esc(prev.title) + '</b></a>' : '<span></span>') +
-           (next ? '<a href="' + next.href + '" style="text-align:right"><em>下一篇</em><b>' + esc(next.title) + '</b></a>' : '<span></span>') +
+           (prev ? '<a href="' + href(prev.href) + '"><em>上一篇</em><b>' + esc(prev.title) + '</b></a>' : '<span></span>') +
+           (next ? '<a href="' + href(next.href) + '" style="text-align:right"><em>下一篇</em><b>' + esc(next.title) + '</b></a>' : '<span></span>') +
            '</div>';
 
       h += '</div></section>';
       root.innerHTML = h;
 
-      if (a.gallery && !document.querySelector('script[src="assets/js/gallery.js"]')) {
-        var sc = document.createElement('script');
-        sc.src = 'assets/js/gallery.js';
-        document.body.appendChild(sc);
-      }
+      if (a.gallery) SiteGallery.init(root);
     })
     .catch(function (e) {
-      document.getElementById('act-root').innerHTML =
-        '<div class="notice">数据加载失败：' + esc(e.message) + '</div>';
+      console.warn('[activity]', e);
+      root.innerHTML = '<div class="notice">' + esc(Site.loadError('活动内容')) + '</div>';
     });
 })();
