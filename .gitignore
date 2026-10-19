@@ -28,3 +28,7 @@ key_windows.txt
 
 # 大文件 —— 图片请压到 500KB 以内再放 assets/img
 # 单个超过 5MB 的文件会被 git 永久记住，谨慎
+
+# Python 缓存
+__pycache__/
+*.pyc
