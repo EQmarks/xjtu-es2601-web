@@ -129,8 +129,8 @@
       "verified": "B",
       "id": "a04",
       "href": "activity.html?id=a04",
-      "gallery": "",
-      "photos": 0,
+      "gallery": "g-xqbwg",
+      "photos": 10,
       "dateKey": "2026-10-11",
       "plan": [
         {
@@ -335,7 +335,7 @@
       "id": "a12",
       "href": "activity.html?id=a12",
       "gallery": "g-ailiteracy",
-      "photos": 4,
+      "photos": 10,
       "dateKey": "2026-10-17",
       "count": 15,
       "plan": [
@@ -371,8 +371,8 @@
       "photo": "",
       "id": "a13",
       "href": "activity.html?id=a13",
-      "gallery": "",
-      "photos": 0,
+      "gallery": "g-renjisuo",
+      "photos": 10,
       "dateKey": "2026-10-17",
       "count": 5,
       "plan": [
@@ -406,7 +406,7 @@
       "id": "a14",
       "href": "activity.html?id=a14",
       "gallery": "g-fuping-red",
-      "photos": 9,
+      "photos": 12,
       "dateKey": "2026-10-18",
       "count": 9,
       "plan": [
@@ -1141,7 +1141,7 @@
         "校际联动"
       ],
       "gallery": "g-xqchallenge",
-      "photos": 8,
+      "photos": 10,
       "id": "a41",
       "href": "activity.html?id=a41",
       "photoFolder": "两校同源闯关",
@@ -1177,7 +1177,7 @@
         "选做3 文化自信"
       ],
       "gallery": "g-xunweifuping",
-      "photos": 5,
+      "photos": 10,
       "id": "a42",
       "href": "activity.html?id=a42",
       "photoFolder": "寻味富平",

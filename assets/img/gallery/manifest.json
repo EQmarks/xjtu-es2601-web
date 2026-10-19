@@ -389,31 +389,42 @@
     "deduped": 8
   },
   "g-ailiteracy": {
-    "folder": "AI媒介素养（推文内嵌）",
+    "folder": "10.17ai讲堂",
     "activity": "AI 媒介素养讲堂",
-    "count": 4,
-    "photos": [
-      "01.jpg",
-      "02.jpg",
-      "03.jpg",
-      "04.jpg"
-    ],
-    "raw": 4,
-    "deduped": 4
-  },
-  "g-xunweifuping": {
-    "folder": "寻味富平（推文内嵌）",
-    "activity": "寻味富平 · 乡土美食文化体验",
-    "count": 5,
+    "count": 10,
     "photos": [
       "01.jpg",
       "02.jpg",
       "03.jpg",
       "04.jpg",
-      "05.jpg"
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg",
+      "10.jpg"
     ],
-    "raw": 5,
-    "deduped": 5
+    "raw": 24,
+    "deduped": 21
+  },
+  "g-xunweifuping": {
+    "folder": "10.18富平走访",
+    "activity": "寻味富平 · 乡土美食文化体验",
+    "count": 10,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg",
+      "10.jpg"
+    ],
+    "raw": 54,
+    "deduped": 52
   },
   "g-zhonghuajun": {
     "folder": "中华郡（推文内嵌）",
@@ -432,9 +443,9 @@
     "deduped": 7
   },
   "g-fuping-red": {
-    "folder": "富平红色之行（推文内嵌）",
+    "folder": "10.18关中革命纪念馆习仲勋纪念馆",
     "activity": "富平党课 · 习仲勋故里行",
-    "count": 9,
+    "count": 12,
     "photos": [
       "01.jpg",
       "02.jpg",
@@ -444,10 +455,13 @@
       "06.jpg",
       "07.jpg",
       "08.jpg",
-      "09.jpg"
+      "09.jpg",
+      "10.jpg",
+      "11.jpg",
+      "12.jpg"
     ],
-    "raw": 9,
-    "deduped": 9
+    "raw": 119,
+    "deduped": 112
   },
   "g-basketball": {
     "folder": "三对三篮球赛（推文内嵌）",
@@ -463,9 +477,9 @@
     "deduped": 4
   },
   "g-xqchallenge": {
-    "folder": "西迁闯关（推文内嵌）",
+    "folder": "10.18电信联动",
     "activity": "「两校同源·西迁记忆」线上闯关挑战",
-    "count": 8,
+    "count": 10,
     "photos": [
       "01.jpg",
       "02.jpg",
@@ -474,10 +488,12 @@
       "05.jpg",
       "06.jpg",
       "07.jpg",
-      "08.jpg"
+      "08.jpg",
+      "09.jpg",
+      "10.jpg"
     ],
-    "raw": 8,
-    "deduped": 8
+    "raw": 12,
+    "deduped": 12
   },
   "g-guqin": {
     "folder": "古琴刘少椿（推文内嵌）",
@@ -492,5 +508,43 @@
     ],
     "raw": 5,
     "deduped": 5
+  },
+  "g-xqbwg": {
+    "folder": "10.17西迁博物馆",
+    "activity": "西迁博物馆参观 · 新生养成教育",
+    "count": 10,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg",
+      "10.jpg"
+    ],
+    "raw": 36,
+    "deduped": 33
+  },
+  "g-renjisuo": {
+    "folder": "10.17人机所",
+    "activity": "人机所讲座 · 脑机接口前沿",
+    "count": 10,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg",
+      "08.jpg",
+      "09.jpg",
+      "10.jpg"
+    ],
+    "raw": 61,
+    "deduped": 59
   }
 }
