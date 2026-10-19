@@ -546,5 +546,16 @@
     ],
     "raw": 61,
     "deduped": 59
+  },
+  "g-qinqiang": {
+    "folder": "10.7秦腔博物馆",
+    "activity": "交大博物馆 · 陕西秦腔博物馆参观",
+    "count": 2,
+    "photos": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "raw": 2,
+    "deduped": 2
   }
 }
