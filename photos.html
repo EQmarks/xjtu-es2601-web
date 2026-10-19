@@ -13,15 +13,15 @@
 .pgal-hd .wrap{position:relative;z-index:2}
 .pgal-hd h1{font-size:28px;letter-spacing:2px}
 .pgal-hd p{margin-top:10px;color:var(--accent-light);font-size:14.5px}
-.pgal-all{display:flex;flex-wrap:wrap;gap:8px;padding:6px 0 24px}
-.pgal-all a{font-size:12.5px;padding:5px 12px;border:1px solid var(--line);border-radius:20px;
-  color:var(--text-2);background:#fff;transition:.16s;white-space:nowrap}
-.pgal-all a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-tint)}
-.pgal-all a b{color:var(--brand);margin-left:5px}
-.pgal-all a i{font-style:normal;color:var(--text-3);font-size:11.5px;margin-right:5px}
+.pgal-jump{display:flex;align-items:center;gap:12px;padding:0 0 20px}
+.pgal-jump label{font-size:13px;color:var(--text-2);flex:0 0 auto}
+.pgal-jump select{width:100%;max-width:560px;min-width:0;height:42px;padding:0 32px 0 12px;
+  border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--text);font:inherit;
+  font-size:14px;text-overflow:ellipsis}
+.pgal-jump select:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 
 /* 时间轴 */
-.pgal-sec{padding:22px 0 26px;border-top:1px solid var(--line)}
+.pgal-sec{padding:22px 0 26px;border-top:1px solid var(--line);scroll-margin-top:64px}
 .pgal-sec:first-child{border-top:none}
 .pgal-date{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
 .pgal-date .d{font-size:20px;font-weight:700;color:var(--brand);
@@ -73,13 +73,16 @@
 <header class="pgal-hd">
   <div class="wrap">
     <h1>活动相册</h1>
-    <p id="pgal-sub">按时间顺序排列</p>
+    <p id="pgal-sub">团日活动的现场记录</p>
   </div>
 </header>
 
 <section class="sec" style="padding-top:22px">
   <div class="wrap">
-    <div class="pgal-all" id="pgal-nav"></div>
+    <div class="pgal-jump">
+      <label for="pgal-select">选择活动</label>
+      <select id="pgal-select" disabled><option value="">正在加载相册…</option></select>
+    </div>
     <div id="pgal-body"></div>
   </div>
 </section>
@@ -93,19 +96,19 @@
         <p style="margin-top:10px">指导单位：共青团西安交通大学委员会</p>
       </div>
       <div>
-        <h4>友情链接</h4>
+        <h4>继续探索</h4>
         <ul>
-          <li><a href="#">共青团西安交通大学委员会</a></li>
-          <li><a href="#">钱学森书院</a></li>
-          <li><a href="#">西迁博物馆</a></li>
-          <li><a href="#">仙交钱小团</a></li>
+          <li><a href="jn.html">学习与寻访</a></li>
+          <li><a href="cr.html">交流与分享</a></li>
+          <li><a href="photos.html">现场照片</a></li>
+          <li><a href="index.html#articles">公众号推文</a></li>
         </ul>
       </div>
       <div>
         <h4>本站导航</h4>
         <ul>
           <li><a href="index.html">首页</a></li>
-          <li><a href="map3d.html">红色足迹 立体地图</a></li>
+          <li><a href="map3d.html">红色足迹地图</a></li>
           <li><a href="jn.html">聚能 · 学</a></li>
           <li><a href="xs.html">蓄势 · 思</a></li>
           <li><a href="cr.html">传热 · 悟</a></li>

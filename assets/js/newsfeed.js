@@ -49,8 +49,8 @@
         return '<li class="is-draft">' +
           '<span class="nf-ch" data-ch="' + esc(a.chapter) + '">' + esc(a.chapter) + '</span>' +
           '<span class="nf-title" title="' + esc(a.title) + '">' + esc(a.title) + '</span>' +
-          '<span class="nf-draft-tag">待发</span>' +
-          '<span class="nf-src">' + esc(a.source) + '</span>' +
+          '<span class="nf-draft-tag">待发布</span>' +
+          '<span class="nf-src">已成稿</span>' +
           '<time>' + esc(a.date) + '</time>' +
         '</li>';
       }).join('') +
@@ -89,7 +89,7 @@
           el.textContent = arts.length + drafts.length;
         });
         document.querySelectorAll('[data-article-status]').forEach(function (el) {
-          el.textContent = '已发 ' + arts.length + ' 篇 · 已成稿 ' + drafts.length + ' 篇';
+          el.textContent = '已发布 ' + arts.length + ' 篇 · 待发布 ' + drafts.length + ' 篇';
         });
 
         /* 表头统计文案自动填 */

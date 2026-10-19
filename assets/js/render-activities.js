@@ -30,7 +30,7 @@
   function cardHTML(a, color) {
     var planned = !isDone(a);
     var pills = (a.tags || []).map(function (t) {
-      return '<span class="' + PILL_CLASS(t) + '">' + esc(t) + '</span>';
+      return '<span class="' + PILL_CLASS(t) + '">' + esc(Site.tagLabel(t)) + '</span>';
     }).join('');
     /* 卡片摘要：优先用导语（lead），兼容旧的 desc；过长截断 */
     var brief = a.lead || a.desc || '';
@@ -124,12 +124,32 @@
             var gold = (a.ch === '蓄势' || a.ch === '释能') ? ' gold' : '';
             return '<li><span class="tag' + gold + '">' + esc(a.ch) + '</span>' +
                    '<a href="' + href(a.href) + '">' + esc(a.title) + '</a>' +
-                   '<time>' + esc(a.dateKey || a.when || '') + '</time></li>';
+                   '<time>' + esc(Site.activityDate(a)) + '</time></li>';
           }).join('');
         });
 
         setAll('[data-count-total]', all.length);
         setAll('[data-count-total-done]', doneAll.length);
+        document.querySelectorAll('[data-count-ch-albums]').forEach(function (el) {
+          var ch = el.getAttribute('data-count-ch-albums');
+          el.textContent = all.filter(function (a) { return a.ch === ch && a.gallery; }).length;
+        });
+        document.querySelectorAll('[data-count-ch-insights]').forEach(function (el) {
+          var ch = el.getAttribute('data-count-ch-insights');
+          el.textContent = all.filter(function (a) { return a.ch === ch; }).reduce(function (n, a) {
+            return n + (a.insight || []).length;
+          }, 0);
+        });
+        ['必做', '选做'].forEach(function (kind) {
+          var types = Object.create(null);
+          doneAll.forEach(function (a) {
+            (a.tags || []).forEach(function (tag) {
+              var match = new RegExp('^' + kind + '(\\d+)').exec(tag);
+              if (match) types[match[1]] = true;
+            });
+          });
+          setAll('[data-count-type="' + kind + '"]', Object.keys(types).length);
+        });
         var albums = Object.create(null);
         all.forEach(function (a) { if (a.gallery) albums[a.gallery] = a.photos || 0; });
         setAll('[data-count-albums]', Object.keys(albums).length);

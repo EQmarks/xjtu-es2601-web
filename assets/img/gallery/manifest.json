@@ -1,7 +1,7 @@
 {
   "g-xianincident": {
     "folder": "10.6西安事变纪念馆",
-    "activity": "西安事变纪念馆红色研学实践",
+    "activity": "西安事变纪念馆研学",
     "count": 8,
     "photos": [
       "01.jpg",
@@ -18,7 +18,7 @@
   },
   "g-innovport": {
     "folder": "10.16创新港",
-    "activity": "创新港参观 · 国家储能平台",
+    "activity": "创新港国家储能平台研学",
     "count": 8,
     "photos": [
       "01.jpg",
@@ -35,7 +35,7 @@
   },
   "g-labor": {
     "folder": "10.12劳动包干",
-    "activity": "劳动包干 · 志愿服务",
+    "activity": "校园劳动包干志愿服务",
     "count": 7,
     "photos": [
       "01.jpg",
@@ -51,7 +51,7 @@
   },
   "g-dance": {
     "folder": "10.9广场舞",
-    "activity": "「嗨跳·仙交」广场舞团支部友谊专场",
+    "activity": "“嗨跳·仙交”广场舞友谊专场",
     "count": 6,
     "photos": [
       "01.jpg",
@@ -66,7 +66,7 @@
   },
   "g-qian": {
     "folder": "10.11图书馆钱展",
-    "activity": "钱学森科学精神与教育思想展",
+    "activity": "钱学森科学精神与教育思想展研学",
     "count": 12,
     "photos": [
       "01.jpg",
@@ -88,7 +88,7 @@
   },
   "g-prep1": {
     "folder": "10.13交附预一宣讲",
-    "activity": "交大附中少年班预科一讲座",
+    "activity": "少年班预科一 · 储能科普讲座",
     "count": 6,
     "photos": [
       "01.jpg",
@@ -132,7 +132,7 @@
   },
   "g-tongyuan": {
     "folder": "10.11四校同源微团课",
-    "activity": "四校同源主题微团课（我支部主讲）",
+    "activity": "“五校同源”线上联合微团课",
     "count": 6,
     "photos": [
       "01.jpg",
@@ -160,7 +160,7 @@
   },
   "g-changzheng": {
     "folder": "10.11长征观影《四渡赤水》",
-    "activity": "长征观影《四渡赤水》",
+    "activity": "长征主题观影 ·《四渡赤水》",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -174,7 +174,7 @@
   },
   "g-tju": {
     "folder": "10.15天大联动团课",
-    "activity": "与天津大学支部联动 · 团课",
+    "activity": "百卅双源 · 西交与天大同源讲堂",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -188,7 +188,7 @@
   },
   "g-pottery": {
     "folder": "10.12陶艺社",
-    "activity": "陶艺社联动 · 中国符号陶砖",
+    "activity": "陶艺体验 · 制作中国符号陶砖",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -202,7 +202,7 @@
   },
   "g-prep2": {
     "folder": "10.11预科二宣讲",
-    "activity": "交大少年班预科二讲座",
+    "activity": "少年班预科二 · 专业与成长交流",
     "count": 4,
     "photos": [
       "01.jpg",
@@ -215,7 +215,7 @@
   },
   "g-xunpai": {
     "folder": "10.15迅湃",
-    "activity": "西安迅湃快速充电技术有限公司参观",
+    "activity": "迅湃科技参观 · 电池测试与产业认知",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -229,7 +229,7 @@
   },
   "g-gaozhong": {
     "folder": "10.15交附团课",
-    "activity": "交大附中高中入团积极分子团课",
+    "activity": "交大附中入团积极分子团课",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -243,7 +243,7 @@
   },
   "g-backhome": {
     "folder": "返校宣讲",
-    "activity": "回母校 · 西迁精神宣讲",
+    "activity": "回母校宣讲 · 传递西迁精神",
     "count": 4,
     "photos": [
       "01.jpg",
@@ -269,7 +269,7 @@
   },
   "g-cleanplate": {
     "folder": "光盘行动",
-    "activity": "文明餐桌 · 光盘行动志愿服务",
+    "activity": "文明餐桌 · 光盘行动",
     "count": 3,
     "photos": [
       "01.jpg",
@@ -281,7 +281,7 @@
   },
   "g-redclass-ready": {
     "folder": "红色足迹（顶层）",
-    "activity": "红色足迹主题班会（返乡见闻分享 + 红色观影）",
+    "activity": "红色足迹主题班会",
     "count": 6,
     "photos": [
       "01.jpg",
@@ -347,7 +347,7 @@
   },
   "g-weibianlun": {
     "folder": "四支部专题微辩论（推文内嵌）",
-    "activity": "四支部专题微辩论 · 以辩代研",
+    "activity": "四支部专题微辩论",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -373,7 +373,7 @@
   },
   "g-lianming": {
     "folder": "联名颂长征（推文内嵌）",
-    "activity": "联名颂长征 · 七支部百人联名信",
+    "activity": "联名颂长征 · 七支部联名信",
     "count": 8,
     "photos": [
       "01.jpg",
@@ -428,7 +428,7 @@
   },
   "g-zhonghuajun": {
     "folder": "中华郡（推文内嵌）",
-    "activity": "中华郡乡村振兴调研",
+    "activity": "中华郡调研 · 文旅与乡村发展",
     "count": 7,
     "photos": [
       "01.jpg",
@@ -444,7 +444,7 @@
   },
   "g-fuping-red": {
     "folder": "10.18关中革命纪念馆习仲勋纪念馆",
-    "activity": "富平党课 · 习仲勋故里行",
+    "activity": "富平红色研学 · 行走的党课",
     "count": 12,
     "photos": [
       "01.jpg",
@@ -465,7 +465,7 @@
   },
   "g-basketball": {
     "folder": "三对三篮球赛（推文内嵌）",
-    "activity": "三对三篮球赛",
+    "activity": "三对三篮球赛与篮球友谊赛",
     "count": 4,
     "photos": [
       "01.jpg",
@@ -478,7 +478,7 @@
   },
   "g-xqchallenge": {
     "folder": "10.18电信联动",
-    "activity": "「两校同源·西迁记忆」线上闯关挑战",
+    "activity": "两校同源 · 西迁记忆线上闯关",
     "count": 10,
     "photos": [
       "01.jpg",
@@ -497,7 +497,7 @@
   },
   "g-guqin": {
     "folder": "古琴刘少椿（推文内嵌）",
-    "activity": "古琴非遗 · 刘少椿纪念馆",
+    "activity": "古琴非遗寻访 · 刘少椿纪念馆",
     "count": 5,
     "photos": [
       "01.jpg",
@@ -511,7 +511,7 @@
   },
   "g-xqbwg": {
     "folder": "10.17西迁博物馆",
-    "activity": "西迁博物馆参观 · 新生养成教育",
+    "activity": "西迁博物馆研学",
     "count": 10,
     "photos": [
       "01.jpg",
@@ -530,7 +530,7 @@
   },
   "g-renjisuo": {
     "folder": "10.17人机所",
-    "activity": "人机所讲座 · 脑机接口前沿",
+    "activity": "人机所研学 · 脑机接口与智能前沿",
     "count": 10,
     "photos": [
       "01.jpg",
@@ -549,7 +549,7 @@
   },
   "g-qinqiang": {
     "folder": "10.7秦腔博物馆",
-    "activity": "交大博物馆 · 陕西秦腔博物馆参观",
+    "activity": "交大博物馆与陕西秦腔博物馆研学",
     "count": 2,
     "photos": [
       "01.jpg",
