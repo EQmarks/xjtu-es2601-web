@@ -6,64 +6,82 @@
 (function () {
   'use strict';
   var BASE = 'assets/img/gallery/';
+  var lb = null;
+  var esc = Site.escapeHTML;
 
-  function box(container, slug, count) {
+  function box(container, slug, info) {
     var html = '';
-    for (var i = 1; i <= count; i++) {
-      var n = (i < 10 ? '0' + i : '' + i);
-      var t = BASE + slug + '/t/' + n + '.jpg';
-      var f = BASE + slug + '/f/' + n + '.jpg';
-      html += '<a class="gal-i" href="' + f + '" data-full="' + f + '">' +
-              '<img src="' + t + '" alt="" loading="lazy" decoding="async"></a>';
-    }
+    info.photos.forEach(function (filename, i) {
+      var t = BASE + slug + '/t/' + filename;
+      var f = BASE + slug + '/f/' + filename;
+      html += '<a class="gal-i" href="' + Site.safeHref(f) + '" data-full="' + Site.safeHref(f) + '">' +
+              '<img src="' + Site.safeHref(t) + '" alt="' + esc(info.activity || '活动现场') + ' · 照片 ' + (i + 1) + '" loading="lazy" decoding="async"></a>';
+    });
     container.innerHTML = html;
   }
 
   function lightbox() {
     var lb = document.createElement('div');
     lb.className = 'gal-lb';
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.setAttribute('aria-label', '现场照片预览');
     lb.innerHTML = '<button class="gal-x" aria-label="关闭">×</button>' +
                    '<button class="gal-p" aria-label="上一张">‹</button>' +
                    '<img alt=""><button class="gal-n" aria-label="下一张">›</button>';
     document.body.appendChild(lb);
-    var img = lb.querySelector('img'), list = [], idx = 0;
+    var img = lb.querySelector('img'), list = [], idx = 0, trigger = null;
     function show(i) {
       if (!list.length) return;
       idx = (i + list.length) % list.length;
-      img.src = list[idx];
+      img.src = list[idx].getAttribute('data-full');
+      img.alt = list[idx].querySelector('img').alt;
     }
-    lb.querySelector('.gal-x').onclick = function () { lb.classList.remove('on'); };
+    function close() {
+      lb.classList.remove('on');
+      if (trigger) trigger.focus({ preventScroll: true });
+    }
+    lb.querySelector('.gal-x').onclick = close;
     lb.querySelector('.gal-p').onclick = function (e) { e.stopPropagation(); show(idx - 1); };
     lb.querySelector('.gal-n').onclick = function (e) { e.stopPropagation(); show(idx + 1); };
-    lb.onclick = function (e) { if (e.target === lb) lb.classList.remove('on'); };
+    lb.onclick = function (e) { if (e.target === lb) close(); };
     document.addEventListener('keydown', function (e) {
       if (!lb.classList.contains('on')) return;
-      if (e.key === 'Escape') lb.classList.remove('on');
+      if (['Escape', 'ArrowLeft', 'ArrowRight'].indexOf(e.key) >= 0) e.preventDefault();
+      if (e.key === 'Escape') close();
       if (e.key === 'ArrowLeft') show(idx - 1);
       if (e.key === 'ArrowRight') show(idx + 1);
+      if (e.key === 'Tab') {
+        var buttons = Array.prototype.slice.call(lb.querySelectorAll('button'));
+        var current = buttons.indexOf(document.activeElement);
+        e.preventDefault();
+        buttons[(current + (e.shiftKey ? -1 : 1) + buttons.length) % buttons.length].focus();
+      }
     });
     return {
       open: function (links, i) {
-        list = links.map(function (a) { return a.getAttribute('data-full'); });
+        list = links;
+        trigger = links[i];
         show(i);
         lb.classList.add('on');
+        lb.querySelector('.gal-x').focus({ preventScroll: true });
       }
     };
   }
 
-  function init() {
-    var boxes = document.querySelectorAll('.gal[data-gallery]');
+  function init(root) {
+    var boxes = (root || document).querySelectorAll('.gal[data-gallery]:not([data-gallery-ready])');
     if (!boxes.length) return;
-    var lb = null;
+    boxes.forEach(function (b) { b.setAttribute('data-gallery-ready', 'loading'); });
 
-    fetch('assets/img/gallery/manifest.json', { cache: 'no-store' })
-      .then(function (r) { return r.json(); })
+    return Site.loadJSON('assets/img/gallery/manifest.json')
       .then(function (m) {
         boxes.forEach(function (b) {
           var slug = b.getAttribute('data-gallery');
           var info = m[slug];
           if (!info) { b.innerHTML = '<p class="gal-empty">暂无照片</p>'; return; }
-          box(b, slug, info.count);
+          box(b, slug, info);
+          b.setAttribute('data-gallery-ready', 'true');
           b.addEventListener('click', function (e) {
             var a = e.target.closest('.gal-i');
             if (!a) return;
@@ -74,9 +92,15 @@
           });
         });
       })
-      .catch(function (e) { console.warn('[gallery]', e); });
+      .catch(function (e) {
+        console.warn('[gallery]', e);
+        boxes.forEach(function (b) {
+          b.removeAttribute('data-gallery-ready');
+          b.innerHTML = '<p class="gal-empty">' + esc(Site.loadError('照片')) + '</p>';
+        });
+      });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  window.SiteGallery = { init: init };
+  Site.ready(function () { init(); });
 })();

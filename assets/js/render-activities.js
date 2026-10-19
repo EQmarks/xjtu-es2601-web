@@ -17,7 +17,9 @@
 (function () {
   'use strict';
 
-  var isDone = function (a) { return a.status !== 'planned'; };
+  var isDone = Site.isDone;
+  var esc = Site.escapeHTML;
+  var href = Site.safeHref;
 
   var PILL_CLASS = function (t) {
     if (t.indexOf('选做') === 0) return 'pill gold';
@@ -28,7 +30,7 @@
   function cardHTML(a, color) {
     var planned = !isDone(a);
     var pills = (a.tags || []).map(function (t) {
-      return '<span class="' + PILL_CLASS(t) + '">' + t + '</span>';
+      return '<span class="' + PILL_CLASS(t) + '">' + esc(t) + '</span>';
     }).join('');
     /* 卡片摘要：优先用导语（lead），兼容旧的 desc；过长截断 */
     var brief = a.lead || a.desc || '';
@@ -36,9 +38,9 @@
     var inner =
       '<div class="bar"></div>' +
       (planned ? '<span class="act-badge">计划中</span>' : '') +
-      '<h3>' + a.title + '</h3>' +
-      '<div class="when">' + (a.when || '') + '</div>' +
-      '<p>' + brief + '</p>' +
+      '<h3>' + esc(a.title) + '</h3>' +
+      '<div class="when">' + esc(a.when || '') + '</div>' +
+      '<p>' + esc(brief) + '</p>' +
       '<div class="foot">' + pills +
         (a.photos ? '<span class="pill photo">📷 ' + a.photos + ' 张</span>' : '') +
       '</div>';
@@ -46,10 +48,10 @@
     /* 有详情页的做成整卡可点击 */
     if (a.href) {
       return '<a class="act act-link' + (planned ? ' act-planned' : '') +
-             '" href="' + a.href + '" style="--c:' + color + '">' + inner + '</a>';
+             '" href="' + href(a.href) + '" style="--c:' + esc(color) + '">' + inner + '</a>';
     }
     return '<div class="act' + (planned ? ' act-planned' : '') +
-           '" style="--c:' + color + '">' + inner + '</div>';
+           '" style="--c:' + esc(color) + '">' + inner + '</div>';
   }
 
   function setAll(sel, val) {
@@ -64,8 +66,7 @@
     );
     if (!boxes.length && !hasCounters) return;
 
-    fetch('assets/data/activities.json', { cache: 'no-store' })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    Site.loadJSON('assets/data/activities.json')
       .then(function (d) {
         var all = d.activities || [];
         var chs = (d.meta && d.meta.chapters) || {};
@@ -94,19 +95,13 @@
           if (cnt) cnt.textContent = list.length;
         });
 
-        /* 按篇章计数（不依赖 .acts 容器，首页四篇章卡片也用它） */
-        ["聚能", "蓄势", "传热", "释能"].forEach(function (ch) {
-          var list = all.filter(function (a) { return a.ch === ch; });
-          if (!list.length) return;
-          setAll('[data-count-ch="' + ch + '"]', list.length);
-          setAll('[data-count-ch-done="' + ch + '"]', list.filter(isDone).length);
-        });
-        /* 兜底：DOM 里出现了其他篇章名也一并填 */
-        document.querySelectorAll('[data-count-ch]').forEach(function (el) {
-          var ch = el.getAttribute('data-count-ch');
-          var list = all.filter(function (a) { return a.ch === ch; });
-          el.textContent = list.length;
-          setAll('[data-count-ch-done="' + ch + '"]', list.filter(isDone).length);
+        /* 从实际数据计算计数，不依赖活动卡片是否存在。 */
+        document.querySelectorAll('[data-count-ch], [data-count-ch-done]').forEach(function (el) {
+          var doneOnly = el.hasAttribute('data-count-ch-done');
+          var ch = el.getAttribute(doneOnly ? 'data-count-ch-done' : 'data-count-ch');
+          el.textContent = all.filter(function (a) {
+            return a.ch === ch && (!doneOnly || isDone(a));
+          }).length;
         });
 
         /* 活动分布条：[data-bar-ch] 的宽度按该篇章占总数的比例自动计算 */
@@ -127,14 +122,22 @@
           }).slice(0, n);
           ul.innerHTML = latest.map(function (a) {
             var gold = (a.ch === '蓄势' || a.ch === '释能') ? ' gold' : '';
-            return '<li><span class="tag' + gold + '">' + a.ch + '</span>' +
-                   '<a href="' + (a.href || '#') + '">' + a.title + '</a>' +
-                   '<time>' + (a.dateKey || a.when || '') + '</time></li>';
+            return '<li><span class="tag' + gold + '">' + esc(a.ch) + '</span>' +
+                   '<a href="' + href(a.href) + '">' + esc(a.title) + '</a>' +
+                   '<time>' + esc(a.dateKey || a.when || '') + '</time></li>';
           }).join('');
         });
 
         setAll('[data-count-total]', all.length);
         setAll('[data-count-total-done]', doneAll.length);
+        var albums = Object.create(null);
+        all.forEach(function (a) { if (a.gallery) albums[a.gallery] = a.photos || 0; });
+        setAll('[data-count-albums]', Object.keys(albums).length);
+        var photoCount = Object.keys(albums).reduce(function (sum, key) {
+          return sum + albums[key];
+        }, 0);
+        setAll('[data-count-photos]', photoCount);
+        setAll('[data-photo-status]', photoCount + ' 张现场照片');
         document.querySelectorAll('[data-count-tag]').forEach(function (el) {
           var tag = el.getAttribute('data-count-tag');
           el.textContent = all.filter(function (a) {
@@ -144,12 +147,12 @@
       })
       .catch(function (e) {
         console.warn('[activities] 加载失败：', e);
+        document.querySelectorAll('.acts[data-chapter], [data-latest-acts]').forEach(function (el) {
+          var tag = el.tagName === 'UL' ? 'li' : 'div';
+          el.innerHTML = '<' + tag + ' class="notice">' + esc(Site.loadError('活动列表')) + '</' + tag + '>';
+        });
       });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  Site.ready(init);
 })();

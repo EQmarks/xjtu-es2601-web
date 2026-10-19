@@ -2,11 +2,12 @@
 """本地预览服务：显式声明 charset=utf-8，避免浏览器猜错编码导致乱码
 用法：python serve.py [port] [root]
 """
-import io, sys, os, posixpath, urllib.parse
+import sys, os, posixpath
+from pathlib import Path
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8800
-ROOT = sys.argv[2] if len(sys.argv) > 2 else r"D:\XJTUpack\大一\班委\ai\团日活动\03_展示网站"
+ROOT = str(Path(sys.argv[2]).resolve()) if len(sys.argv) > 2 else str(Path(__file__).resolve().parent.parent)
 
 EXTRA = {
     ".html": "text/html; charset=utf-8",

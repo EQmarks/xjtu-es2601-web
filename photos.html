@@ -117,44 +117,8 @@
   <div class="fbar">版权所有 © 2026 储能2601 团支部 ｜ 本站为最佳团日成果展示，非官方站点</div>
 </footer>
 
-<script>
-(function(){
-  function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-  function fmt(d){
-    var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d||'');
-    if(!m) return d||'';
-    if(m[1]==='9999') return '时间待定';
-    return m[1]+'.'+m[2]+'.'+m[3];
-  }
-  fetch('assets/data/activities.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
-    var acts=(d.activities||[]).filter(function(a){return a.gallery && a.photos;});
-    /* 按 dateKey 升序排列 */
-    acts.sort(function(a,b){
-      return String(a.dateKey||'9999').localeCompare(String(b.dateKey||'9999'));
-    });
-    var total=acts.reduce(function(s,a){return s+a.photos;},0);
-    document.getElementById('pgal-sub').textContent =
-      '按时间顺序排列 ｜ 共 '+acts.length+' 项活动 · '+total+' 张现场照片 ｜ 点击看大图，支持左右切换与键盘操作';
-
-    document.getElementById('pgal-nav').innerHTML = acts.map(function(a,i){
-      return '<a href="#g'+i+'"><i>'+fmt(a.dateKey)+'</i>'+esc(a.title.slice(0,14))+'<b>'+a.photos+'</b></a>';
-    }).join('');
-
-    document.getElementById('pgal-body').innerHTML = acts.map(function(a,i){
-      return '<div class="pgal-sec" id="g'+i+'">'+
-             '<div class="pgal-date"><span class="d">'+fmt(a.dateKey)+'</span>'+
-             '<span class="n">'+esc(a.when||'')+'</span></div>'+
-             '<h2>'+esc(a.title)+'</h2>'+
-             '<div class="pgal-meta"><span>'+a.photos+' 张照片</span>'+
-             '<span class="ch">'+esc(a.ch)+' · '+esc(a.main||'')+'</span></div>'+
-             '<div class="gal" data-gallery="'+a.gallery+'"></div></div>';
-    }).join('');
-
-    var s=document.createElement('script'); s.src='assets/js/gallery.js'; document.body.appendChild(s);
-  }).catch(function(e){
-    document.getElementById('pgal-body').innerHTML='<div class="notice">加载失败：'+esc(e.message)+'</div>';
-  });
-})();
-</script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/photos.js"></script>
 </body>
 </html>
