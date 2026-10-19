@@ -68,6 +68,8 @@ def main():
         label = a['id']
         check(a['status'] in ('done', 'planned'), label + ': 状态无效')
         check(a['ch'] in data['meta']['chapters'], label + ': 篇章无效')
+        if a['ch'] in data['meta']['chapters']:
+            check(a.get('main') == data['meta']['chapters'][a['ch']]['main'], label + ': 主线与篇章不一致')
         check(a.get('href') == 'activity.html?id=' + label, label + ': 详情链接不一致')
         check('count' not in a, label + ': 不应保留参与人数 count 字段')
         for field in ('lead', 'story', 'summary'):
@@ -97,6 +99,13 @@ def main():
 
     check(articles['meta']['draftCount'] == len(articles['drafts']), '推文草稿统计不一致')
     check(articles['meta']['totalPlanned'] == len(articles['articles']) + len(articles['drafts']), '推文总计不一致')
+    by_id = {a['id']: a for a in activities}
+    for item in articles['articles'] + articles['drafts']:
+        if item.get('activityId'):
+            activity = by_id.get(item['activityId'])
+            check(activity is not None, item['title'] + ': 关联活动不存在')
+            if activity:
+                check(item['chapter'] == activity['ch'], item['title'] + ': 推文分类与活动不一致')
     for path in ROOT.glob('*.html'):
         parser = TagCheck()
         parser.feed(path.read_text(encoding='utf-8'))
