@@ -776,3 +776,15 @@ a.act:hover h3{color:var(--brand)}
 @media (max-width:640px){
   .chapters.chapters-2{grid-template-columns:1fr}
 }
+/* 活动详情页 · 主标题下的副标题（活动名称） */
+.act-hero-sub{
+  margin-top:10px;font-size:15.5px;letter-spacing:1px;
+  color:rgba(255,255,255,.86);
+}
+@media (max-width:640px){ .act-hero-sub{font-size:13.5px;margin-top:8px} }
+/* 活动卡片 · 主标题（推文标题）小字行 */
+.act .act-eyebrow{
+  font-size:12.5px;letter-spacing:1px;color:var(--c);font-weight:600;
+  margin-bottom:7px;line-height:1.5;opacity:.92;
+}
+@media (max-width:640px){ .act .act-eyebrow{font-size:11.5px} }
