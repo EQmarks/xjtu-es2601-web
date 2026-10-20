@@ -38,6 +38,7 @@
     var inner =
       '<div class="bar"></div>' +
       (planned ? '<span class="act-badge">计划中</span>' : '') +
+      (a.headline ? '<div class="act-eyebrow">' + esc(a.headline) + '</div>' : '') +
       '<h3>' + esc(a.title) + '</h3>' +
       '<div class="when">' + esc(a.when || '') + '</div>' +
       '<p>' + esc(brief) + '</p>' +

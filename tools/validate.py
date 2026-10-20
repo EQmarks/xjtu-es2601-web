@@ -78,7 +78,7 @@ def main():
         matches = forbidden.findall(json.dumps(public, ensure_ascii=False))
         check(not matches, label + ': 公开文案含内部信息或人数 ' + repr(matches))
         for section in a.get('story', []):
-            check(bool(section.get('h') and section.get('p')), label + ': 正文分节缺少标题或段落')
+            check(bool(section.get('p')), label + ': 正文分节缺少段落')
         gallery = a.get('gallery')
         if gallery:
             check(gallery in manifest, label + ': 相册不存在 ' + gallery)

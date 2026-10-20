@@ -42,7 +42,7 @@
         root.innerHTML = '<div class="notice">未找到该活动。<a href="index.html">返回首页</a></div>';
         return;
       }
-      document.title = a.title + '｜储能2601 团支部';
+      document.title = (a.headline ? a.headline + '：' : '') + a.title + '｜储能2601 团支部';
 
       var chs = (d.meta && d.meta.chapters) || {};
       var color = (chs[a.ch] && chs[a.ch].color) || 'var(--brand)';
@@ -68,7 +68,8 @@
       h += '<header class="act-hero" style="--c:' + esc(color) + '"><div class="wrap">' +
            '<span class="act-hero-ch">' + esc(a.ch) + ' · ' + esc(a.main || CH_LABEL[a.ch] || '') + '</span>' +
            (planned ? '<span class="act-hero-badge">计划中</span>' : '') +
-           '<h1>' + esc(a.title) + '</h1>' +
+           '<h1>' + esc(a.headline || a.title) + '</h1>' +
+           (a.headline ? '<div class="act-hero-sub">' + esc(a.title) + '</div>' : '') +
            '<div class="act-hero-meta">' + esc(a.when || '') + '</div>' +
            '<div class="act-hero-tags">' + pills + '</div>' +
            '</div></header>';
