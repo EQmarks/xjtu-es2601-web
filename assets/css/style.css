@@ -813,3 +813,48 @@ a.act:hover h3{color:var(--brand)}
   .photo-band,.photo-band.photo-band-3{grid-template-columns:1fr}
   .photo-band img{height:200px}
 }
+
+
+/* ============================================================
+   宣传成果 · 平台统计条 + 折叠列表
+   ============================================================ */
+.nf-plats{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:13px 20px;border-bottom:1px solid var(--line);background:#FFFBF8;
+}
+.nf-plats-hd{
+  font-size:11.5px;letter-spacing:2px;color:var(--text-3);
+  border-right:1px solid var(--line);padding-right:11px;margin-right:2px;
+}
+.nf-plat{
+  display:inline-flex;align-items:baseline;gap:6px;
+  font-size:12.5px;color:var(--text-2);
+  background:#fff;border:1px solid var(--line);border-radius:2px;padding:3px 9px;
+}
+.nf-plat b{font-weight:600;color:var(--text)}
+.nf-plat i{font-style:normal;font-size:11.5px;color:var(--brand);font-weight:700}
+.nf-plats-total{margin-left:auto;font-size:12px;color:var(--text-2)}
+.nf-plats-total b{color:var(--brand);font-size:15px;font-weight:700}
+
+/* 折叠：默认只显示前 6 条 */
+.nf-list.is-folded li:nth-child(n+7){display:none}
+
+/* 展开 / 收起按钮 */
+.nf-more{
+  display:block;width:100%;margin:0;padding:12px;
+  border:0;border-top:1px dashed var(--line);background:#fff;
+  color:var(--brand);font-size:13px;letter-spacing:1.5px;cursor:pointer;
+  transition:background .2s;
+}
+.nf-more:hover{background:var(--brand-tint)}
+.nf-more:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+
+/* 无日期占位 */
+.nf-list time.is-empty{color:var(--text-3);opacity:.55}
+
+@media (max-width:640px){
+  .nf-plats{padding:11px 14px;gap:8px}
+  .nf-plats-hd{display:none}
+  .nf-plats-total{margin-left:0;width:100%}
+  .nf-plat{font-size:11.5px;padding:2px 7px}
+}
