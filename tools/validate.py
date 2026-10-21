@@ -123,7 +123,9 @@ def main():
     check(all(isinstance(h['n'], int) and h['n'] > 0 and len(h['p']) == 2 for h in homes), '家乡点位格式错误')
     for name in ('index.html', 'map3d.html'):
         html = (ROOT / name).read_text(encoding='utf-8')
-        check(f'<b>{len(homes)}</b><span>个家乡地点</span>' in html, name + ': 家乡地点计数未同步')
+        # 允许「个家乡地点」「处同学家乡」等不同表述，只校验数字与「家乡」二字
+        pattern = r'<b>%d</b><span>[^<]*家乡[^<]*</span>' % len(homes)
+        check(re.search(pattern, html) is not None, name + ': 家乡地点计数未同步')
     source_sites = read('assets/data/map-locations.json')
     embedded_sites = {s['id']: s for s in map_data['sites']}
     check(len(source_sites) == len(embedded_sites), '地图站点数量与源数据不一致')
