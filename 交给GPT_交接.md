@@ -8,7 +8,7 @@
 
 ## 0. 一句话现状
 
-**网站已上线、结构与数据全部就绪（43 项活动 / 34 个相册 / 23 篇已发推文），只剩一处视觉优化待做。**
+**网站已上线、结构与数据全部就绪（41 项活动 / 34 个相册 / 31 篇已发推文），只剩一处视觉优化待做。**
 
 ---
 
@@ -150,9 +150,9 @@ copy assets\css\style.css assets\css\style.css.bak
 
 | 项 | 数值 |
 |---|---|
-| 活动 | **43 项**（已办 42 / 计划 1） |
+| 活动 | **41 项**（全部已举办） |
 | 相册 | **34 个 / 229 张照片** |
-| 推文 | **已发 23 篇**（仙交钱小团 20 + 英仔爱心社 3）／ 已成稿 4 篇 |
+| 推文 | **已发 31 篇**（仙交钱小团 26 · 英仔爱心社 3 · 钱学森学院 1 · YouthPower西安 1） |
 | 足迹地图 | 19 个地点 / 12 组地区足迹 |
 | 家乡 | 27 处 / 31 位同学 |
 | 全班 | 31 人（团员 29 人；查明俊、李浩冉不是团员） |
@@ -175,7 +175,7 @@ D:\XJTUpack\大一\班委\ai\团日活动\03_展示网站\
 ├── favicon.ico / apple-touch-icon.png / site.webmanifest
 ├── README.md                项目说明
 ├── 完整交接文档.md            上一版完整技术交接（很长，可查细节）
-├── 活动分类说明.md            43 项活动的归类依据（脚本生成）
+├── 活动分类说明.md            41 项活动的归类依据（脚本生成）
 ├── tools/
 │   ├── serve.py             本地预览服务器（必须用，显式 charset=utf-8）
 │   ├── push.py              ⭐ 一键推送（解决 Schannel + IP 封锁）
@@ -191,7 +191,7 @@ D:\XJTUpack\大一\班委\ai\团日活动\03_展示网站\
     │   ├── gallery.js       相册网格 + 灯箱
     │   └── activity.js      详情页渲染（推文式）
     ├── data/
-    │   ├── activities.json   ⭐ 43 项活动（核心数据）
+    │   ├── activities.json   ⭐ 41 项活动（核心数据）
     │   ├── articles.json     ⭐ 推文（23 已发 + 4 草稿）
     │   ├── hometowns.json    家乡（27 处 / 31 人）
     │   ├── map-locations.json 足迹地图 19 个地点
@@ -423,8 +423,8 @@ print(len(d["activities"]))
 ## 10. Git 历史（近期）
 
 ```
-9f5a5e4  docs: README 统计行同步为 43 项活动 / 23 篇已发推文
-bc44e31  content(articles): 推文清单更新为已发 23 篇 / 已成稿 4 篇
+9f5a5e4  docs: README 统计行同步为 41 项活动 / 31 篇已发推文
+bc44e31  content(articles): 推文清单更新为已发 31 篇 / 已成稿 4 篇
 543c87f  feat(tools): git_proxy 支持手动指定上游 IP
 2414bb9  chore: 忽略 Python 缓存目录
 e2fe12b  feat(structure): 按答辩 PPT《储百卅之光·能万里新程》重构为两幕四篇章
