@@ -13,13 +13,13 @@
        </div>
      </section>
 
-   行为：自动轮换（5.5 秒）· 悬停/聚焦暂停 · 左右箭头 · 圆点跳转 ·
+   行为：自动轮换（5 秒）· 悬停/聚焦暂停 · 左右箭头 · 圆点跳转 ·
         键盘 ←→ · 触摸滑动 · 页面不可见时停止
    ============================================================ */
 (function () {
   'use strict';
 
-  var INTERVAL = 5500;
+  var INTERVAL = 5000;
 
   function init(root) {
     var track = root.querySelector('.pcar-track');
