@@ -913,3 +913,54 @@ a.act:hover h3{color:var(--brand)}
   .pcar-dots{bottom:10px;gap:7px}
   .pcar-dot{width:8px;height:8px}
 }
+
+
+/* ===== 首页紧凑版 v1（可整段删除回滚） ===== */
+/* 首屏 */
+.banner{height:258px}
+.banner .kicker{font-size:11.5px;padding:3px 10px;margin-bottom:11px;letter-spacing:2.5px}
+.banner h1{font-size:37px;letter-spacing:3px}
+.banner .sub{font-size:14.5px;margin-top:9px;letter-spacing:1.5px}
+.banner .btns{margin-top:17px;gap:11px}
+.banner .btn{height:36px;padding:0 19px;font-size:13.5px}
+
+/* 数据条 */
+.stats .stat{padding:14px 12px}
+.stats .stat b{font-size:29px}
+.stats .stat span{margin-top:4px;font-size:12.5px}
+.stats .stat .ph-sub{margin-top:2px;font-size:11.5px}
+
+/* 轮播与下方板块间距 */
+.pcar{margin:16px auto 2px}
+.sec{padding:34px 0}
+.sec-head{margin-bottom:18px}
+
+
+/* ===== 轮播可点击 + 全站头部压缩 v2 ===== */
+.pcar-slide{text-decoration:none;color:inherit;display:block}
+.pcar-slide:focus-visible{outline:2px solid rgba(255,255,255,.85);outline-offset:-3px}
+.pcar-slide img{transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+.pcar-slide.is-on img{transform:scale(1.02)}
+.pcar-view:hover .pcar-slide.is-on img{transform:scale(1.05)}
+
+/* 篇章页 / 支部概况 / 相册 / 下载页头部 */
+.ch-hero{padding:30px 0 27px}
+.ch-hero .badge{font-size:11.5px;padding:4px 11px;margin-bottom:11px}
+.ch-hero h1{font-size:31px}
+.ch-hero h1 em{font-size:16px;letter-spacing:5px;margin-left:11px}
+.ch-hero p{margin-top:10px;font-size:14px}
+.ch-hero .meta{margin-top:15px;gap:26px}
+.ch-hero .meta div b{font-size:21px}
+.ch-hero .meta div span{font-size:11.5px}
+
+/* 活动详情页头部 */
+.act-hero{padding:23px 0 21px}
+.act-hero h1{font-size:23px;margin:11px 0 0}
+.act-hero-meta{margin-top:9px;font-size:13px}
+.act-hero-tags{margin-top:11px}
+
+@media (max-width:640px){
+  .ch-hero{padding:24px 0 21px}
+  .ch-hero h1{font-size:24px}
+  .act-hero{padding:19px 0 17px}
+}
