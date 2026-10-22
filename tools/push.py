@@ -132,6 +132,59 @@ class Proxy:
             pass
 
 
+PROXY_PORTS = [7890, 7891, 7892, 7897, 10808, 1080]
+
+
+def port_open(port, host="127.0.0.1", timeout=1.0):
+    try:
+        s = socket.create_connection((host, port), timeout=timeout)
+        s.close()
+        return True
+    except Exception:
+        return False
+
+
+def git_push_with(proxy=None, remote="origin", branch="main"):
+    """使用指定代理（或直连）执行一次 push；成功返回 True"""
+    env = dict(os.environ)
+    env["GIT_TERMINAL_PROMPT"] = "0"
+    cmd = ["git", "-c", "http.sslBackend=openssl", "-c", "http.version=HTTP/1.1"]
+    if proxy:
+        cmd += ["-c", "http.proxy=http://127.0.0.1:%d" % proxy]
+    cmd += ["-c", "http.postBuffer=524288000", "push", remote, branch]
+    for _ in range(2):
+        r = subprocess.run(cmd, cwd=ROOT, capture_output=True, timeout=400, env=env)
+        out = (r.stdout + r.stderr).decode("utf-8", "replace").strip()
+        ok = (r.returncode == 0 and "rejected" not in out
+              and ("-> " in out or "up-to-date" in out))
+        if ok:
+            for line in out.splitlines():
+                if "->" in line or "up-to-date" in line:
+                    log("  " + line.strip())
+            return True
+        first = out.splitlines()[0][:110] if out else "(无输出)"
+        log("    失败: %s" % first)
+        if "rejected" in out:
+            log("    ⚠️ 远程有新提交，需先 fetch + rebase")
+            return False
+        time.sleep(2)
+    return False
+
+
+def try_local_proxy(remote, branch):
+    """优先使用本机代理（Clash / Mihomo 等）——通常比裸连稳定得多"""
+    alive = [p for p in PROXY_PORTS if port_open(p)]
+    if not alive:
+        return False
+    log("\n=== 检测到本机代理端口: %s ===" % ", ".join(str(p) for p in alive))
+    for p in alive:
+        log("  经 127.0.0.1:%d 推送 …" % p)
+        if git_push_with(proxy=p, remote=remote, branch=branch):
+            log("✅ 推送成功（经本机代理 %d）" % p)
+            return True
+    return False
+
+
 def try_push(ip, remote, branch):
     px = Proxy(ip)
     time.sleep(0.4)
@@ -171,6 +224,11 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     remote = args[0] if args else "origin"
     branch = args[1] if len(args) > 1 else "main"
+
+    # 优先走本机代理（有 Clash 时基本一次成功）
+    if try_local_proxy(remote, branch):
+        return 0
+    log("\n本机代理不可用，回退到「逐个 IP 试推」…")
 
     ips = pick_ips()
     if not ips:
