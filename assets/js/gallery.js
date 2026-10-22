@@ -6,14 +6,15 @@
 (function () {
   'use strict';
   var BASE = 'assets/img/gallery/';
+  var IMG_V = '?v=20261022n';   /* 图片内容更新后改这里，强制客户端重新拉取 */
   var lb = null;
   var esc = Site.escapeHTML;
 
   function box(container, slug, info) {
     var html = '';
     info.photos.forEach(function (filename, i) {
-      var t = BASE + slug + '/t/' + filename;
-      var f = BASE + slug + '/f/' + filename;
+      var t = BASE + slug + '/t/' + filename + IMG_V;
+      var f = BASE + slug + '/f/' + filename + IMG_V;
       html += '<a class="gal-i" href="' + Site.safeHref(f) + '" data-full="' + Site.safeHref(f) + '">' +
               '<img src="' + Site.safeHref(t) + '" alt="' + esc(info.activity || '活动现场') + ' · 照片 ' + (i + 1) + '" loading="lazy" decoding="async"></a>';
     });
