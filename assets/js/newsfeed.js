@@ -126,8 +126,7 @@
         var metaEl = document.querySelector('[data-article-meta]');
         if (metaEl) {
           var plats = (meta.platforms || []).filter(function (p) { return p.count > 0; });
-          metaEl.textContent = '共 ' + arts.length + ' 篇 · ' + plats.length + ' 个平台（' +
-            plats.map(function (p) { return p.name + ' ' + p.count; }).join(' · ') + '）';
+          metaEl.textContent = '共 ' + arts.length + ' 篇 · ' + plats.length + ' 个平台';
         }
 
         boxes.forEach(function (box) {

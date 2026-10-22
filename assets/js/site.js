@@ -41,7 +41,7 @@
   function activityDate(activity) {
     var text = String(activity.when || '日期待确认').split(' · ')[0];
     // 括号里是补充说明（如「具体日期以书院赛程为准」「兴庆校区食堂」），列表标题只用日期
-    text = text.replace(/（[^）]*）/g, '').replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+    text = stripNote(text);
     var range = /^(\d{4})-(\d{2})-(\d{2})\s*至\s*(\d{2})-(\d{2})/.exec(text);
     if (range) return range[1] + '.' + range[2] + '.' + range[3] + '—' + range[4] + '.' + range[5];
     var months = /^(\d{4})-(\d{2})\s*至\s*(\d{2})$/.exec(text);
@@ -57,6 +57,13 @@
     return String(tag).replace(/^(必做|选做)\d+\s*/, '').replace(/^附件\s*4.*$/, '学习记录');
   }
 
+  /* 去掉时间里的补充说明（括号内容），列表与详情只显示时间本身 */
+  function stripNote(text) {
+    return String(text == null ? '' : text)
+      .replace(/（[^）]*）/g, '').replace(/\([^)]*\)/g, '')
+      .replace(/\s+/g, ' ').trim();
+  }
+
   function loadError(label) {
     return label + '暂时无法加载，请刷新重试。' +
       (location.protocol === 'file:' ? '本地预览请先启动 tools/serve.py，再通过本地网址打开。' : '');
@@ -69,6 +76,7 @@
     ready: ready,
     activityDate: activityDate,
     tagLabel: tagLabel,
+    stripNote: stripNote,
     loadError: loadError,
     isDone: function (activity) { return activity.status === 'done'; }
   };

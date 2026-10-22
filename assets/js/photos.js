@@ -16,7 +16,7 @@
 
     var select = document.getElementById('pgal-select');
     select.innerHTML = '<option value="">快速定位相册</option>' + acts.map(function(a,i){
-      return '<option value="g'+i+'">'+esc(dateLabel(a))+' · '+esc(a.title)+'（'+a.photos+' 张）</option>';
+      return '<option value="g'+i+'">'+esc(dateLabel(a))+' · '+esc(a.title)+'</option>';
     }).join('');
     select.disabled = false;
     select.addEventListener('change', function () {
