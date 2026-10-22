@@ -1057,3 +1057,67 @@ a.act:hover h3{color:var(--brand)}
   .ch-hero h1 em{display:block;font-size:14px;margin:7px 0 0}
   .ch-hero .meta div b{font-size:19px}
 }
+
+
+/* ===== 手机版首页 v1 ===== */
+/* 桌面端主标题两段之间留全角空隙 */
+.page-home .banner h1 span + span{margin-left:.75em}
+
+@media (max-width:640px){
+  /* 顶栏 */
+  .page-home .topbar{padding:9px 0}
+  .page-home .topbar .logo img{width:38px;height:38px}
+  .page-home .brand-text b{font-size:15px;letter-spacing:.5px}
+  .page-home .brand-text span{font-size:10.5px;letter-spacing:1px;margin-top:2px}
+  .page-home .topbar .right{display:none}
+
+  /* 导航：更紧，可横向滑动 */
+  .page-home .nav .wrap{height:44px;gap:0;padding:0 8px}
+  .page-home .nav{position:relative}
+  .page-home .nav a{font-size:13px;padding:0 11px;white-space:nowrap}
+  .page-home .nav::after{content:"";position:absolute;right:0;top:0;bottom:0;width:24px;
+    background:linear-gradient(to left,var(--brand),rgba(200,16,46,0));pointer-events:none}
+
+  /* 首屏 */
+  .page-home .banner{height:auto;min-height:0;padding:26px 0 24px}
+  .page-home .banner .kicker{font-size:10.5px;letter-spacing:1.5px;padding:3px 9px;margin-bottom:12px}
+  .page-home .banner h1{font-size:27px;letter-spacing:3px;line-height:1.35}
+  .page-home .banner h1 span{display:block}
+  .page-home .banner h1 span + span{margin-left:0}
+  .page-home .banner .sub{font-size:12px;line-height:1.85;letter-spacing:.5px;margin-top:11px}
+  .page-home .banner .btns{margin-top:16px;gap:9px}
+  .page-home .banner .btn{height:38px;padding:0 16px;font-size:13px}
+
+  /* 数据条：2 列，第 5 项跨两列 */
+  .page-home .stats .wrap{display:grid;grid-template-columns:1fr 1fr}
+  .page-home .stats .stat{
+    border-right:none;border-bottom:1px solid var(--line);padding:13px 8px;
+  }
+  .page-home .stats .stat:nth-child(odd){border-right:1px solid var(--line)}
+  .page-home .stats .stat:last-child{grid-column:1 / -1;border-right:none;border-bottom:none}
+  .page-home .stats .stat b{font-size:24px}
+  .page-home .stats .stat span{font-size:11.5px;margin-top:3px}
+  .page-home .stats .stat .ph-sub{font-size:10.5px}
+
+  /* 轮播 */
+  .page-home .pcar{padding:0 10px;margin:14px auto 0}
+  .page-home .pcar-track{aspect-ratio:4/3}
+  .page-home .pcar-slide figcaption{padding:34px 12px 13px;gap:6px}
+  .page-home .pcar-slide figcaption b{font-size:13.5px;letter-spacing:.3px}
+  .page-home .pcar-slide figcaption span{font-size:10.5px;letter-spacing:.8px}
+  .page-home .pcar-arrow{width:32px;height:50px;font-size:18px}
+  .page-home .pcar-dots{bottom:9px;gap:6px}
+  .page-home .pcar-dot{width:7px;height:7px}
+
+  /* 各板块收紧 */
+  .page-home .sec{padding:28px 0}
+  .page-home .sec-head{margin-bottom:14px}
+  .page-home .sec-head h2{font-size:19px;padding-left:11px}
+  .page-home .act-band{margin:0 0 10px}
+  .page-home .chapters-2{gap:12px}
+}
+
+@media (max-width:380px){
+  .page-home .banner h1{font-size:24px;letter-spacing:2px}
+  .page-home .nav a{font-size:12px;padding:0 9px}
+}
