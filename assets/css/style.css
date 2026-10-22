@@ -1032,3 +1032,28 @@ a.act:hover h3{color:var(--brand)}
   background:#F5F1EF;border-radius:3px;padding:1px 5px;margin-right:7px}
 @media (max-width:980px){.emblem-symbols{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.emblem-symbols{grid-template-columns:1fr}}
+
+
+/* ===== 头部高度统一 v3 ===== */
+/* 所有页面的头部与首页 banner 同高（258px），内容垂直居中 */
+.banner{height:266px}
+.ch-hero{
+  min-height:266px;display:flex;flex-direction:column;justify-content:center;
+  padding:24px 0;box-sizing:border-box;
+}
+.ch-hero .wrap{width:100%}
+
+/* 篇章标题放大到与首页主标题同量级 */
+.ch-hero h1{font-size:37px;letter-spacing:3px;line-height:1.25}
+.ch-hero h1 em{font-size:17px;letter-spacing:5px;margin-left:12px}
+.ch-hero .badge{font-size:12px;padding:4px 12px;margin-bottom:13px}
+.ch-hero p{margin-top:11px;font-size:14.5px;line-height:1.8}
+.ch-hero .meta{margin-top:16px;gap:28px}
+.ch-hero .meta div b{font-size:23px}
+
+@media (max-width:760px){
+  .ch-hero{min-height:0;padding:22px 0 20px}
+  .ch-hero h1{font-size:25px;letter-spacing:2px}
+  .ch-hero h1 em{display:block;font-size:14px;margin:7px 0 0}
+  .ch-hero .meta div b{font-size:19px}
+}
