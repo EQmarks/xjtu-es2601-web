@@ -19,8 +19,9 @@
   "g-innovport": {
     "folder": "10.16创新港",
     "activity": "创新港国家储能平台研学",
-    "count": 8,
+    "count": 9,
     "photos": [
+      "09.jpg",
       "01.jpg",
       "02.jpg",
       "03.jpg",
@@ -36,7 +37,7 @@
   "g-labor": {
     "folder": "10.12劳动包干",
     "activity": "校园劳动包干志愿服务",
-    "count": 7,
+    "count": 8,
     "photos": [
       "01.jpg",
       "02.jpg",
@@ -44,7 +45,8 @@
       "04.jpg",
       "05.jpg",
       "06.jpg",
-      "07.jpg"
+      "07.jpg",
+      "08.jpg"
     ],
     "raw": 32,
     "deduped": 29
@@ -512,8 +514,9 @@
   "g-xqbwg": {
     "folder": "10.17西迁博物馆",
     "activity": "西迁博物馆研学",
-    "count": 10,
+    "count": 11,
     "photos": [
+      "11.jpg",
       "01.jpg",
       "02.jpg",
       "03.jpg",
