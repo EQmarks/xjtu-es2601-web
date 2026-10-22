@@ -40,6 +40,8 @@
 
   function activityDate(activity) {
     var text = String(activity.when || '日期待确认').split(' · ')[0];
+    // 括号里是补充说明（如「具体日期以书院赛程为准」「兴庆校区食堂」），列表标题只用日期
+    text = text.replace(/（[^）]*）/g, '').replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
     var range = /^(\d{4})-(\d{2})-(\d{2})\s*至\s*(\d{2})-(\d{2})/.exec(text);
     if (range) return range[1] + '.' + range[2] + '.' + range[3] + '—' + range[4] + '.' + range[5];
     var months = /^(\d{4})-(\d{2})\s*至\s*(\d{2})$/.exec(text);
