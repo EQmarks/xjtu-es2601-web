@@ -999,12 +999,12 @@ a.act:hover h3{color:var(--brand)}
 .emblem-plan p{margin-top:9px;font-size:13px;line-height:1.85;color:var(--text-2)}
 
 .emblem-combo{margin:0}
-.emblem-combo img{width:100%;max-height:540px;object-fit:contain;display:block;border:1px solid var(--line);border-radius:4px;background:#fff}
+.emblem-combo img{display:block;width:100%;max-width:900px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:4px;background:#fff}
 .emblem-combo figcaption{margin-top:11px;font-size:13px;color:var(--text-3)}
 
 .emblem-flags{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
 .emblem-flags figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:#2a121a}
-.emblem-flags img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .5s}
+.emblem-flags img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;display:block;transition:transform .5s}
 .emblem-flags figure:hover img{transform:scale(1.04)}
 .emblem-flags figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;color:#fff;font-size:12.5px;
   background:linear-gradient(transparent,rgba(15,3,8,.80))}
@@ -1014,8 +1014,21 @@ a.act:hover h3{color:var(--brand)}
   .emblem-grid{grid-template-columns:repeat(3,1fr)}
   .emblem-plans{grid-template-columns:1fr}
   .emblem-flags{grid-template-columns:1fr}
-  .emblem-flags img{height:200px}
+  .emblem-flags img{aspect-ratio:4/3}
 }
 @media (max-width:560px){
   .emblem-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+
+/* 寓意 */
+.emblem-symbols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.esym{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px 22px 20px;position:relative;transition:.2s}
+.esym:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(139,10,30,.08)}
+.esym-no{font-size:12px;letter-spacing:2px;color:var(--accent);font-weight:700}
+.esym h4{font-size:16px;color:var(--text);margin-top:8px;letter-spacing:.5px}
+.esym p{margin-top:9px;font-size:13px;line-height:1.9;color:var(--text-2)}
+.esym code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--text-3);
+  background:#F5F1EF;border-radius:3px;padding:1px 5px;margin-right:7px}
+@media (max-width:980px){.emblem-symbols{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.emblem-symbols{grid-template-columns:1fr}}
