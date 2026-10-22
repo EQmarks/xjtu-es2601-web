@@ -964,3 +964,58 @@ a.act:hover h3{color:var(--brand)}
   .ch-hero h1{font-size:24px}
   .act-hero{padding:19px 0 17px}
 }
+
+
+/* ===== 班徽 · 班旗页 ===== */
+.sec-sub{font-size:13px;color:var(--text-3);margin-left:auto;align-self:flex-end;padding-bottom:4px}
+.emblem-main-row{display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:center}
+.emblem-main{background:#fff;border:1px solid var(--line);border-radius:4px;padding:26px;display:grid;place-items:center}
+.emblem-main img{width:100%;max-width:280px;display:block}
+.emblem-h3{font-size:24px;color:var(--brand);letter-spacing:2px;font-weight:700;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.emblem-h3 span{font-size:13.5px;color:var(--text-3);letter-spacing:1px;font-weight:400}
+.emblem-p{margin-top:14px;font-size:15px;line-height:1.95;color:var(--text-2)}
+.emblem-note{margin-top:14px;font-size:13px;color:var(--text-3)}
+.emblem-swatches{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px}
+.emblem-swatch{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--text-2)}
+.emblem-swatch i{width:20px;height:20px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.08)}
+.emblem-swatch code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--text-3)}
+
+.emblem-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.emblem-cell{background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 12px;text-align:center;transition:.2s}
+.emblem-cell:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(139,10,30,.08)}
+.emblem-cell img{width:100%;aspect-ratio:1;object-fit:contain;display:block;margin-bottom:10px}
+.emblem-cell b{display:block;font-size:13px;color:var(--text);font-weight:600}
+.emblem-cell span{display:block;font-size:11.5px;color:var(--text-3);margin-top:4px}
+.emblem-cell span:empty{display:none}
+.emblem-cell.is-dark{background:#241017;border-color:#241017}
+.emblem-cell.is-dark b{color:#fff}
+.emblem-cell.is-dark span{color:rgba(255,255,255,.55)}
+
+.emblem-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.emblem-plan{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px}
+.emblem-plan img{width:150px;height:150px;object-fit:contain;display:block;margin-bottom:14px}
+.emblem-plan h4{font-size:16px;color:var(--text);display:flex;align-items:center;gap:9px}
+.emblem-plan h4 em{font-style:normal}
+.emblem-plan p{margin-top:9px;font-size:13px;line-height:1.85;color:var(--text-2)}
+
+.emblem-combo{margin:0}
+.emblem-combo img{width:100%;max-height:540px;object-fit:contain;display:block;border:1px solid var(--line);border-radius:4px;background:#fff}
+.emblem-combo figcaption{margin-top:11px;font-size:13px;color:var(--text-3)}
+
+.emblem-flags{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.emblem-flags figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:#2a121a}
+.emblem-flags img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .5s}
+.emblem-flags figure:hover img{transform:scale(1.04)}
+.emblem-flags figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;color:#fff;font-size:12.5px;
+  background:linear-gradient(transparent,rgba(15,3,8,.80))}
+
+@media (max-width:980px){
+  .emblem-main-row{grid-template-columns:1fr;gap:26px}
+  .emblem-grid{grid-template-columns:repeat(3,1fr)}
+  .emblem-plans{grid-template-columns:1fr}
+  .emblem-flags{grid-template-columns:1fr}
+  .emblem-flags img{height:200px}
+}
+@media (max-width:560px){
+  .emblem-grid{grid-template-columns:repeat(2,1fr)}
+}
