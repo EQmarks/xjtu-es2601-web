@@ -40,7 +40,7 @@
       (planned ? '<span class="act-badge">计划中</span>' : '') +
       (a.headline ? '<div class="act-eyebrow">' + esc(a.headline) + '</div>' : '') +
       '<h3>' + esc(a.title) + '</h3>' +
-      '<div class="when">' + esc(a.when || '') + '</div>' +
+      '<div class="when">' + esc(Site.stripNote(a.when || '')) + '</div>' +
       '<p>' + esc(brief) + '</p>' +
       '<div class="foot">' + pills +
         (a.photos ? '<span class="pill photo">📷 ' + a.photos + ' 张</span>' : '') +

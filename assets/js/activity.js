@@ -70,7 +70,7 @@
            (planned ? '<span class="act-hero-badge">计划中</span>' : '') +
            '<h1>' + esc(a.headline || a.title) + '</h1>' +
            (a.headline ? '<div class="act-hero-sub">' + esc(a.title) + '</div>' : '') +
-           '<div class="act-hero-meta">' + esc(a.when || '') + '</div>' +
+           '<div class="act-hero-meta">' + esc(Site.stripNote(a.when || '')) + '</div>' +
            '<div class="act-hero-tags">' + pills + '</div>' +
            '</div></header>';
 
