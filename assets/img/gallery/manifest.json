@@ -485,7 +485,7 @@
   "g-xqchallenge": {
     "folder": "10.18电信联动",
     "activity": "两校同源 · 西迁记忆线上闯关",
-    "count": 10,
+    "count": 7,
     "photos": [
       "01.jpg",
       "02.jpg",
@@ -493,10 +493,7 @@
       "04.jpg",
       "05.jpg",
       "06.jpg",
-      "07.jpg",
-      "08.jpg",
-      "09.jpg",
-      "10.jpg"
+      "07.jpg"
     ],
     "raw": 12,
     "deduped": 12
