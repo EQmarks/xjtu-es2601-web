@@ -74,7 +74,7 @@ copy assets\css\style.css assets\css\style.css.bak
 | 1 | **「携手」篇只有 7 项** | 答辩 PPT 目录页写 8 项、正文页写 7 项，PPT 自身不一致。网站现按 7 项。需业主定：保持 7，还是从别处挪 1 项进来 |
 | 2 | **a40「给四年后自己的信」仍是计划中** | 原定 10-19 晚，已推迟，等业主给新日期后改 `status` 为 `done` |
 | 3 | **PPT 活动编号（01—33）未上网站** | 业主说"先不急"。若答辩要对照，可给活动加 `pptNo` 字段并在卡片/详情页显示 |
-| 4 | **网址变短** | 现 `https://eqmarks.github.io/xjtu-es2601-web/`（43 字符）。方案：仓库改名 `eqmarks.github.io`（最短）或 `es2601`；**需业主在 GitHub 网页操作，AI 无 token 改不了** |
+| 4 | **网址变短** | 现 `https://xjtu-es2601.com/`（43 字符）。方案：仓库改名 `eqmarks.github.io`（最短）或 `es2601`；**需业主在 GitHub 网页操作，AI 无 token 改不了** |
 | 5 | **秦腔博物馆相册只有 2 张** | 只有两张合影（推文里就这两张） |
 | 6 | **「烟火聚塬上」标题半角逗号** | 公众号原文是半角「,」，网站草稿是全角「，」，可对齐 |
 
@@ -394,7 +394,7 @@ python tools/serve.py 8801
 
 ```python
 import urllib.request, json
-url = "https://eqmarks.github.io/xjtu-es2601-web/assets/data/activities.json"
+url = "https://xjtu-es2601.com/assets/data/activities.json"
 d = json.loads(urllib.request.urlopen(url, timeout=25).read())
 print(len(d["activities"]))
 ```
@@ -432,7 +432,7 @@ ee735b8  style(home): 两幕篇章卡改为整行横向卡片
 ```
 
 仓库：`https://github.com/EQmarks/xjtu-es2601-web`（main）
-线上：`https://eqmarks.github.io/xjtu-es2601-web/`
+线上：`https://xjtu-es2601.com/`
 
 ---
 

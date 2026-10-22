@@ -1,6 +1,14 @@
 # 网址缩短与 Cloudflare 配置说明
 
-> 现状：`https://eqmarks.github.io/xjtu-es2601-web/`（43 字符）
+> ✅ **已完成**（2026-10-22）：已注册 `xjtu-es2601.com` 并绑定 GitHub Pages。
+> - 站点地址：**https://xjtu-es2601.com/**
+> - DNS：阿里云，A 记录 4 条（185.199.108—111.153）+ CNAME www → eqmarks.github.io
+> - 旧地址 `eqmarks.github.io/xjtu-es2601-web/` 自动 301 跳转
+> - 本文档保留作后续参考（换域名、上 Cloudflare 时用）
+
+---
+
+> 现状：`https://xjtu-es2601.com/`（43 字符）
 > 目标：让人能记住、能口头说、二维码扫出来不密
 
 ---

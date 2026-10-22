@@ -149,12 +149,16 @@ def try_push(ip, remote, branch):
         for _ in range(2):
             r = subprocess.run(cmd, cwd=ROOT, capture_output=True, timeout=400, env=env)
             out = (r.stdout + r.stderr).decode("utf-8", "replace").strip()
-            if r.returncode == 0 or "-> " in out or "up-to-date" in out:
+            ok = (r.returncode == 0 and "rejected" not in out
+                  and ("-> " in out or "up-to-date" in out))
+            if ok:
                 for line in out.splitlines():
                     if "->" in line or "up-to-date" in line:
                         log("  " + line.strip())
                 return True
-            first = out.splitlines()[0][:80] if out else "(无输出)"
+            first = out.splitlines()[0][:110] if out else "(无输出)"
+            if "rejected" in out:
+                log("    ⚠️ 远程有新提交，需先 fetch + rebase")
             log("    失败: %s" % first)
             time.sleep(2)
     finally:
