@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   var BASE = 'assets/img/gallery/';
-  var IMG_V = '?v=20261022s';   /* 图片内容更新后改这里，强制客户端重新拉取 */
+  var IMG_V = '?v=20261022t';   /* 图片内容更新后改这里，强制客户端重新拉取 */
   var lb = null;
   var esc = Site.escapeHTML;
 
