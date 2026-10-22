@@ -863,12 +863,12 @@ a.act:hover h3{color:var(--brand)}
 /* ============================================================
    首页顶部轮播（参照高校官网 banner：居中大图 + 圆点 + 箭头）
    ============================================================ */
-.pcar{max-width:1180px;margin:26px auto 6px;padding:0 16px}
+.pcar{max-width:1200px;margin:28px auto 6px;padding:0 16px}
 .pcar-view{
   position:relative;overflow:hidden;border-radius:3px;background:#2a121a;
   box-shadow:0 8px 28px rgba(139,10,30,.14);
 }
-.pcar-track{position:relative;aspect-ratio:1000/330}
+.pcar-track{position:relative;aspect-ratio:16/9}
 .pcar-slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .7s ease;pointer-events:none}
 .pcar-slide.is-on{opacity:1;pointer-events:auto}
 .pcar-slide img{width:100%;height:100%;object-fit:cover;display:block}
@@ -905,7 +905,7 @@ a.act:hover h3{color:var(--brand)}
 
 @media (max-width:760px){
   .pcar{padding:0 12px;margin-top:18px}
-  .pcar-track{aspect-ratio:4/3}
+  .pcar-track{aspect-ratio:16/9}
   .pcar-slide figcaption{padding:40px 16px 16px;gap:8px}
   .pcar-slide figcaption b{font-size:15px}
   .pcar-slide figcaption span{font-size:11.5px}
