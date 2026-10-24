@@ -26,7 +26,7 @@
       plats = Object.keys(by).map(function (k) { return { name: k, count: by[k] }; });
     }
     var chips = plats.filter(function (p) { return p.count > 0; }).map(function (p) {
-      return '<span class="nf-plat" title="' + esc(p.level || '') + (p.score ? ' · ' + esc(p.score) : '') + '">' +
+      return '<span class="nf-plat" title="' + esc(p.level || '') + '">' +
         '<b>' + esc(p.name) + '</b><i>' + p.count + '</i></span>';
     }).join('');
     return '<div class="nf-plats">' +
