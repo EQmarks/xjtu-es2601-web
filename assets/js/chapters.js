@@ -5,7 +5,7 @@
   if(!root)return;
   var esc=Site.escapeHTML, href=Site.safeHref;
   var imageOptions={};
-  function topics(a){return '<div class="topic-tags">'+(a.tags||[]).map(function(t){return '<span>'+esc(Site.tagLabel(t))+'</span>';}).join('')+'</div>';}
+  function topics(a){if(!(a.tags||[]).length)return '';return '<div class="topic-tags">'+(a.tags||[]).map(function(t){return '<span>'+esc(Site.tagLabel(t))+'</span>';}).join('')+'</div>';}
   function image(a,manifest){var album=manifest[a.gallery],options=imageOptions[a.id]||{};if(!album||!album.photos||!album.photos.length)return '';var file=album.photos.indexOf(options.file)>=0?options.file:album.photos[0];return 'assets/img/gallery/'+a.gallery+'/f/'+file;}
   function photo(a,manifest){
     var src=image(a,manifest),options=imageOptions[a.id]||{},point=options.position||[50,50];
