@@ -91,12 +91,29 @@
         h += '<div class="act-lead">' + fmt(lead) + '</div>';
       }
 
+      var illustrated = a.id === 'a14';
+      if (illustrated) {
+        root.classList.add('act-illustrated');
+        h += '<figure class="detail-opening"><img src="assets/img/gallery/g-fuping-red/f/03.jpg" alt="富平研学现场的题词石"><figcaption>富平研学 · 现场记录</figcaption></figure>';
+      }
       /* 正文分节 */
       h += '<div class="act-story">';
       if (story.length) {
-        story.forEach(function (s) {
-          if (s.h) h += '<h2>' + esc(s.h) + '</h2>';
-          if (s.p) h += paragraphs(s.p);
+        story.forEach(function (s, index) {
+          if (illustrated) {
+            var photo = ['10.jpg','02.jpg','13.jpg','01.jpg'][index] || '';
+            var caption = ['陵园对面的社会主义核心价值观广场','纪念馆内的历史展陈','纪念馆中的西迁精神展板','故居参观途中'][index] || '';
+            h += '<section class="story-part'+(index % 2 ? ' is-reversed' : '')+(photo ? '' : ' is-text')+'">';
+            h += '<div class="story-copy"><span class="story-number">'+String(index+1).padStart(2,'0')+'</span>';
+            if (s.h) h += '<h2>'+esc(s.h)+'</h2>';
+            if (s.p) h += paragraphs(s.p);
+            h += '</div>';
+            if (photo) h += '<figure'+(index === 2 ? ' class="is-document"' : '')+'><img src="assets/img/gallery/g-fuping-red/f/'+photo+'" alt="'+esc(caption)+'" loading="lazy"><figcaption>'+esc(caption)+'</figcaption></figure>';
+            h += '</section>';
+          } else {
+            if (s.h) h += '<h2>' + esc(s.h) + '</h2>';
+            if (s.p) h += paragraphs(s.p);
+          }
         });
       } else {
         h += '<p>' + esc(a.desc || '内容待补充。') + '</p>';
@@ -105,7 +122,7 @@
 
       /* 总结 */
       if (summary) {
-        h += '<div class="act-summary"><h2>总结</h2>' + paragraphs(summary) + '</div>';
+        h += '<div class="act-summary"><h2>活动成果总结</h2>' + paragraphs(summary) + '</div>';
       }
 
       /* 观后感 */
