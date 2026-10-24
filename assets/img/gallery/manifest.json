@@ -138,9 +138,10 @@
   },
   "g-tongyuan": {
     "folder": "10.11四校同源微团课",
-    "activity": "“四交同源”线上联合微团课",
-    "count": 6,
+    "activity": "“同源讲堂”交通大学线上联合团课",
+    "count": 7,
     "photos": [
+      "07.jpg",
       "01.jpg",
       "02.jpg",
       "03.jpg",
@@ -416,18 +417,15 @@
   "g-xunweifuping": {
     "folder": "10.18富平走访",
     "activity": "寻味富平 · 乡土美食文化体验",
-    "count": 10,
+    "count": 7,
     "photos": [
-      "01.jpg",
       "02.jpg",
-      "03.jpg",
-      "04.jpg",
       "05.jpg",
-      "06.jpg",
-      "07.jpg",
-      "08.jpg",
-      "09.jpg",
-      "10.jpg"
+      "11.jpg",
+      "12.jpg",
+      "13.jpg",
+      "14.jpg",
+      "15.jpg"
     ],
     "raw": 54,
     "deduped": 52
@@ -451,20 +449,16 @@
   "g-fuping-red": {
     "folder": "10.18关中革命纪念馆习仲勋纪念馆",
     "activity": "富平红色研学 · 行走的党课",
-    "count": 12,
+    "count": 8,
     "photos": [
       "01.jpg",
       "02.jpg",
       "03.jpg",
-      "04.jpg",
       "05.jpg",
-      "06.jpg",
-      "07.jpg",
       "08.jpg",
       "09.jpg",
       "10.jpg",
-      "11.jpg",
-      "12.jpg"
+      "11.jpg"
     ],
     "raw": 119,
     "deduped": 112
@@ -555,6 +549,56 @@
   "g-qinqiang": {
     "folder": "10.7秦腔博物馆",
     "activity": "交大博物馆与陕西秦腔博物馆研学",
+    "count": 2,
+    "photos": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "raw": 2,
+    "deduped": 2
+  },
+  "g-national-flag": {
+    "folder": "10.1国庆升旗仪式",
+    "activity": "国庆升旗仪式",
+    "count": 3,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "raw": 3,
+    "deduped": 3
+  },
+  "g-siyuan": {
+    "folder": "10.17饮水思源碑打卡",
+    "activity": "饮水思源碑集体打卡",
+    "count": 2,
+    "photos": [
+      "01.jpg",
+      "02.jpg"
+    ],
+    "raw": 2,
+    "deduped": 2
+  },
+  "g-persimmon": {
+    "folder": "10.18富平走访",
+    "activity": "富平县柿子产业调研与建言",
+    "count": 7,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg",
+      "04.jpg",
+      "05.jpg",
+      "06.jpg",
+      "07.jpg"
+    ],
+    "raw": 7,
+    "deduped": 7
+  },
+  "g-tea-survey": {
+    "folder": "10.16新茶调研/推文配图",
+    "activity": "新式养生茶饮行业调研",
     "count": 2,
     "photos": [
       "01.jpg",

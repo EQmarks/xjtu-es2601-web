@@ -12,3 +12,7 @@
 @media(max-width:600px){.feature{grid-template-columns:38% minmax(0,1fr)}.feature img{min-height:160px}.card-brief{font-size:12px;line-height:1.7}.feature .card-brief{font-size:12px}.activity-row{grid-template-columns:34% minmax(0,1fr) 10px}.activity-row img{align-self:center}.feature-foot{padding-top:8px}}
 
 .activity-row{grid-template-columns:36% minmax(0,1fr) 20px}.row-arrow{font-size:16px;min-width:0;text-align:center}.activity-row.is-text{grid-template-columns:minmax(0,1fr) 20px}.chapter-content{--chapter-accent:var(--c)}.feature-foot b,.row-arrow{color:var(--c)}.chapter-loading{color:#85736b;padding:20px 0}@media(max-width:850px){.activity-row{grid-template-columns:30% minmax(0,1fr) 20px}}@media(max-width:600px){.activity-row{grid-template-columns:34% minmax(0,1fr) 20px}}
+
+/* Card crops use a per-photo focal point; screenshots retain their full content. */
+.feature img,.activity-row img{object-fit:var(--photo-fit,cover);object-position:var(--photo-position,50% 50%)}
+@media(max-width:600px){.feature img{height:auto;min-height:0;aspect-ratio:4/3;align-self:center}}
