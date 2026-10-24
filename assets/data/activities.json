@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-24",
+    "updated": "2026-10-25",
     "source": "依据活动记录、既有推文及决赛完善版总结材料核对；公开文案按事实、范围与成果状态整理",
     "photoRoot": "D:\\XJTUpack\\大一\\班委\\最佳团日活动\\素材",
     "statusNote": {
@@ -104,7 +104,10 @@
       ],
       "summary": "国庆升旗与假期中的红色寻访、知识竞答共同构成本次系列活动的爱国主义教育内容。",
       "href": "activity.html?id=a45",
-      "dateKey": "2026-10-01"
+      "dateKey": "2026-10-01",
+      "gallery": "g-national-flag",
+      "photos": 3,
+      "photoFolder": "10.1国庆升旗仪式"
     },
     {
       "id": "a01",
@@ -289,7 +292,7 @@
       "href": "activity.html?id=a17",
       "dateKey": "2026-10-11",
       "gallery": "g-tongyuan",
-      "photos": 6,
+      "photos": 7,
       "photoFolder": "10.11四校同源微团课"
     },
     {
@@ -332,11 +335,11 @@
       "verified": "A",
       "headline": "饮水思源铭来路，同源印记致百卅",
       "title": "饮水思源碑集体打卡",
-      "when": "2026-10-11 18:00—18:15",
+      "when": "2026-10-17",
       "tags": [
         "必做2 西迁精神"
       ],
-      "lead": "10月11日，支部在饮水思源碑前开展集体打卡，参与“四校同源”主题活动，记录校庆祝福与校园地标。",
+      "lead": "10月17日，支部在饮水思源碑前开展集体打卡，参与“四校同源”主题活动，记录校庆祝福与校园地标。",
       "story": [
         {
           "h": "记录校园地标",
@@ -345,7 +348,10 @@
       ],
       "summary": "地标照片与祝福记录构成“同源印记”的活动成果，并与线上联合团课相互衔接。",
       "href": "activity.html?id=a06",
-      "dateKey": "2026-10-11"
+      "dateKey": "2026-10-17",
+      "gallery": "g-siyuan",
+      "photos": 2,
+      "photoFolder": "10.17饮水思源碑打卡"
     },
     {
       "id": "a18",
@@ -1047,7 +1053,7 @@
       "href": "activity.html?id=a42",
       "dateKey": "2026-10-18",
       "gallery": "g-xunweifuping",
-      "photos": 10,
+      "photos": 7,
       "photoFolder": "寻味富平"
     },
     {
@@ -1113,7 +1119,7 @@
       "href": "activity.html?id=a14",
       "dateKey": "2026-10-18",
       "gallery": "g-fuping-red",
-      "photos": 12
+      "photos": 8
     },
     {
       "id": "a37",
@@ -1238,7 +1244,9 @@
       "summary": "此次走访以产品观察和店员交流为基础，帮助成员了解新式茶饮的产品呈现与门店经营。",
       "href": "activity.html?id=a39",
       "dateKey": "2026-10-16",
-      "photoFolder": "养生茶饮调研"
+      "photoFolder": "10.16新茶调研/推文配图",
+      "gallery": "g-tea-survey",
+      "photos": 2
     },
     {
       "id": "a26",
@@ -1371,7 +1379,10 @@
       ],
       "summary": "从农户访谈到建议函整理，成员将走访中关注的收成与销售问题转化为具体建议，尝试以书面形式反映基层情况。",
       "href": "activity.html?id=a47",
-      "dateKey": "2026-10-18"
+      "dateKey": "2026-10-18",
+      "gallery": "g-persimmon",
+      "photos": 7,
+      "photoFolder": "10.18富平走访"
     }
   ]
 }
