@@ -42,8 +42,9 @@
     var text = String(activity.when || '日期待确认').split(' · ')[0];
     // 括号里是补充说明（如「具体日期以书院赛程为准」「兴庆校区食堂」），列表标题只用日期
     text = stripNote(text);
-    var range = /^(\d{4})-(\d{2})-(\d{2})\s*至\s*(\d{2})-(\d{2})/.exec(text);
-    if (range) return range[1] + '.' + range[2] + '.' + range[3] + '—' + range[4] + '.' + range[5];
+    var range = /^(\d{4})-(\d{2})-(\d{2})\s*(?:至|[—–~])\s*(\d{2})-(\d{2})/.exec(text);
+    if (range) return range[1] + '.' + range[2] + '.' + range[3] + '—' + range[4] + '.' + range[5] + text.slice(range[0].length);
+    if (/[、，,]/.test(text)) return text.replace(/(\d{4})-(\d{2})-(\d{2})/g, '$1.$2.$3');
     var months = /^(\d{4})-(\d{2})\s*至\s*(\d{2})$/.exec(text);
     if (months) return months[1] + ' 年 ' + Number(months[2]) + '—' + Number(months[3]) + ' 月';
     var exact = /^(\d{4})-(\d{2})-(\d{2})/.exec(text);
