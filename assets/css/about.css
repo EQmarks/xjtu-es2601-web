@@ -1,0 +1,28 @@
+.about-main{--c:var(--brand)}
+.about-main .sec{padding:40px 0}.about-main .sec+ .sec{padding-top:12px}
+.about-main a:focus-visible,.about-main summary:focus-visible{outline:3px solid var(--xjtu-blue);outline-offset:5px}
+.about-eyebrow{font-size:12px;letter-spacing:2px;color:var(--brand)}
+.identity-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:24px}
+.identity-badge,.identity-flag{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .2s}
+.identity-grid a:hover{border-color:var(--brand)}
+.identity-badge>img{height:248px;width:100%;object-fit:contain;padding:24px}
+.identity-flag>img{width:100%;height:248px;object-fit:cover;object-position:center 55%}
+.identity-grid a>div{padding:22px 28px 26px}
+.identity-grid h3{font-size:22px;margin:5px 0 9px;line-height:1.5}
+.identity-grid p,.intro-grid p,.about-chapter p,.teams-intro,.team-row p{color:var(--text-2);line-height:1.9}
+.identity-link{display:inline-block;font-size:13px;color:var(--brand);font-weight:600;margin-top:15px}
+.intro-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;border-top:1px solid var(--line);padding-top:32px}
+.intro-grid h2{font-size:28px;line-height:1.6;margin-top:10px}.intro-grid p+p{margin-top:12px}
+.about-theme{border-left:2px solid var(--accent);padding:2px 0 2px 20px;margin-bottom:22px}.about-theme p{color:var(--text-2);font-size:13px}.about-theme h3{font-size:22px;margin-top:3px}
+.about-chapters{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.about-chapter{border-top:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:42px 1fr;gap:15px}
+.chapter-index{font-size:27px;color:var(--accent);line-height:1.4}.about-chapter h3{font-size:23px}.about-chapter small{font-size:13px;font-weight:400;margin-left:16px;color:var(--text-2)}.about-chapter p{margin-top:8px;font-size:14px}.chapter-count{display:block;margin-top:10px;font-size:13px;color:var(--brand)}.about-chapter:hover h3{color:var(--brand)}
+.teams-intro{max-width:850px;margin-bottom:22px}.team-list{border-top:1px solid var(--line)}
+.team-row{display:grid;grid-template-columns:180px 1fr;gap:30px;border-bottom:1px solid var(--line);padding:22px 0}.team-row h3{font-size:19px}.team-row span{font-size:13px;color:var(--text-2)}.team-row summary{cursor:pointer;color:var(--brand);font-size:13px;margin-top:7px;width:fit-content}.team-row details p{font-size:14px;padding-top:10px;max-width:800px}
+@media(min-width:1500px){.identity-badge>img,.identity-flag>img{height:280px}}
+@media(max-width:800px){.identity-grid{gap:16px;grid-template-columns:1fr 1fr}.identity-grid a>div{padding:18px}.identity-grid h3{font-size:19px}.identity-badge>img,.identity-flag>img{height:210px}.intro-grid{gap:25px;grid-template-columns:1fr 1.25fr}.intro-grid h2{font-size:23px}.about-chapters{column-gap:24px}.about-chapter small{display:block;margin-left:0}.team-row{grid-template-columns:130px 1fr;gap:20px}}
+@media(max-width:560px){.about-main .sec{padding:28px 0}.about-main .sec-head{align-items:start;flex-direction:column;gap:6px;margin-bottom:18px}.about-main .sec-head .more{margin-left:14px}.identity-grid,.intro-grid,.about-chapters{grid-template-columns:1fr}.identity-badge{flex-direction:row;align-items:center}.identity-badge>img{width:34%;height:auto;padding:12px}.identity-badge>div{flex:1;min-width:0}.identity-grid a>div{padding:16px}.identity-badge p{font-size:13px}.identity-badge h3{font-size:21px}.identity-badge .about-eyebrow{font-size:11px}.identity-flag>img{height:auto;aspect-ratio:3/2}.intro-grid{gap:16px;padding-top:24px}.intro-grid h2 br{display:none}.about-theme h3{font-size:20px}.about-chapter{padding:20px 0;grid-template-columns:32px 1fr;gap:10px}.about-chapter small{display:inline;margin-left:10px}.team-row{grid-template-columns:1fr;gap:8px;padding:18px 0}.team-row>div:first-child{display:flex;align-items:baseline;gap:16px}.team-row p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.identity-grid a{transition:none}}
+.intro-grid h2{text-wrap:balance}
+
+.about-main>.about-intro:first-child .intro-grid{border-top:0;padding-top:0}
