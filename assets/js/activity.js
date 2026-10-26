@@ -143,6 +143,15 @@
         h += '</div>';
       }
 
+      /* 活动成果文件 */
+      if (a.downloads && a.downloads.length) {
+        h += '<div class="act-summary"><h2>活动资料</h2>';
+        a.downloads.forEach(function (file) {
+          h += '<p><a href="' + href(file.href) + '" target="_blank" rel="noopener">' + esc(file.title) + ' →</a></p>';
+        });
+        h += '</div>';
+      }
+
       /* 现场照片 */
       if (a.gallery) {
         h += '<div class="act-photos"><h2>活动影像';

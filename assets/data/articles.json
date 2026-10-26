@@ -1,12 +1,17 @@
 {
   "meta": {
     "title": "宣传成果",
-    "source": "依据《最佳团日41_储能2601_总结材料_提交版》「三、宣传情况」整理",
-    "total": 31,
+    "source": "依据总结材料宣传清单、已发布推文及日期截图核对",
+    "total": 32,
     "draftCount": 0,
-    "totalPlanned": 31,
-    "updated": "2026-10-25",
+    "totalPlanned": 32,
+    "updated": "2026-10-26",
     "platforms": [
+      {
+        "name": "青励公益",
+        "level": "公益组织公众号",
+        "count": 1
+      },
       {
         "name": "YouthPower西安",
         "level": "省级以下校外媒体",
@@ -32,9 +37,22 @@
         "score": "不重复计分"
       }
     ],
-    "note": "共 31 篇报道：省级以下校外媒体 1 次、院级官方 1 次、院级团组织官方 26 次、校级学生社团 3 篇"
+    "note": "共32篇已发布报道，来自5个公众号平台"
   },
   "articles": [
+    {
+      "id": "p32",
+      "title": "青励资讯｜青励公益西安站 × 西安交通大学储能2601团支部素拓回顾",
+      "chapter": "携手",
+      "source": "青励公益",
+      "platform": "公益组织公众号",
+      "level": 4,
+      "url": "https://mp.weixin.qq.com/s/EPwmtA0HJv9cPo8kQj0HQQ",
+      "featured": false,
+      "activityId": "a10",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T12:00:00+08:00"
+    },
     {
       "id": "p01",
       "title": "青励素拓丨走进西交大：听公益分享，赴招新之约，做同路之人",

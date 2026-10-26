@@ -134,6 +134,8 @@
           var bar = platformBarHTML(meta, arts);
           if (mode === 'stat') {
             box.innerHTML = bar;
+          } else if (mode === 'compact') {
+            box.innerHTML = bar + listHTML(arts, true);
           } else if (mode === 'head') {
             box.innerHTML = heroHTML(head) + bar + listHTML(arts, true) + statHTML(arts);
           } else {

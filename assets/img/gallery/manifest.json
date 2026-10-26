@@ -17,9 +17,9 @@
     "deduped": 23
   },
   "g-innovport": {
-    "folder": "10.16创新港",
+    "folder": "10.16创新港；10.25 创新港2.0",
     "activity": "创新港国家储能平台研学",
-    "count": 10,
+    "count": 18,
     "photos": [
       "10.jpg",
       "09.jpg",
@@ -30,7 +30,15 @@
       "05.jpg",
       "06.jpg",
       "07.jpg",
-      "08.jpg"
+      "08.jpg",
+      "11.jpg",
+      "12.jpg",
+      "13.jpg",
+      "14.jpg",
+      "15.jpg",
+      "16.jpg",
+      "17.jpg",
+      "18.jpg"
     ],
     "raw": 50,
     "deduped": 46
@@ -609,5 +617,15 @@
     ],
     "raw": 2,
     "deduped": 2
+  },
+  "g-wishes": {
+    "folder": "10.17同源寄语.pdf",
+    "activity": "同源寄语电子纪念册",
+    "count": 3,
+    "photos": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ]
   }
 }
