@@ -2,11 +2,17 @@
   "meta": {
     "title": "宣传成果",
     "source": "依据总结材料宣传清单、已发布推文及日期截图核对",
-    "total": 32,
+    "total": 33,
     "draftCount": 0,
-    "totalPlanned": 32,
-    "updated": "2026-10-26",
+    "totalPlanned": 33,
+    "updated": "2026-10-27",
     "platforms": [
+      {
+        "name": "学习强国·西安交通大学强国号",
+        "level": "学校官方新媒体",
+        "count": 1,
+        "score": "6 分"
+      },
       {
         "name": "青励公益",
         "level": "公益组织公众号",
@@ -37,9 +43,22 @@
         "score": "不重复计分"
       }
     ],
-    "note": "共32篇已发布报道，来自5个公众号平台"
+    "note": "共33篇已发布报道，来自6个公众号平台"
   },
   "articles": [
+    {
+      "id": "p33",
+      "title": "最佳团日 | 百名学子寄深情，一纸联名颂长征",
+      "chapter": "开物",
+      "source": "学习强国·西安交通大学强国号",
+      "platform": "学校官方新媒体",
+      "level": 1,
+      "url": "https://article.xuexi.cn/articles/index.html?art_id=10987213556966841077&item_id=10987213556966841077&study_style_id=feeds_opaque&t=1792976888068&showmenu=false&ref_read_id=332ac6d1-1e36-4842-865e-13f04915d2dc_1792985454983&pid=&ptype=-1&source=share&share_to=wx_single",
+      "featured": false,
+      "activityId": "a37",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T12:00:00+08:00"
+    },
     {
       "id": "p32",
       "title": "青励资讯｜青励公益西安站 × 西安交通大学储能2601团支部素拓回顾",
