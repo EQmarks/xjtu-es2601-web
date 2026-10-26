@@ -318,5 +318,90 @@
     ],
     "source": "红色足迹/赵师玖/041260b11a530680cfb554450f552d3c.jpg",
     "url": "https://wgxj.nc.gov.cn/wgxlj/zfcg/202402/523dbb2782d646a3b88704fb9ac6fba7.shtml"
+  },
+  {
+    "id": "xjtu-link",
+    "group": "xian",
+    "name": "西安交通大学",
+    "title": "四校同源 · 同源讲堂与寄语",
+    "status": "校际联学",
+    "date": "2026.10.11、10.17",
+    "address": "陕西省西安市 · 西安交通大学",
+    "desc": "西安交通大学、上海交通大学、西南交通大学与北京交通大学开展线上联学，以校史短片、故事分享与交流认识共同源流，并通过同源寄语记录校庆祝愿。",
+    "note": "同源讲堂 · 同源寄语",
+    "coord": [
+      108.98,
+      34.26
+    ],
+    "source": "activities.json · a17、a46",
+    "url": "activity.html?id=a17"
+  },
+  {
+    "id": "sjtu-link",
+    "group": "shanghai",
+    "name": "上海交通大学",
+    "title": "四校同源 · 同源讲堂与寄语",
+    "status": "校际联学",
+    "date": "2026.10.11、10.17",
+    "address": "上海市 · 上海交通大学",
+    "desc": "西安交通大学、上海交通大学、西南交通大学与北京交通大学开展线上联学，以校史短片、故事分享与交流认识共同源流，并通过同源寄语记录校庆祝愿。",
+    "note": "同源讲堂 · 同源寄语",
+    "coord": [
+      121.47,
+      31.23
+    ],
+    "source": "activities.json · a17、a46",
+    "url": "activity.html?id=a17"
+  },
+  {
+    "id": "swjtu-link",
+    "group": "chengdu",
+    "name": "西南交通大学",
+    "title": "四校同源 · 同源讲堂与寄语",
+    "status": "校际联学",
+    "date": "2026.10.11、10.17",
+    "address": "四川省成都市 · 西南交通大学",
+    "desc": "西安交通大学、上海交通大学、西南交通大学与北京交通大学开展线上联学，以校史短片、故事分享与交流认识共同源流，并通过同源寄语记录校庆祝愿。",
+    "note": "同源讲堂 · 同源寄语",
+    "coord": [
+      104.07,
+      30.67
+    ],
+    "source": "activities.json · a17、a46",
+    "url": "activity.html?id=a17"
+  },
+  {
+    "id": "bjtu-link",
+    "group": "beijing",
+    "name": "北京交通大学",
+    "title": "四校同源 · 同源讲堂与寄语",
+    "status": "校际联学",
+    "date": "2026.10.11、10.17",
+    "address": "北京市 · 北京交通大学",
+    "desc": "西安交通大学、上海交通大学、西南交通大学与北京交通大学开展线上联学，以校史短片、故事分享与交流认识共同源流，并通过同源寄语记录校庆祝愿。",
+    "note": "同源讲堂 · 同源寄语",
+    "coord": [
+      116.4,
+      39.9
+    ],
+    "source": "activities.json · a17、a46",
+    "url": "activity.html?id=a17"
+  },
+  {
+    "id": "tju-link",
+    "group": "tianjin",
+    "name": "天津大学",
+    "title": "双城同源，储能同行",
+    "status": "校际联学",
+    "date": "2026.10.15、10.17",
+    "address": "天津市 · 天津大学",
+    "desc": "西安交通大学与天津大学储能2601团支部开展联学共建，交流校史、团日实践与专业学习，并通过线上思辨交流和百秒微访谈延伸对话。",
+    "note": "联学共建 · 专业交流 · 百秒微访谈",
+    "coord": [
+      117.2,
+      39.12
+    ],
+    "source": "activities.json · a18",
+    "url": "activity.html?id=a18"
   }
 ]
