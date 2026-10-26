@@ -363,13 +363,12 @@
   "g-weibianlun": {
     "folder": "四支部专题微辩论（推文内嵌）",
     "activity": "四支部专题微辩论",
-    "count": 5,
+    "count": 4,
     "photos": [
-      "01.jpg",
+      "05.jpg",
       "02.jpg",
       "03.jpg",
-      "04.jpg",
-      "05.jpg"
+      "04.jpg"
     ],
     "raw": 5,
     "deduped": 5
