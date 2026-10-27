@@ -1,0 +1,247 @@
+{
+  "categories": [
+    {
+      "id": "identity",
+      "page": "download-identity.html",
+      "title": "班级标识",
+      "meta": "班徽 · 班旗 · 素材包",
+      "summary": "能流织环班徽的五套配色，以及班旗印刷稿。",
+      "lead": "班徽「能流织环」以首尾相衔的曲线表达能量的汇集、存储与释放。五套配色适用于不同背景，班旗提供印刷稿与版式预览。",
+      "preview": "assets/img/logo/badge-1-liu-blue.png",
+      "previewAlt": "班级标识预览",
+      "caption": "班级标识",
+      "groups": [
+        {
+          "title": "班徽素材",
+          "files": [
+            {
+              "label": "原色蓝青",
+              "href": "assets/img/logo/badge-1-liu-blue.png",
+              "name": "储能2601_能流织环_原色蓝青.png"
+            },
+            {
+              "label": "爱国红梧桐金",
+              "href": "assets/img/logo/badge-1-liu-red.png",
+              "name": "储能2601_能流织环_爱国红梧桐金.png"
+            },
+            {
+              "label": "科技蓝",
+              "href": "assets/img/logo/badge-1-liu-monoblue.png",
+              "name": "储能2601_能流织环_科技蓝.png"
+            },
+            {
+              "label": "爱国红",
+              "href": "assets/img/logo/badge-1-liu-pure-red.png",
+              "name": "储能2601_能流织环_爱国红.png"
+            },
+            {
+              "label": "反白",
+              "href": "assets/img/logo/badge-1-liu-white.png",
+              "name": "储能2601_能流织环_反白.png"
+            }
+          ]
+        },
+        {
+          "title": "班旗与素材包",
+          "files": [
+            {
+              "label": "班旗印刷稿",
+              "href": "assets/img/logo/flag-print.pdf",
+              "name": "储能2601_班旗印刷稿.pdf"
+            },
+            {
+              "label": "班旗版式预览",
+              "href": "assets/img/logo/flag-preview.png",
+              "name": "储能2601_班旗版式.png"
+            },
+            {
+              "label": "班级标识素材包",
+              "href": "assets/downloads/es2601-class-identity.zip",
+              "name": "储能2601_班级标识素材包.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "labor",
+      "page": "download-labor.html",
+      "title": "劳动包干工作记录表",
+      "meta": "实践记录 · PDF",
+      "summary": "10月12日校园劳动的工作记录与成果照片。",
+      "lead": "从绿化带清扫到路面保洁，记录校园劳动的内容与现场成果。工作记录表摘自校赛总结材料。",
+      "preview": "assets/img/downloads/labor-record.jpg",
+      "previewAlt": "劳动包干工作记录表预览",
+      "caption": "劳动包干工作记录表",
+      "groups": [
+        {
+          "title": "附件下载",
+          "files": [
+            {
+              "label": "劳动包干工作记录表",
+              "href": "assets/downloads/labor-record.pdf",
+              "name": "储能2601_劳动包干工作记录表.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "page": "download-records.html",
+      "title": "智慧团建记录",
+      "meta": "组织生活 · PDF",
+      "summary": "支部学习与主题团日的系统录入记录。",
+      "lead": "以系统截图保存支部学习与主题实践的开展记录，涵盖支部大会、团课和主题团日等组织生活。",
+      "preview": "assets/img/downloads/organization-records.jpg",
+      "previewAlt": "智慧团建记录预览",
+      "caption": "智慧团建记录",
+      "groups": [
+        {
+          "title": "附件下载",
+          "files": [
+            {
+              "label": "智慧团建组织生活记录",
+              "href": "assets/downloads/organization-records.pdf",
+              "name": "储能2601_智慧团建组织生活记录.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "page": "download-learning.html",
+      "title": "采访与竞答资料",
+      "meta": "文字稿 · 题库 · 采访视频",
+      "summary": "储能主题采访文字稿、校史竞答题与采访原始视频。",
+      "lead": "围绕储能学习、科研探索与青年成长保存采访记录，并以校史知识竞答回顾交通大学的办学历程。",
+      "preview": "assets/img/downloads/interview-preview.jpg",
+      "previewAlt": "采访与竞答资料预览",
+      "caption": "采访与竞答资料",
+      "groups": [
+        {
+          "title": "采访文字稿",
+          "files": [
+            {
+              "label": "储能主题采访文字稿",
+              "href": "assets/downloads/interview-transcript.docx",
+              "name": "储能2601_储能主题采访文字稿.docx"
+            },
+            {
+              "label": "采访文字稿 · 文本版",
+              "href": "assets/downloads/interview-transcript.md",
+              "name": "储能2601_储能主题采访文字稿.md"
+            }
+          ]
+        },
+        {
+          "title": "校史知识竞答",
+          "files": [
+            {
+              "label": "校史竞答题 · 50题",
+              "href": "assets/downloads/history-quiz.md",
+              "name": "交通大学校史知识竞答_50题.md"
+            },
+            {
+              "label": "校史竞答题与参考答案",
+              "href": "assets/downloads/history-quiz-answers.md",
+              "name": "交通大学校史知识竞答_题目与参考答案.md"
+            }
+          ]
+        },
+        {
+          "title": "采访原始视频",
+          "files": [
+            {
+              "label": "采访视频 01",
+              "href": "assets/downloads/interviews/interview-01.mp4",
+              "name": "储能主题采访_01.mp4"
+            },
+            {
+              "label": "采访视频 02",
+              "href": "assets/downloads/interviews/interview-02.mp4",
+              "name": "储能主题采访_02.mp4"
+            },
+            {
+              "label": "采访视频 03",
+              "href": "assets/downloads/interviews/interview-03.mp4",
+              "name": "储能主题采访_03.mp4"
+            },
+            {
+              "label": "采访视频 04",
+              "href": "assets/downloads/interviews/interview-04.mp4",
+              "name": "储能主题采访_04.mp4"
+            },
+            {
+              "label": "采访视频 05",
+              "href": "assets/downloads/interviews/interview-05.mp4",
+              "name": "储能主题采访_05.mp4"
+            },
+            {
+              "label": "采访视频 06",
+              "href": "assets/downloads/interviews/interview-06.mp4",
+              "name": "储能主题采访_06.mp4"
+            },
+            {
+              "label": "采访视频 07",
+              "href": "assets/downloads/interviews/interview-07.mp4",
+              "name": "储能主题采访_07.mp4"
+            },
+            {
+              "label": "采访视频 08",
+              "href": "assets/downloads/interviews/interview-08.mp4",
+              "name": "储能主题采访_08.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wishes",
+      "page": "download-wishes.html",
+      "title": "同源寄语",
+      "meta": "电子纪念册 · PDF",
+      "summary": "四校青年写给130岁交大的祝福与期许。",
+      "lead": "一纸寄语，四校同源。36页电子纪念册汇集校庆祝福、前言与手写寄语，让不同校园的心声在同一册中相遇。",
+      "preview": "assets/img/downloads/wishes-cover.jpg",
+      "previewAlt": "同源寄语预览",
+      "caption": "同源寄语",
+      "groups": [
+        {
+          "title": "附件下载",
+          "files": [
+            {
+              "label": "同源寄语 · 电子纪念册",
+              "href": "assets/downloads/same-origin-wishes.pdf",
+              "name": "同源寄语_写给130岁的交大.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "page": "download-video.html",
+      "title": "团日活动视频",
+      "meta": "活动回顾 · MP4 · 05:00",
+      "summary": "用五分钟影像，回顾四个篇章中的共同经历。",
+      "lead": "从回望来路到自驱求知，从携手同行到开物创新，以影像串联团日活动中的学习、交流与实践。",
+      "preview": "assets/img/downloads/video-poster.jpg",
+      "previewAlt": "团日活动视频预览",
+      "caption": "团日活动视频",
+      "groups": [
+        {
+          "title": "视频下载",
+          "files": [
+            {
+              "label": "储百卅之光，能万里新程 · 团日活动视频",
+              "href": "assets/downloads/es2601-best-youth-day-2026.mp4",
+              "name": "储能2601团支部_储百卅之光_能万里新程.mp4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
