@@ -16,3 +16,4 @@
 /* Card crops use a per-photo focal point; screenshots retain their full content. */
 .feature img,.activity-row img{object-fit:var(--photo-fit,cover);object-position:var(--photo-position,50% 50%)}
 @media(max-width:600px){.feature img{height:auto;min-height:0;aspect-ratio:4/3;align-self:center}}
+/* es2601-fp:e2d689de09632c07 */

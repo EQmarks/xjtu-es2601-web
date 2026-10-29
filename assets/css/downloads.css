@@ -15,3 +15,4 @@
 @media(prefers-reduced-motion:reduce){.resource-card{transition:none}}
 
 /* 版头与活动相册统一：块级、无最小高度、37px 标题 */.ch-hero.resource-hero{min-height:0;display:block;padding:32px 0 28px}.ch-hero.resource-hero h1{font-size:37px;letter-spacing:3px;line-height:1.25}.ch-hero.resource-hero p{margin-top:11px;font-size:14.5px;line-height:1.8;letter-spacing:.5px}.ch-hero.resource-hero .badge{font-size:12px;padding:4px 12px;margin-bottom:13px}@media(max-width:640px){.ch-hero.resource-hero{padding:24px 0 20px}.ch-hero.resource-hero h1{font-size:25px;letter-spacing:2px}.ch-hero.resource-hero p{font-size:14px}}
+/* es2601-fp:589a1dbd555a3df1 */

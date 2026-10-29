@@ -12,3 +12,4 @@
 .act-illustrated .story-part img{background:#f1eae4}
 .act-illustrated .act-hero h1{text-wrap:balance}
 @media(max-width:600px){.act-illustrated .detail-opening.is-document img{aspect-ratio:4/3}.act-illustrated .act-article-btn{min-width:0}.act-illustrated .act-article-txt{min-width:0}}
+/* es2601-fp:9d73c458744dce9e */

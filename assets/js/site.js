@@ -82,3 +82,4 @@
     isDone: function (activity) { return activity.status === 'done'; }
   };
 })();
+// es2601-fp:cc01989be865e06e

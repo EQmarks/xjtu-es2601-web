@@ -49,3 +49,4 @@
     document.getElementById('pgal-body').innerHTML='<div class="notice">'+esc(Site.loadError('活动相册'))+'</div>';
   });
 })();
+// es2601-fp:74b70b016147e5ce

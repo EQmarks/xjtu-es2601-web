@@ -179,3 +179,4 @@
       root.innerHTML = '<div class="notice">' + esc(Site.loadError('活动内容')) + '</div>';
     });
 })();
+// es2601-fp:d3d63616e692c72c

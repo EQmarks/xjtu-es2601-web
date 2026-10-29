@@ -26,3 +26,4 @@
     root.dataset.ready='true';
   }).catch(function(){root.querySelector('[data-chapter-featured]').innerHTML='<p class="chapter-loading">活动加载失败，请刷新页面重试。</p>';});
 })();
+// es2601-fp:3ab910df4bf69ae5
