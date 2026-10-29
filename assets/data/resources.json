@@ -1,6 +1,70 @@
 {
   "categories": [
     {
+      "id": "summary",
+      "page": "download-summary.html",
+      "title": "总结材料",
+      "meta": "总结材料 · PDF · 194 页",
+      "summary": "194 页完整总结材料，含支部介绍、四篇章活动纪实、宣传情况与附录。",
+      "lead": "支部介绍与分工、42 项活动纪实、宣传情况，以及劳动记录、智慧团建、采访实录等附录。",
+      "preview": "assets/img/downloads/summary-preview.jpg",
+      "previewAlt": "最佳团日总结材料封面",
+      "files": [
+        {
+          "label": "储能2601 团支部“最佳团日”活动总结材料",
+          "href": "assets/downloads/es2601-summary-material.pdf",
+          "name": "储能2601_最佳团日总结材料.pdf",
+          "size": "PDF · 194 页 · 10.3 MB"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "page": "download-video.html",
+      "title": "团日活动视频",
+      "meta": "活动回顾 · MP4 · 05:00",
+      "summary": "用五分钟影像，回顾四个篇章中的共同经历。",
+      "lead": "从回望来路到自驱求知，从携手同行到开物创新，以影像串联团日活动中的学习、交流与实践。",
+      "preview": "assets/img/downloads/video-poster.jpg",
+      "previewAlt": "团日活动视频预览",
+      "caption": "团日活动视频",
+      "groups": [
+        {
+          "title": "视频下载",
+          "files": [
+            {
+              "label": "储百卅之光，能万里新程 · 团日活动视频",
+              "href": "assets/downloads/es2601-best-youth-day-2026.mp4",
+              "name": "储能2601团支部_储百卅之光_能万里新程.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wishes",
+      "page": "download-wishes.html",
+      "title": "同源寄语",
+      "meta": "电子纪念册 · PDF",
+      "summary": "四校青年写给130岁交大的祝福与期许。",
+      "lead": "一纸寄语，四校同源。36页电子纪念册汇集校庆祝福、前言与手写寄语，让不同校园的心声在同一册中相遇。",
+      "preview": "assets/img/downloads/wishes-cover.jpg",
+      "previewAlt": "同源寄语预览",
+      "caption": "同源寄语",
+      "groups": [
+        {
+          "title": "附件下载",
+          "files": [
+            {
+              "label": "同源寄语 · 电子纪念册",
+              "href": "assets/downloads/same-origin-wishes.pdf",
+              "name": "同源寄语_写给130岁的交大.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "identity",
       "page": "download-identity.html",
       "title": "班级标识",
@@ -64,6 +128,123 @@
       ]
     },
     {
+      "id": "learning",
+      "page": "download-learning.html",
+      "preview": "assets/img/downloads/interview-preview.jpg",
+      "groups": [
+        {
+          "title": "采访文字稿",
+          "files": [
+            {
+              "label": "储能主题采访文字稿",
+              "href": "assets/downloads/interview-transcript.docx",
+              "name": "储能2601_储能主题采访文字稿.docx"
+            },
+            {
+              "label": "采访文字稿 · 文本版",
+              "href": "assets/downloads/interview-transcript.md",
+              "name": "储能2601_储能主题采访文字稿.md"
+            }
+          ]
+        },
+        {
+          "title": "采访视频",
+          "files": [
+            {
+              "label": "采访片段 01",
+              "href": "assets/downloads/interview-web/interview-01.mp4",
+              "name": "储能主题采访_01.mp4",
+              "duration": "01:59",
+              "size": "4.0 MB"
+            },
+            {
+              "label": "采访片段 02",
+              "href": "assets/downloads/interview-web/interview-02.mp4",
+              "name": "储能主题采访_02.mp4",
+              "duration": "02:21",
+              "size": "5.2 MB"
+            },
+            {
+              "label": "采访片段 03",
+              "href": "assets/downloads/interview-web/interview-03.mp4",
+              "name": "储能主题采访_03.mp4",
+              "duration": "01:55",
+              "size": "3.5 MB"
+            },
+            {
+              "label": "采访片段 04",
+              "href": "assets/downloads/interview-web/interview-04.mp4",
+              "name": "储能主题采访_04.mp4",
+              "duration": "02:08",
+              "size": "5.2 MB"
+            },
+            {
+              "label": "采访片段 05",
+              "href": "assets/downloads/interview-web/interview-05.mp4",
+              "name": "储能主题采访_05.mp4",
+              "duration": "02:04",
+              "size": "4.7 MB"
+            },
+            {
+              "label": "采访片段 06",
+              "href": "assets/downloads/interview-web/interview-06.mp4",
+              "name": "储能主题采访_06.mp4",
+              "duration": "00:59",
+              "size": "3.2 MB"
+            },
+            {
+              "label": "采访片段 07",
+              "href": "assets/downloads/interview-web/interview-07.mp4",
+              "name": "储能主题采访_07.mp4",
+              "duration": "01:13",
+              "size": "3.9 MB"
+            },
+            {
+              "label": "采访片段 08",
+              "href": "assets/downloads/interview-web/interview-08.mp4",
+              "name": "储能主题采访_08.mp4",
+              "duration": "00:40",
+              "size": "2.1 MB"
+            }
+          ]
+        }
+      ],
+      "title": "采访实录",
+      "meta": "储能主题 · 视频与文字稿",
+      "summary": "8 段储能主题采访视频与文字稿，记录学习、科研与成长。",
+      "lead": "围绕储能学习、科研探索与青年成长，整理采访中的交流与思考。",
+      "previewAlt": "采访实录",
+      "caption": "采访实录"
+    },
+    {
+      "id": "quiz",
+      "page": "download-quiz.html",
+      "preview": "assets/img/downloads/quiz-cover.svg",
+      "groups": [
+        {
+          "title": "校史知识竞答",
+          "files": [
+            {
+              "label": "校史竞答题 · 50题",
+              "href": "assets/downloads/history-quiz.md",
+              "name": "交通大学校史知识竞答_50题.md"
+            },
+            {
+              "label": "校史竞答题与参考答案",
+              "href": "assets/downloads/history-quiz-answers.md",
+              "name": "交通大学校史知识竞答_题目与参考答案.md"
+            }
+          ]
+        }
+      ],
+      "title": "校史知识竞答",
+      "meta": "校史学习 · 50 道题",
+      "summary": "回顾交大办学历程，提供竞答题目与参考答案。",
+      "previewAlt": "校史知识竞答",
+      "caption": "校史知识竞答",
+      "lead": "以 50 道题回顾校史，提供题目与参考答案。"
+    },
+    {
       "id": "labor",
       "page": "download-labor.html",
       "title": "劳动包干工作记录表",
@@ -106,70 +287,6 @@
               "name": "储能2601_智慧团建组织生活记录.pdf"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "wishes",
-      "page": "download-wishes.html",
-      "title": "同源寄语",
-      "meta": "电子纪念册 · PDF",
-      "summary": "四校青年写给130岁交大的祝福与期许。",
-      "lead": "一纸寄语，四校同源。36页电子纪念册汇集校庆祝福、前言与手写寄语，让不同校园的心声在同一册中相遇。",
-      "preview": "assets/img/downloads/wishes-cover.jpg",
-      "previewAlt": "同源寄语预览",
-      "caption": "同源寄语",
-      "groups": [
-        {
-          "title": "附件下载",
-          "files": [
-            {
-              "label": "同源寄语 · 电子纪念册",
-              "href": "assets/downloads/same-origin-wishes.pdf",
-              "name": "同源寄语_写给130岁的交大.pdf"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "video",
-      "page": "download-video.html",
-      "title": "团日活动视频",
-      "meta": "活动回顾 · MP4 · 05:00",
-      "summary": "用五分钟影像，回顾四个篇章中的共同经历。",
-      "lead": "从回望来路到自驱求知，从携手同行到开物创新，以影像串联团日活动中的学习、交流与实践。",
-      "preview": "assets/img/downloads/video-poster.jpg",
-      "previewAlt": "团日活动视频预览",
-      "caption": "团日活动视频",
-      "groups": [
-        {
-          "title": "视频下载",
-          "files": [
-            {
-              "label": "储百卅之光，能万里新程 · 团日活动视频",
-              "href": "assets/downloads/es2601-best-youth-day-2026.mp4",
-              "name": "储能2601团支部_储百卅之光_能万里新程.mp4"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "summary",
-      "page": "download-summary.html",
-      "title": "总结材料",
-      "meta": "总结材料 · PDF · 194 页",
-      "summary": "194 页完整总结材料，含支部介绍、四篇章活动纪实、宣传情况与附录。",
-      "lead": "支部介绍与分工、42 项活动纪实、宣传情况，以及劳动记录、智慧团建、采访实录等附录。",
-      "preview": "assets/img/downloads/summary-preview.jpg",
-      "previewAlt": "最佳团日总结材料封面",
-      "files": [
-        {
-          "label": "储能2601 团支部“最佳团日”活动总结材料",
-          "href": "assets/downloads/es2601-summary-material.pdf",
-          "name": "储能2601_最佳团日总结材料.pdf",
-          "size": "PDF · 194 页 · 10.3 MB"
         }
       ]
     }
