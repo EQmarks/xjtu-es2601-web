@@ -15,4 +15,8 @@
 @media(prefers-reduced-motion:reduce){.resource-card{transition:none}}
 
 /* 版头与活动相册统一：块级、无最小高度、37px 标题 */.ch-hero.resource-hero{min-height:0;display:block;padding:32px 0 28px}.ch-hero.resource-hero h1{font-size:37px;letter-spacing:3px;line-height:1.25}.ch-hero.resource-hero p{margin-top:11px;font-size:14.5px;line-height:1.8;letter-spacing:.5px}.ch-hero.resource-hero .badge{font-size:12px;padding:4px 12px;margin-bottom:13px}@media(max-width:640px){.ch-hero.resource-hero{padding:24px 0 20px}.ch-hero.resource-hero h1{font-size:25px;letter-spacing:2px}.ch-hero.resource-hero p{font-size:14px}}
+
+/* 总结材料卡片：整行通栏（7 张卡片时最后一行不孤立） */.resource-card.card-summary{grid-column:1/-1;display:grid;grid-template-columns:280px minmax(0,1fr);align-items:stretch;border-left:0;border-right:0}.resource-card.card-summary .resource-cover{aspect-ratio:auto;height:100%;border-bottom:0;border-right:1px solid var(--line);padding:18px 22px}.resource-card.card-summary .resource-card-body{justify-content:center;padding:22px 26px}.resource-card.card-summary h2{font-size:22px;margin:5px 0 8px}@media(max-width:960px){.resource-card.card-summary{grid-template-columns:1fr}.resource-card.card-summary .resource-cover{aspect-ratio:16/7;border-right:0;border-bottom:1px solid var(--line)}}
+
+.summary-points{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px;margin:12px 0 0;padding:0}.summary-points li{font-size:13px;color:var(--text-2);position:relative;padding-left:14px}.summary-points li::before{content:'';position:absolute;left:0;top:7px;width:5px;height:5px;background:var(--brand-deep);border-radius:1px}@media(max-width:960px){.summary-points{grid-template-columns:1fr}}
 /* es2601-fp:589a1dbd555a3df1 */
