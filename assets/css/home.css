@@ -8,7 +8,7 @@
 .home-link{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;color:var(--brand)}
 .home-section-note{font-size:13px;color:var(--text-2)}
 .home-section-intro{margin:-10px 0 24px;max-width:800px}
-.home-chapter-section{background:#f3ece8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-chapter-section{background:#fff}
 .home-acts{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:20px}
 .home-acts>div{display:flex;gap:15px;align-items:baseline;border-bottom:2px solid var(--brand);padding-bottom:12px}
 .home-acts span{font-size:12px;color:var(--brand)}.home-acts b{font-size:19px;letter-spacing:2px}.home-acts em{font-size:12px;font-style:normal;color:var(--text-2);margin-left:auto}
@@ -30,7 +30,7 @@
 .home-mobile-act{display:none}
 @media(max-width:760px){.home-acts{display:none}.home-mobile-act{display:flex;grid-column:1/-1;align-items:baseline;gap:14px;border-bottom:2px solid var(--brand);padding:6px 0 10px}.home-mobile-act span{font-size:12px;color:var(--brand)}.home-mobile-act b{font-size:18px;letter-spacing:2px}}
 /* es2601-fp:b43bded10a85d101 */
-/* Alternate a shared light tint with white sections across the homepage. */
-.home-chapter-section,.page-home main>#articles{background:#f3ece8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+/* White section backgrounds keep the homepage continuous. */
+.home-chapter-section,.page-home main>#articles{background:#fff;border:0}
 .page-home main>#articles{padding-top:42px}
 @media(max-width:760px){.page-home main>#articles{padding-top:30px}}
