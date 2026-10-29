@@ -32,21 +32,22 @@
 /* es2601-fp:b43bded10a85d101 */
 /* Repeated section tint gives chapters and reports a shared visual rhythm. */
 .home-chapter-section,.home-media-section{background:#f3ece8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.home-media-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:start}
+.home-media-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:26px;align-items:stretch}
 .home-reports,.home-footprints{min-width:0;scroll-margin-top:70px}
 .home-reports .sec-head{flex-wrap:wrap;gap:10px}
 .home-reports .home-section-intro{font-size:13px}
 .home-reports .nf-wrap{background:#fff}
 .home-reports .nf-list{padding:4px 16px 12px}
-.home-reports .nf-list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:5px 9px;padding:10px 0}
-.home-reports .nf-title{white-space:normal;line-height:1.6;grid-column:2/-1;font-size:13px}
+.home-reports .nf-list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:3px 9px;padding:8px 0}
+.home-reports .nf-title{white-space:normal;line-height:1.6;grid-column:2/-1;font-size:13px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 .home-reports .nf-src{grid-column:2;font-size:11px;max-width:none}
 .home-reports .nf-list time{font-size:11px;grid-column:3}
 .home-reports .nf-hd{padding:14px 16px}
 .home-reports .nf-hd h3{font-size:16px}
 .home-reports .nf-hd-sub{font-size:11px}
-.home-footprints .home-map{display:flex;flex-direction:column;gap:24px;align-items:stretch;padding:30px 26px}
-.home-footprints .home-map h2{font-size:25px}
+.home-footprints{display:flex}
+.home-footprints .home-map{display:flex;flex:1;flex-direction:column;justify-content:space-between;gap:32px;align-items:stretch;padding:34px 30px}
+.home-footprints .home-map h2{font-size:29px;line-height:1.65;margin:16px 0 20px}
 .home-footprints .home-map p{font-size:13px;line-height:2}
 .home-footprints .home-map-stats{gap:12px;border-top:1px solid #ffffff30;padding-top:22px}
 .home-footprints .home-map-stats b{font-size:30px}
@@ -56,3 +57,12 @@
 @media(max-width:560px){.home-footprints .home-map{display:flex;padding:25px 20px}.home-footprints .home-map-stats{border-top:1px solid #ffffff30;padding-top:18px}.home-reports .sec-head .more{margin-left:14px}.home-reports .nf-hd{flex-wrap:wrap}.home-reports .nf-src{max-width:150px}}
 
 .page-home .home-media-section #articles{padding-top:0}
+.home-reports .nf-plats{padding:12px 16px;gap:7px}
+.home-reports .nf-plats-hd,.home-reports .nf-plats-total{display:none}
+.home-reports .nf-plat{font-size:11px;padding:3px 7px}
+/* Expanded reports keep their natural flow without stretching the map card. */
+.home-media-grid:has(.nf-list:not(.is-folded)) .home-footprints{align-self:start}
+@media(max-width:900px){.home-footprints .home-map{padding:28px}.home-footprints .home-map h2{font-size:25px;margin:10px 0 14px}}
+@media(max-width:560px){.home-footprints .home-map{padding:25px 20px}.home-footprints .home-map h2{font-size:24px}.home-reports .nf-plat{font-size:10px}}
+.home-footprint-map{width:100%;height:180px;object-fit:contain;opacity:.85}
+@media(max-width:900px){.home-footprint-map{display:none}}
