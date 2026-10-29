@@ -56,4 +56,3 @@
 @media(max-width:560px){.home-footprints .home-map{display:flex;padding:25px 20px}.home-footprints .home-map-stats{border-top:1px solid #ffffff30;padding-top:18px}.home-reports .sec-head .more{margin-left:14px}.home-reports .nf-hd{flex-wrap:wrap}.home-reports .nf-src{max-width:150px}}
 
 .page-home .home-media-section #articles{padding-top:0}
-@media(min-width:901px){.home-footprints{position:sticky;top:72px}}
