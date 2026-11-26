@@ -2,15 +2,15 @@
   "meta": {
     "title": "宣传成果",
     "source": "依据总结材料宣传清单、已发布推文及日期截图核对",
-    "total": 33,
+    "total": 34,
     "draftCount": 0,
-    "totalPlanned": 33,
-    "updated": "2026-10-27",
+    "totalPlanned": 34,
+    "updated": "2026-11-26",
     "platforms": [
       {
         "name": "学习强国·西安交通大学强国号",
         "level": "学校官方新媒体",
-        "count": 1,
+        "count": 2,
         "score": "6 分"
       },
       {
@@ -46,6 +46,19 @@
     "note": "共33篇已发布报道，来自6个公众号平台"
   },
   "articles": [
+    {
+      "id": "p34",
+      "title": "最佳团日 | 储能2601团支部：踏访富平寻根，缅怀先辈铸魂——储能2601团支部赴富平开展红色教育实践活动",
+      "chapter": "携手",
+      "source": "学习强国·西安交通大学强国号",
+      "platform": "学校官方新媒体",
+      "level": 1,
+      "url": "https://article.xuexi.cn/articles/index.html?art_id=8627546021619926739&item_id=8627546021619926739",
+      "featured": false,
+      "activityId": "a14",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-29T12:00:00+08:00"
+    },
     {
       "id": "p33",
       "title": "最佳团日 | 百名学子寄深情，一纸联名颂长征",
