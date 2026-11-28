@@ -93,12 +93,11 @@
       if (a.articleUrl) {
         var srcLabel = a.articleSource || (a.articleUrl.indexOf('mp.weixin.qq.com') >= 0 ? '微信公众号原文'
           : a.articleUrl.indexOf('xuexi.cn') >= 0 ? '学习强国原文' : '媒体报道原文');
-        var wxHint = a.articleUrl.indexOf('mp.weixin.qq.com') >= 0 ? '（建议在微信内打开）' : '';
         h += '<div class="act-article">' +
              '<a class="act-article-btn" href="' + href(a.articleUrl) + '" target="_blank" rel="noopener">' +
              '<span class="act-article-ico">文</span>' +
              '<span class="act-article-txt"><b>阅读已发布推文</b>' +
-             '<em>' + esc(srcLabel) + wxHint + '</em></span>' +
+             '<em>' + esc(srcLabel) + '</em></span>' +
              '<span class="act-article-arrow">→</span></a>';
         if (a.articleMore && a.articleMore.length) {
           var seenTitle = {};
