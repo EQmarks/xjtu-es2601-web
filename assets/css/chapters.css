@@ -17,3 +17,27 @@
 .feature img,.activity-row img{object-fit:var(--photo-fit,cover);object-position:var(--photo-position,50% 50%)}
 @media(max-width:600px){.feature img{height:auto;min-height:0;aspect-ratio:4/3;align-self:center}}
 /* es2601-fp:e2d689de09632c07 */
+/* ===== 篇章导读 v3：引号式 + 整体放大一号（窄屏引号内收不裁切） ===== */
+.chapter-context{padding:29px 0 0}
+.chapter-context .wrap{max-width:1080px;padding:10px 18px 24px 41px;background:none;border-left:0;
+  border-bottom:1px solid #e8ddd6;position:relative}
+.chapter-context .wrap::before{content:'\201C';position:absolute;left:4px;top:-8px;
+  font:700 55px/1 Georgia,'Times New Roman',serif;color:#d8bd92}
+.chapter-context h2{font-size:23px;margin:6px 0 11px;color:#8B0A1E;letter-spacing:.5px}
+.chapter-context p{max-width:1000px;font-size:17px;line-height:2.1;color:#2f2724;text-align:justify;text-indent:2em}
+.context-label{font-size:13px;color:#B08A3A;letter-spacing:4px}
+@media(max-width:960px){
+  .chapter-context{padding:25px 17px 0}
+  .chapter-context .wrap{max-width:none;padding:10px 15px 22px 38px}
+  .chapter-context .wrap::before{font-size:42px;left:2px;top:-4px}
+  .chapter-context h2{font-size:21px}
+  .chapter-context p{font-size:16.5px;line-height:2.05}
+}
+@media(max-width:640px){
+  .chapter-context{padding:21px 11px 0}
+  .chapter-context .wrap{max-width:none;padding:7px 0 17px 29px}
+  .chapter-context .wrap::before{font-size:32px;left:0;top:-2px}
+  .chapter-context h2{font-size:20px;margin:6px 0 12px}
+  .chapter-context p{font-size:16px;line-height:2;text-indent:2em}
+  .context-label{font-size:12px}
+}
