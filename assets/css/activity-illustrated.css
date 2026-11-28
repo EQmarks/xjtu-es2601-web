@@ -15,7 +15,7 @@
 /* es2601-fp:9d73c458744dce9e */
 
 .act-illustrated .act-lead{text-indent:0}
-.act-article-more{margin-top:10px;font-size:12.5px;color:#8a7c76;line-height:1.9}
-.act-article-more span{margin-right:4px}
-.act-article-more a{color:#8B0A1E;text-decoration:none;margin-right:12px;border-bottom:1px dashed rgba(139,10,30,.35)}
-.act-article-more a:hover{border-bottom-color:#8B0A1E}
+.act-article-more{margin-top:10px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12.5px;color:#8a7c76}
+.act-article-more span{margin-right:2px;white-space:nowrap}
+.act-article-more a{display:inline-block;padding:3px 10px;background:#fdf3f4;border:1px solid #f0d6d9;border-radius:3px;color:#8B0A1E;font-size:12.5px;line-height:1.6;text-decoration:none;max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.act-article-more a:hover{background:#fbe6e8;border-color:#e3b7bc}
