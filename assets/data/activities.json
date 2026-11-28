@@ -121,7 +121,9 @@
       "dateKey": "2026-10-01",
       "gallery": "g-national-flag",
       "photos": 3,
-      "photoFolder": "10.1国庆升旗仪式"
+      "photoFolder": "10.1国庆升旗仪式",
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507755&idx=3&sn=fa00fff7d293e8eb6f65218a2189a4bb",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a01",
@@ -207,7 +209,8 @@
       "dateKey": "2026-10-01",
       "gallery": "g-redclass-ready",
       "photos": 6,
-      "articleUrl": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ"
+      "articleUrl": "https://mp.weixin.qq.com/s/dDmNg3Qx3fEmDlc1rY0SeQ",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a07",
@@ -252,7 +255,8 @@
         "file": "02.jpg",
         "caption": "联合研学合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a08",
@@ -293,7 +297,8 @@
       "dateKey": "2026-10-07",
       "gallery": "g-qinqiang",
       "photos": 2,
-      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598843&idx=1&sn=70f0702f7bd5069c20f24ff408c4fc97"
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MjM5MjA5NDAzMg==&mid=2652598843&idx=1&sn=70f0702f7bd5069c20f24ff408c4fc97",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a15",
@@ -332,7 +337,9 @@
       "dateKey": "2026-10-11",
       "gallery": "g-changzheng",
       "photos": 5,
-      "photoFolder": "10.11长征观影《四渡赤水》"
+      "photoFolder": "10.11长征观影《四渡赤水》",
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247508608&idx=2&sn=b1679fe985f0c78140aff73f97548188",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a17",
@@ -438,7 +445,9 @@
         "file": "03.jpg",
         "caption": "钱学森图书馆前合影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247511798&idx=1&sn=015d9dfa821fbea0d29bdc1ef02279e7",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a06",
@@ -574,7 +583,9 @@
         "file": "01.jpg",
         "caption": "交大西迁博物馆前合影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=2&sn=0a7635e6f5d169144d06ff7e48ab5449",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a46",
@@ -679,7 +690,9 @@
         "file": "07.jpg",
         "caption": "线上闯关活动合影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247511793&idx=1&sn=2d10ab7244bd45bbf97dd7973ea408a8",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a03",
@@ -761,7 +774,9 @@
       "href": "activity.html?id=a30",
       "dateKey": "2026-10-13",
       "gallery": "g-basketball",
-      "photos": 4
+      "photos": 4,
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510142&idx=3&sn=1ada8348aee8c4b2974b999e8df15c96",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a31",
@@ -812,7 +827,9 @@
       "detailCover": {
         "file": "01.jpg",
         "caption": "“最佳团日”动员大会现场"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247507000&idx=1&sn=d7ca01a443cbed94a5ec40a5c3ae374d",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a29",
@@ -857,7 +874,8 @@
         "file": "01.jpg",
         "caption": "友谊专场活动合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a28",
@@ -903,7 +921,8 @@
         "file": "03.jpg",
         "caption": "陶艺工坊活动合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a09",
@@ -957,7 +976,8 @@
           "by": "郭一航",
           "text": "从草原额吉都贵玛的无疆大爱与基层扶贫的为民初心，到《哥达纲领批判》的真理底色与二十届四中全会精神的时代指引，这场宣讲让我在历史与现实的交响中，深切领悟了铸牢中华民族共同体意识的深厚底蕴与青年的时代担当。"
         }
-      ]
+      ],
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a11",
@@ -1005,7 +1025,8 @@
       "gallery": "g-cui",
       "photos": 6,
       "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=3&sn=12a81223db23144d8dbd272148ad0646",
-      "photoFolder": "10.16崔学长分享"
+      "photoFolder": "10.16崔学长分享",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a38",
@@ -1059,7 +1080,8 @@
         "file": "05.jpg",
         "caption": "专题微辩论活动留影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a40",
@@ -1225,7 +1247,8 @@
         "file": "04.jpg",
         "caption": "讲座活动合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a25",
@@ -1281,7 +1304,8 @@
         "file": "01.jpg",
         "caption": "劳动包干活动合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a21",
@@ -1328,7 +1352,9 @@
       "dateKey": "2026-10-13",
       "gallery": "g-prep1",
       "photos": 6,
-      "photoFolder": "10.13交附预一宣讲"
+      "photoFolder": "10.13交附预一宣讲",
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=1&sn=67732b9fe1365e3c138940f246bf84ac",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a23",
@@ -1474,7 +1500,9 @@
         "file": "01.jpg",
         "caption": "刘少椿纪念馆前留影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247511793&idx=4&sn=447ce7a104791131ed21fdc9fffe2e7e",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a42",
@@ -1524,7 +1552,9 @@
       "dateKey": "2026-10-18",
       "gallery": "g-xunweifuping",
       "photos": 7,
-      "photoFolder": "寻味富平"
+      "photoFolder": "寻味富平",
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=1&sn=57f884cdb2c08e69613694cc7e6b1848",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a43",
@@ -1572,7 +1602,9 @@
         "file": "01.jpg",
         "caption": "乡村振兴学院前合影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=4&sn=b59eef019b75aa9dc498f130a3b850c4",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a14",
@@ -1629,7 +1661,16 @@
       "detailCover": {
         "file": "03.jpg",
         "caption": "富平研学 · 现场记录"
-      }
+      },
+      "articleUrl": "https://article.xuexi.cn/articles/index.html?art_id=8627546021619926739&item_id=8627546021619926739",
+      "articleSource": "学习强国原文",
+      "articleMore": [
+        {
+          "title": "【最佳团日】储能2601团支部：踏访富平寻根，缅怀先辈铸魂",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247511793&idx=2&sn=43919018aa831dd78a49f9c218a15f42",
+          "source": "微信公众号原文"
+        }
+      ]
     },
     {
       "id": "a37",
@@ -1679,8 +1720,21 @@
       "dateKey": "2026-09-30",
       "gallery": "g-lianming",
       "photos": 8,
-      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9",
-      "photoFolder": "联名颂长征"
+      "articleUrl": "https://article.xuexi.cn/articles/index.html?art_id=10987213556966841077&item_id=10987213556966841077&study_style_id=feeds_opaque&t=1792976888068&showmenu=false&ref_read_id=332ac6d1-1e36-4842-865e-13f04915d2dc_1792985454983&pid=&ptype=-1&source=share&share_to=wx_single",
+      "photoFolder": "联名颂长征",
+      "articleSource": "学习强国原文",
+      "articleMore": [
+        {
+          "title": "【最佳团日】储能2601团支部：百人共书纪长征，信抵吴起绽光彩",
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NjA4MjA1Nw==&mid=2247546909&idx=4&sn=75db2b87331864881508de603fc5e980",
+          "source": "微信公众号原文"
+        },
+        {
+          "title": "【最佳团日】储能2601团支部：百人共书纪长征，信抵吴起绽光彩",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247509021&idx=2&sn=cd95583ac956923ebbd96f08724c0db9",
+          "source": "微信公众号原文"
+        }
+      ]
     },
     {
       "id": "a33",
@@ -1765,7 +1819,8 @@
         "file": "01.jpg",
         "caption": "迅湃技术参观合影",
         "fit": "contain"
-      }
+      },
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a39",
@@ -1810,7 +1865,9 @@
       "dateKey": "2026-10-16",
       "photoFolder": "10.16新茶调研/推文配图",
       "gallery": "g-tea-survey",
-      "photos": 2
+      "photos": 2,
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247511793&idx=3&sn=dba6f164c77c3e97ed97075806a71968",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a26",
@@ -1887,7 +1944,9 @@
         "file": "10.jpg",
         "caption": "中国西部科技创新港参观留影",
         "fit": "contain"
-      }
+      },
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=3&sn=01cf45cd73689cf56f773027582a4a52",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a13",
@@ -1933,7 +1992,9 @@
       "href": "activity.html?id=a13",
       "dateKey": "2026-10-17",
       "gallery": "g-renjisuo",
-      "photos": 10
+      "photos": 10,
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510118&idx=3&sn=2a21962948b1687305c8dcaa460ca9bc",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a12",
@@ -1979,7 +2040,9 @@
       "href": "activity.html?id=a12",
       "dateKey": "2026-10-17",
       "gallery": "g-ailiteracy",
-      "photos": 10
+      "photos": 10,
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzkyOTU3MTcxNQ==&mid=2247510120&idx=5&sn=b30e3a779b1b37f637886816bb573375",
+      "articleSource": "微信公众号原文"
     },
     {
       "id": "a47",
@@ -2080,7 +2143,15 @@
         "file": "01.jpg",
         "caption": "青励公益分享活动现场"
       },
-      "articleUrl": "https://mp.weixin.qq.com/s/EPwmtA0HJv9cPo8kQj0HQQ"
+      "articleUrl": "https://mp.weixin.qq.com/s?__biz=MzUxMDI4MzU4Nw==&mid=2247486142&idx=1&sn=f23ee39bd87e0c07d10b6837bc568d5b",
+      "articleSource": "微信公众号原文",
+      "articleMore": [
+        {
+          "title": "青励资讯｜青励公益西安站 × 西安交通大学储能2601团支部素拓回顾",
+          "url": "https://mp.weixin.qq.com/s/EPwmtA0HJv9cPo8kQj0HQQ",
+          "source": "微信公众号原文"
+        }
+      ]
     }
   ]
 }
